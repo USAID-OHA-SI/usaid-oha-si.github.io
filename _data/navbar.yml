@@ -1,0 +1,9 @@
+#_data/navbar.yml
+- name: Home
+  Link: /
+- name: Projects
+  link: /projects
+- name: Tutorials
+  link: /tutorials
+- name: Blogs
+  link: /blogs
