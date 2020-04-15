@@ -1,4 +1,3 @@
 theme: jekyll-theme-slate
 name: USAID - Office of HIV/AIDS
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
