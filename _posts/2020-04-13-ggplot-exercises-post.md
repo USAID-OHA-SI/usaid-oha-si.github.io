@@ -2,6 +2,7 @@
 layout: post
 title: "ggplot Exercises | 2020-04-13"
 date: 2014-04-13
+categories: blog
 ---
 
 ```{r setup, include=FALSE}

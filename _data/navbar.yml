@@ -1,9 +1,11 @@
 #_data/navbar.yml
-- name: Home
-  Link: /
 - name: Projects
-  link: /projects
+  link: /projects/
 - name: Tutorials
-  link: /tutorials
+  link: /tutorials/
+- name: Resources
+  link: /resources/
 - name: Blog
-  link: /blog
+  link: /blog/
+- name: Contact
+  link: /contact/
