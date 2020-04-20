@@ -1,4 +1,6 @@
 #_data/navbar.yml
+- name: Home
+  link: /
 - name: Projects
   link: /projects/
 - name: Tutorials
