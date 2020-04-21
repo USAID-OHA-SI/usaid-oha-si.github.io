@@ -29,7 +29,7 @@ Here is an example:
     Jekyll uses **YAML Front Matter** as variable holders for your post.
     The header should be always wraped within a pair of 3 dashes and contain a _layout_, _title_, _date_ (in YYYY-MM-DD format), and _author_.
     One could also include _categories_ in the header to group posts by category. You may use more that one categories. Tags are also allowed.
-    `
+    ```
     ---
     layout: post
     title: "Sample Post Title Here"
@@ -38,7 +38,7 @@ Here is an example:
     categories: [Tutorial, HFR, Reporting]
     tags: [R, MySQL, Frequency]
     ---
-    `
+    ```
 
     3.2. Post Description
     Jekyll uses the first paragraph as the excerpt of your post. Please do make sure that your first paragraph represent a short description of your post.
