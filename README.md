@@ -25,6 +25,7 @@ Here is an example:
 `2020-04-20-Processing-HFR-Country-Data-with-Wavelenth-R.md`
 
 3. File content
+
     3.1. File Header
     Jekyll uses **YAML Front Matter** as variable holders for your post.
     The header should be always wraped within a pair of 3 dashes and contain a _layout_, _title_, _date_ (in YYYY-MM-DD format), and _author_.
