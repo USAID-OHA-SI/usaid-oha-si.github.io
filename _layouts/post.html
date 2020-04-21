@@ -1,10 +1,31 @@
 --- 
 layout: default 
 ---
-<div class="post">
-    <h1 class="post-title">{{ page.title }}</h1>
 
-    <article class="post-content">
-        {{ content }}
-    </article>
+<div class="row">
+    <div class="col-4">
+        <h3><a href="">Back to list</a></h3>
+        <ul class="list-group list-group-flush">
+            {% for post in site.posts %}
+            <li class="list-group-item">
+                <span><a class="display-5" href="{{ page.url }}">{{ page.title }}</a><span> <br/>
+                <span><small> Posted {% if page.author And page.author != "" %} by {{ page.author }} {% endif %} on {{ page.date | date: "%m/%d/%Y" }}</small></span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col-8">
+        <div class="post">
+            <h1 class="post-title">{{ post.title }}</h1>
+
+            <span><small> Posted {% if page.author And page.author != "" %} by {{ page.author }} {% endif %} on {{ page.date | date: "%m/%d/%Y" }}</small></span>
+            
+            <hr/>
+
+            <article class="post-content">
+                {{ content }}
+            </article>
+        </div>
+    </div>    
 </div>

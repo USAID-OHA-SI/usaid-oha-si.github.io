@@ -26,8 +26,8 @@ title: Projects
 </div> {%- endcomment -%}
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-{% for repo in site.data.repos %}
+{% assign si_repos = site.data.repos | sort: 'name' %}
+{% for repo in si_repos%}
     <div class="col mb-3">
         <div class="card h-100">
             <div class="card-body">
