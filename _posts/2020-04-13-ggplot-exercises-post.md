@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ggplot Exercises | 2020-04-13"
+title: "ggplot Exercises"
 date: 2014-04-13
 categories: blog
 ---

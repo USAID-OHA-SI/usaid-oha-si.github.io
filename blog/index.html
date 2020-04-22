@@ -8,7 +8,7 @@ title: SI - Blogs
         <h1>Blogs</h1>
 
         <ol>
-            {% for post in site.posts reversed %}
+            {% for post in site.posts %}
             <li>
                 <h5><a class="display-5" href="{{ post.url }}">{{ post.title }}</a><h5>
                 <p class="">{{ post.excerpt }}</p>
