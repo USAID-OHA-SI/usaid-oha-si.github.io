@@ -1,24 +1,31 @@
 ## Welcome to Global Health / OHA Github Site
 
-You can view the live site at [USAID-OHA-SI](https://usaid-oha-si.github.io/).
+You can access the live site at [USAID-OHA-SI](https://usaid-oha-si.github.io/).
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Maintenance
 
-The site is built with Jekyll Templating so all pages could be updated and publish through this repo.
+This repo is used to maintain USAID-OHA-SI's website. All pages should be updated and publish through this repo.
 
 ### Setting up Jekyll on your local host
 
+GitHub uses Jekyll, a Ruby Gem, to update the website on _github.io_
+
+For you to preview and test the site locally before pushing your updated code, you will need to install Jekyll.
+
+Follow these [instructions](https://jekyllrb.com/docs/installation/) to install Jekyll and all the related requirements.
 
 ### Publishing a tutorial or blog post
 
 All new publications (tutorials or blog) will be processed as a blog posts and you will need to meet few requirements:
 
 1. File type
+
 Markdown files (.md) are recommended 
 
 2. File name
+
 You post will need to names as follow: YYYY-MM-DD-Sample-Post-Title-Here.md
 Dashes are used as space markers, so "Sample-Post-Title-Here" will end up as "Sample Post Title Here"
 Here is an example:
@@ -58,7 +65,7 @@ All tutorials and/or blog posts should go under **_posts** folder. For tutorials
 ### Updating the site with the new content
 
 You should alway test the new content before publishing the site. 
-Follow the setup section to install Jekyll. Once done with your post, run `jekyll serve', open a browser, and go to `localhost:4000` to review the changes.
+Follow the setup section to install Jekyll. Once done with your post, run `jekyll serve`, open a browser, and go to `localhost:4000` to review the changes.
 
 
 ### Markdown Syntax
