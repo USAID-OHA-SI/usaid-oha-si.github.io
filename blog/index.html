@@ -5,11 +5,11 @@ title: SI - Blogs
 
 <div class="row">
     <div class="col-12">
-        <h1>Blogs</h1>
+        <h1 class="display-5">SI - Most recent Publications</h1>
 
         <ol>
             {% for post in site.posts %}
-            <li>
+            <li class="mb-4">
                 <h5><a class="display-5" href="{{ post.url }}">{{ post.title }}</a><h5>
                 <p class="">{{ post.excerpt }}</p>
                 <span><small> Posted {% if post.author And post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small></span>

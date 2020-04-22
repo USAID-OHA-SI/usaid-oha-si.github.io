@@ -5,6 +5,8 @@ date: 2014-04-13
 categories: blog
 ---
 
+The USAID/Saturn team is interested in knowing where partners are seeing less than ideal linkage to treatment. Using `df_linkage`, help them create a scatter plot that looks at testing and treatment, flagging where they're far from a 1:1 relationship. Consider using different aesthetics to convey a message to your audience.
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
