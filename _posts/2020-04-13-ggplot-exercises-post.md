@@ -2,7 +2,7 @@
 layout: post
 title: "ggplot Exercises"
 date: 2014-04-13
-categories: [tutorials]
+categories: [tutorial]
 tags: [ggplot]
 ---
 
