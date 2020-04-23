@@ -3,18 +3,33 @@ layout: default
 title: SI - Blogs
 ---
 
-<div class="row">
+<div class="row mt-3">
     <div class="col-12">
-        <h1 class="display-5">SI - Most recent Publications</h1>
 
-        <ol>
-            {% for post in site.posts %}
-            <li class="mb-4">
-                <h5><a class="display-5" href="{{ post.url }}">{{ post.title }}</a><h5>
-                <p class="">{{ post.excerpt }}</p>
-                <span><small> Posted {% if post.author And post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small></span>
-            </li>
-            {% endfor %}
-        </ul>
+        <h3 class="display-5 mb-5">SI Blogs - Most recent publications</h3>
+        
+        {% for post in site.categories.blog %}
+        <div class="card mb-5">
+            <div class="row no-gutters">
+                <div class="d-none d-md-block col-sm-12 col-md-4">
+                    <img src="/assets/img/posts/default-blogging.png" class="card-img" alt="{{ post.title }}">
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.excerpt }}</p>
+
+                        <p class="card-text">
+                            <small> Posted {% if post.author And post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
+                            <br/>
+                            <small> Tags: {% if post.tags %}  {{ post.tags }} {% else %} "N/A" {% endif %}</small>
+                            <br/>
+                            <small><a class="display-5" href="{{ post.url }}">Details</a></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>

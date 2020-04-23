@@ -2,8 +2,8 @@
 layout: default 
 ---
 
-<div class="row">
-    <div class="d-none d-md-block col-md-4 mt-3 position-relative">
+<div class="row mt-3">
+    <div class="d-none d-md-block col-md-3 mt-3 position-relative">
         <div id="post-sidebar" class="position-fixed">
             <span class="display-5"><i class="fa fa-list-ul"></i> <a class="" href="/blog/">Back to list</a></span>
 
@@ -45,9 +45,9 @@ layout: default
         </div>
     </div>
 
-    <div class="col-sm-12 col-md-8">
+    <div class="col-sm-12 col-md-9">
         <div class="post">
-            <h1 class="post-title">{{ page.title }}</h1>
+            <h3 class="post-title">{{ page.title }}</h3>
 
             <span><small> Posted {% if page.author And page.author != "" %} by {{ page.author }} {% endif %} on {{ page.date | date: "%m/%d/%Y" }}</small></span>
             
