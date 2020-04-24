@@ -15,18 +15,22 @@ title: SI - Tutorials
         {% for post in site.categories.tutorial %}
         <div class="card mb-5">
             <div class="row no-gutters">
-                <div class="d-none d-md-block col-sm-12 col-md-4">
-                    <img src="/assets/img/posts/default-tutorial.png" class="card-img" alt="{{ post.title }}">
+                <div class="post-thumbnail d-none d-md-block col-sm-12 col-md-4">
+                    {% if post.thumbnail %}
+                        <img src="/assets/img/tutorials/{{ post.thumbnail }}" class="card-img" alt="{{ post.title }}">
+                    {% else %}
+                        <img src="/assets/img/posts/default-tutorial.png" class="card-img" alt="{{ post.title }}">
+                    {% endif %}
                 </div>
                 <div class="col-sm-12 col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">{{ post.title }}</h5>
-                        <p class="card-text">{{ post.excerpt }}</p>
+                        <p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
 
                         <p class="card-text">
-                            <small> Posted {% if post.author And post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
+                            <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
                             <br/>
-                            <small> Tags: {% if post.tags %}  {{ post.tags }} {% else %} "N/A" {% endif %}</small>
+                            <small> Tags: {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
                             <br/>
                             <small><a class="display-5" href="{{ post.url }}">Details</a></small>
                         </p>

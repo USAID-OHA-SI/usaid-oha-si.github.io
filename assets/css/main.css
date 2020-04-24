@@ -306,3 +306,16 @@ body {
     line-height: 60px;
     background-color: #F5F5F5;
 }
+
+.post-thumbnail {
+    height: 250px;
+}
+
+.post-thumbnail>img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.post p>img {
+    width: 80%;
+}
