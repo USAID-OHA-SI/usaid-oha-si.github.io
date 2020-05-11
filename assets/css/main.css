@@ -293,9 +293,33 @@ body {
     height: 100%;
 }
 
-#main-content {
+#main-content,
+.content {
     padding-top: 60px;
     padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.jumbotron-image {
+    background-image: url("/assets/img/line-graph-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px #ffffff;
+}
+
+.round-section {
+    text-align: center;
+    vertical-align: middle;
+    height: 150px;
+    width: 100%;
+    line-height: 150px;
+    background-color: #007bff40;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .footer {

@@ -1,46 +1,50 @@
---- 
-layout: default 
-title: Projects 
+---
+layout: default
+title: Projects
 ---
 
-<div class="row">
-    <div class="col-12">
-        <h1>Projects</h1>
+<div class="content container">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
-    </div>
-</div>
+    <div class="row">
+        <div class="col-12">
+            <h1>Projects</h1>
 
-{%- comment -%} <div class="row">
-    <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Repo</h2>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="card-footer">
-                <a class="card-link" href="#">Github Repo</a>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
         </div>
     </div>
-</div> {%- endcomment -%}
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-{% assign si_repos = site.data.repos | sort: 'name' %}
-{% for repo in si_repos%}
-    <div class="col mb-3">
-        <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">{{repo.name}}</h5>
-                <p class="card-text">{{repo.description}}</p>
-            </div>
-            <div class="card-footer">
-                <a class="card-link" href="{{repo.html_url}}" target="_blank"><i class="fa fa-github" ></i> Repo</a> <br/>
-                <span><small><strong>Created on</strong>: {{repo.created_at | date: '%Y-%m-%d'}}</small></span> <br/>
-                <span><small><strong>Updated on</strong>: {{repo.updated_at | date: '%Y-%m-%d'}}</small></span>
+    {%- comment -%} <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Repo</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="card-footer">
+                    <a class="card-link" href="#">Github Repo</a>
+                </div>
             </div>
         </div>
+    </div> {%- endcomment -%}
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    {% assign si_repos = site.data.repos | sort: 'name' %}
+    {% for repo in si_repos%}
+        <div class="col mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{repo.name}}</h5>
+                    <p class="card-text">{{repo.description}}</p>
+                </div>
+                <div class="card-footer">
+                    <a class="card-link" href="{{repo.html_url}}" target="_blank"><i class="fa fa-github" ></i> Repo</a> <br/>
+                    <span><small><strong>Created on</strong>: {{repo.created_at | date: '%Y-%m-%d'}}</small></span> <br/>
+                    <span><small><strong>Updated on</strong>: {{repo.updated_at | date: '%Y-%m-%d'}}</small></span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
     </div>
-{% endfor %}
 
 </div>
