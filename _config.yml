@@ -33,6 +33,13 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  #- jekyll-paginate
+
+pagination:
+  enabled: true
+  collections: repos
+  per_page: 12
+  paginate_path: "/projects/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
