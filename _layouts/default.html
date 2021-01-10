@@ -45,6 +45,23 @@
     <script src={{ "/assets/js/plugins.js" }}></script>
     <script src={{ "/assets/js/main.js" }}></script>
 
+    <!-- Main menu sizing on scroll -->
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = ".5rem 1rem";
+            $("#logo").css("font-size", "1rem");
+            $(".nav-item").css("font-size", "1em");
+        } else {
+            document.getElementById("navbar").style.padding = "1.2rem 1rem";
+            $("#logo").css("font-size", "1.5rem");
+            $(".nav-item").css("font-size", "1.2rem");
+        }
+    }
+    </script>
+
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function() {

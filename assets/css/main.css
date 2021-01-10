@@ -352,3 +352,7 @@ body {
 .post p>img {
     width: 80%;
 }
+
+a.nav-link {
+    color: rgba(255,255,255, .9) !important;
+}
