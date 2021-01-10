@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2020-04-17 16:37:19 -0400
-categories: [blog]
+categories: [news]
 tags: [markdown, md, Rmd]
 ---
 
