@@ -1,10 +1,6 @@
 #_data/navbar.yml
 - name: Home
   link: /
-- name: Cookbooks
-  link: /cookbooks/
-#- name: Style Guide
-#  link: /styles/
 - name: Packages
   link: /packages/
 - name: Projects
@@ -15,5 +11,9 @@
 #  link: /news/
 #- name: Resources
 #  link: /resources/
+- name: Cookbooks
+  link: /cookbooks/
+#- name: Style Guide
+#  link: /styles/
 - name: Learn
   link: /learn/

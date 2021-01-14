@@ -1,0 +1,77 @@
+---
+layout: default
+title: SI - Learning
+---
+
+<div class="content container">
+
+    <div class="row mt-3">
+
+        <div class="col-12">
+            <h3>Learning</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla
+                mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
+        </div>
+
+        <div class="col-12">
+            <h3 class="display-5">CATEGORIES</h3>
+
+            <div class="tags-expo mb-3">
+                <div class="tags-expo-list">
+                    {% for tag in site.categories %}
+                        <a href="#{{ category[0] | slugify }}" class="post-tag">{{ category[0] }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <h3 class="display-5">TAGS</h3>
+
+            <div class="tags-expo mb-3">
+                <div class="tags-expo-list">
+                    {% for tag in site.tags %}
+                        <a href="#{{ tag[0] | slugify }}" class="post-tag badge badge-info"><i class="fa fa-tag"></i> {{ tag[0] }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <h3 class="display-5 mb-5">POSTS</h3>
+
+            {% for post in site.posts %}
+            <div class="card mb-5">
+                <div class="row no-gutters">
+                    <div class="post-thumbnail d-none d-md-block col-sm-12 col-md-4">
+                        {% if post.thumbnail %}
+                            <img src="/assets/img/tutorials/{{ post.thumbnail }}" class="card-img" alt="{{ post.title }}">
+                        {% else %}
+                            <img src="/assets/img/posts/default-tutorial.png" class="card-img" alt="{{ post.title }}">
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+
+                            <p class="card-text">
+                                <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
+                                <br/>
+                                <small> <i class="fa fa-suitcase"></i> <!-- Categories:--> {% if post.categories %}  {{ post.categories | join: ", " }} {% else %} "N/A" {% endif %}</small>
+                                <br/>
+                                <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
+                                <br/>
+                                <small><a class="display-5" href="{{ post.url }}">Details</a></small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</div>
