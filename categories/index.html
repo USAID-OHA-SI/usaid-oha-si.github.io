@@ -23,7 +23,7 @@ title: SI - Recurrent categories in posts
             <ul>
             {% for category in site.categories %}
                 {% capture categoryname %}{{ category | first }}{% endcapture %}
-                <li><h4>{{ categoryname | upcase }}</h4></li>
+                <li><h4 id="{{ categoryname }}">{{ categoryname | upcase }}</h4></li>
                 <ul>
                     {% for post in site.categories[categoryname] %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>

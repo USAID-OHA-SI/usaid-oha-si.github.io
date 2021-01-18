@@ -31,6 +31,7 @@ github_username:  usaid-oha-si
 
 # Build settings
 theme: minima
+#theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   #- jekyll-paginate
