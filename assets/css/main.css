@@ -356,3 +356,11 @@ body {
 a.nav-link {
     color: rgba(255,255,255, .9) !important;
 }
+
+a.badge {
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
+}

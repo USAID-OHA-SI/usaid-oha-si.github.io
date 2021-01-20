@@ -23,10 +23,23 @@ title: SI - Recurrent tags in posts
             <ul>
             {% for tag in site.tags %}
                 {% capture tagname %}{{ tag | first }}{% endcapture %}
-                <li><h4 id="{{ tagname }}">{{ tagname | upcase }}</h4></li>
-                <ul>
+                <li><h5 id="{{ tagname }}">{{ tagname | upcase }}</h5></li>
+                <ul class="mb-3">
                     {% for post in site.tags[tagname] %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    <li class="mb-2">
+                        <i class="fa fa-file-o" title="post"></i>
+                        <a href="{{ post.url }}">{{ post.title }}</a> <br/> &nbsp;&nbsp;
+                        <small>
+                            <i class="fa fa-calendar" title="date"></i> {{post.date | date: "%Y-%m-%d" }} &nbsp;&nbsp;
+                            <i class="fa fa-user-circle" title="author"></i> {{post.author}} &nbsp;&nbsp;
+                            <i class="fa fa-folder-open" title="categories"></i>
+                            {% for category in post.categories %}
+                                <a href="{{site.url}}/learn/categories/#{{ category | slugify }}"
+                                    class="badge badge-info">
+                                    {{ category | slugify }}</a>
+                            {% endfor %}
+                        </small>
+                    </li>
                     {% endfor %}
                 </ul>
             {% endfor %}

@@ -6,6 +6,7 @@ layout: default
 
         <!-- Links to posts -->
         <div class="d-none d-md-block col-md-3 mt-3 position-relative">
+
             <div id="post-sidebar" class="position-fixed">
                 <span class="display-5">
                     <i class="fa fa-list-ul"></i>
@@ -51,6 +52,26 @@ layout: default
 
             </div>
         </div>
+<!--
+<ul id="toc" class="section-nav">
+  <li class="toc-entry toc-h1"><a href="#heading1">Heading.1</a>
+    <ul>
+      <li class="toc-entry toc-h2"><a href="#heading1-1">Heading.1-1</a></li>
+      <li class="toc-entry toc-h2"><a href="#heading1-2">Heading.1-2</a></li>
+    </ul>
+  </li>
+  <li class="toc-entry toc-h1"><a href="#heading2">Heading.2</a>
+    <ul>
+      <li class="toc-entry toc-h2"><a href="#heading2-1">Heading.2-1</a>
+        <ul>
+          <li class="toc-entry toc-h3"><a href="#heading2-1-1">Heading.2-1-1</a></li>
+          <li class="toc-entry toc-h3"><a href="#heading2-1-2">Heading.2-1-2</a></li>
+        </ul>
+      </li>
+      <li class="toc-entry toc-h2"><a href="#heading2-2">Heading.2-2</a></li>
+    </ul>
+  </li>
+</ul> -->
 
         <div class="col-sm-12 col-md-9">
             <div class="post">
@@ -59,52 +80,54 @@ layout: default
                 <hr/>
 
                 <!-- Metatada -->
-                <!-- Author & date -->
+
                 <span>
+                    <!-- Author & date -->
                     <small>
-                        Published {% if page.author and page.author != "" %} by {{ page.author }} {% endif %} on {{ page.date | date: "%m/%d/%Y" }}
+                        <i class="fa fa-calendar" title="date"></i> {{ page.date | date: "%Y-%m-%d" }} &nbsp;&nbsp;
+                        <i class="fa fa-user-circle" title="author"></i> {% if page.author and page.author != "" %} {{ page.author }} {% endif %}
                     </small>
-                </span>
-                <br/>
 
-                <!-- Categories -->
-                <span>
-                    <small>Categories:
-                    {% if post %}
-                        {% assign categories = post.categories %}
-                    {% else %}
-                        {% assign categories = page.categories %}
-                    {% endif %}
-                    {% for category in categories %}
-                        <a href="{{site.url}}/learn/categories/#{{ category | slugify }}"
-                            class="post-tag badge badge-secondary">
-                            <i class="fa fa-folder"></i> {{ category | slugify}}</a>
-                    {% endfor %}
+                    <br/>
+
+                    <!-- Categories -->
+                    <small>
+                        <i class="fa fa-folder-open" title="category"></i>
+                        {% if post %}
+                            {% assign categories = post.categories %}
+                        {% else %}
+                            {% assign categories = page.categories %}
+                        {% endif %}
+                        {% for category in categories %}
+                            <a href="{{site.url}}/learn/categories/#{{ category | slugify }}"
+                                class="badge badge-secondary">
+                                {{ category | slugify}}</a>
+                        {% endfor %}
                     </small>
-                </span>
-                <br/>
 
-                <!-- Tags -->
-                <span>
-                    <small>Tags:
-                    {% if post %}
-                        {% assign tags = post.tags %}
-                    {% else %}
-                        {% assign tags = page.tags %}
-                    {% endif %}
+                     &nbsp;&nbsp;
 
-                    {% for tag in tags %}
-                        <a href="{{site.url}}/learn/tags/#{{ tag | slugify }}"
-                            class="post-tag badge badge-info">
-                            <i class="fa fa-tag"></i> {{ tag | slugify }}</a>
-                    {% endfor %}
+                    <!-- Tags -->
+                    <small>
+                        <i class="fa fa-tags" title="tag"></i>
+                        {% if post %}
+                            {% assign tags = post.tags %}
+                        {% else %}
+                            {% assign tags = page.tags %}
+                        {% endif %}
+
+                        {% for tag in tags %}
+                            <a href="{{site.url}}/learn/tags/#{{ tag | slugify }}"
+                                class="badge badge-info">
+                                {{ tag | slugify }}</a>
+                        {% endfor %}
                     </small>
                 </span>
                 <hr/>
 
                 <!-- Content -->
                 <article class="post-content">
-                    {{ content }}
+                    {{ content | toc}}
                 </article>
             </div>
         </div>
