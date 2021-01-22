@@ -5,50 +5,63 @@ layout: default
     <div class="row mt-3">
 
         <!-- Sidebar menu to posts -->
-        <div class="d-none d-md-block col-md-3 mt-3 position-relative">
-            <div id="post-sidebar" class="position-fixed">
-                <span class="display-5">
-                    <i class="fa fa-list-ul"></i>
-                    <a class="" href="/learn/">Back to list</a></span>
+        <div class="d-none d-md-block col-md-3 col-lg-4 mt-3 position-relative">
+
+            <div id="post-sidemenu" class="post-sidemenu card">
 
                 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
-                <div class="list-group list-group-flush">
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item bg-secondary text-light">
+                        <i class="fa fa-list-ul"></i> Other posts
+                    <span class="badge badge-pill badge-light pull-right">{{site.posts.size}}</span></li>
 
                 {% for year in postsByYear %}
 
                     {% assign bYear = year.name | prepend: "blog-" %}
 
-                    <li class="list-group-item">
+                    <li class="list-group-item list-group-item-action">
                         <a href="#{{bYear}}" data-toggle="collapse"
-                            aria-expanded="true" aria-controls="{{bYear}}">
-                            <i class="fa fa-folder-o"></i> {{ year.name }}</a></li>
-
-                    {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+                            aria-expanded="false" aria-controls="{{bYear}}">
+                            <i class="fa fa-folder-o"></i> {{ year.name }}</a>
+                        <span class="badge badge-pill badge-light pull-right">{{year.items.size}}</span></li>
 
                     <div id="{{bYear}}" class="collapse">
 
-                        <ul class="list-group">
-                            {% for month in postsByMonth %}
-                            {% assign bMonth = month.name | prepend: "blog-" %}
-                            {% assign bMonth = bMonth | append: bYear %}
+                        {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
-                                <li class="list-group-item">
-                                    <a href="#{{bMonth}}" data-toggle="collapse" aria-expanded="false"
-                                        aria-controls="{{bMonth}}">
-                                        <i class="fa fa-folder-o"></i> {{ month.name }}</a></li>
+                        <ul class="list-group">
+
+                            {% for month in postsByMonth %}
+                            {% assign bMonth = month.name %}
+                            {% assign bMonth = bMonth | prepend: "-" | prepend: bYear %}
+
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#{{bMonth}}" data-toggle="collapse"
+                                        aria-expanded="false" aria-controls="{{bMonth}}">
+                                        &nbsp; <i class="fa fa-folder-o"></i> {{ month.name }}</a>
+                                    <span class="badge badge-pill badge-light pull-right">{{month.items.size}}</span></li>
 
                                 <div id="{{bMonth}}" class="collapse">
                                     <ul class="list-group">
                                         {% for post in month.items %}
+                                            {% assign bDate = post.date | date:"%Y-%m-%d" %}
+                                            {% assign bDate = bDate | prepend:"blog-" %}
+
+                                            <li class="list-group-item list-group-item-action">
 
                                             {% if post.title == page.title %}
-                                                <li class="list-group-item1"><i class="fa fa-file"></i>
+                                                &nbsp; <i class="fa fa-file"></i>
                                             {% else %}
-                                                <li class="list-group-item1"><i class="fa fa-file-o"></i>
+                                                &nbsp; <i class="fa fa-file-o"></i>
                                             {% endif %}
-                                                    <a href="{{ post.url }}">{{ post.title }}</a>
-                                                </li>
+
+                                                <a href="{{ post.url }}" class="{{ bDate }}"
+                                                    data-toggle="collapse" data-parent="{{bMonth}}"
+                                                    aria-expanded="false" aria-controls="{{bMonth}}">
+                                                    {{ post.title }}</a>
+                                            </li>
                                         {% endfor %}
                                     </ul>
                                 </div>
@@ -58,13 +71,14 @@ layout: default
                     </div>
 
                 {% endfor %}
-                </div>
+
+                </ul>
 
             </div>
         </div>
 
         <!-- Content of the Post -->
-        <div class="col-sm-12 col-md-9">
+        <div class="col-sm-12 col-md-9 col-lg-8">
             <div class="post">
 
                 <h3 class="post-title">{{ page.title }}</h3>

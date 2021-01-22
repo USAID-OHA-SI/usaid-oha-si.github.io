@@ -295,7 +295,7 @@ body {
 
 #main-content,
 .content {
-    padding-top: 60px;
+    margin-top: 60px;
     padding-bottom: 100px;
     margin-bottom: 100px;
 }
@@ -363,4 +363,13 @@ a.badge {
 
 li {
     list-style: none;
+}
+
+.post-sidemenu ul {
+    margin-left: 0;
+    font-size: .9em;
+    background-color: #ccc;
+}
+.post-sidemenu a:hover {
+    text-decoration: none;
 }
