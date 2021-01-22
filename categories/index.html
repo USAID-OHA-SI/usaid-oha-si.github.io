@@ -26,8 +26,9 @@ title: SI - Recurrent categories in posts
                 <li><h5 id="{{ categoryname }}">{{ categoryname | upcase }}</h5></li>
                 <ul class="mb-3">
                     {% for post in site.categories[categoryname] %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a> <br/>
+                    <li class="mb-2">
+                        <i class="fa fa-file-o" title="post"></i>
+                        <a href="{{ post.url }}">{{ post.title }}</a> <br/> &nbsp;&nbsp;
                         <small>
                             <i class="fa fa-calendar" title="date"></i> {{post.date | date: "%Y-%m-%d" }} &nbsp;&nbsp;
                             <i class="fa fa-user-circle" title="author"></i> {{post.author | default: "Not available"}} &nbsp;&nbsp;
