@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Key Performance Indicators Example"
+title: "Bar graph example"
 author: Tim Essam | SI
 date: 2021-01-12
 categories: [vignette]
@@ -10,12 +10,12 @@ tags: [ggplot]
 ```{r}
 # Setup knitr defaults and folder paths
   knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, out.width = '100%')
-  
+
   pub_images <- "public_images"
 
 # Set up caption object
   caption <- paste0("Source: Testing data from glitr package | Created on: ", Sys.Date())
-  
+
 # Add libraries needed
   library(tidyverse)
   library(scales)
@@ -33,18 +33,18 @@ When munging the hts data for the bar graph, make use of the `forcats::fct_reord
 ```{r}
 
 # Munge the hts data down to testing yields for a given year
-  hts_bar <- 
-    hts %>% 
-    filter(period == "FY50", period_type == "cumulative") %>% 
-    group_by(indicator, primepartner) %>% 
-    summarise(total = sum(value, na.rm = TRUE)) %>% 
-    ungroup() %>% 
-    spread(indicator, total) %>% 
-    mutate(yield = (HTS_TST_POS / HTS_TST)) 
+  hts_bar <-
+    hts %>%
+    filter(period == "FY50", period_type == "cumulative") %>%
+    group_by(indicator, primepartner) %>%
+    summarise(total = sum(value, na.rm = TRUE)) %>%
+    ungroup() %>%
+    spread(indicator, total) %>%
+    mutate(yield = (HTS_TST_POS / HTS_TST))
 
-  hts_bar %>% 
-    ggplot(aes(x = primepartner, y = yield)) + 
-    coord_flip() + 
+  hts_bar %>%
+    ggplot(aes(x = primepartner, y = yield)) +
+    coord_flip() +
     geom_col() +
     si_style_xgrid()
 ```
@@ -54,14 +54,14 @@ When munging the hts data for the bar graph, make use of the `forcats::fct_reord
 Sort the partners variable by yield and then plot as a rotated, sorted bar graph. Notice that we are using the `si_style_xgrid()` option from the `glitr` package to call baked-in formatting.
 
 ```{r}
-  hts_bar_sorted <- 
-    hts_bar %>% 
-    mutate(partner_ordered = fct_reorder(primepartner, yield)) 
-  
-  hts_bar_sorted %>% 
-    ggplot(aes(x = partner_ordered, 
-               y = yield)) + 
-    coord_flip() + 
+  hts_bar_sorted <-
+    hts_bar %>%
+    mutate(partner_ordered = fct_reorder(primepartner, yield))
+
+  hts_bar_sorted %>%
+    ggplot(aes(x = partner_ordered,
+               y = yield)) +
+    coord_flip() +
     geom_col() +
     si_style_xgrid()
 ```
@@ -74,21 +74,21 @@ To highlight the partners that have achieved beyond a given threshold, we create
 
 ```{r}
 # Match axis label colors to top to performers
-  label_colors <- if_else(sort(hts_bar_sorted$yield, decreasing = FALSE) > 0.2, 
-                          scooter, 
+  label_colors <- if_else(sort(hts_bar_sorted$yield, decreasing = FALSE) > 0.2,
+                          scooter,
                           color_caption)
 
-  hts_bar_sorted %>% 
-    mutate(color_flag = if_else(yield > 0.2, scooter, grey20k)) %>% 
-    ggplot(aes(x = partner_ordered, 
-               y = yield, 
-               fill = color_flag)) + 
-    coord_flip() + 
+  hts_bar_sorted %>%
+    mutate(color_flag = if_else(yield > 0.2, scooter, grey20k)) %>%
+    ggplot(aes(x = partner_ordered,
+               y = yield,
+               fill = color_flag)) +
+    coord_flip() +
     geom_col() +
     scale_fill_identity() +
     scale_y_continuous(labels = percent_format()) +
     si_style_xgrid() +
-    labs(x = NULL, y = NULL, 
+    labs(x = NULL, y = NULL,
          title = "BOOTES AND LEO ACHIEVED THE HIGHEST TESTING YIELDS",
          caption = caption
          ) +
