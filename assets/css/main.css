@@ -288,9 +288,34 @@ textarea {
  */
 
 body {
+    font-family: 'Source sans pro';
     margin-bottom: 60px;
     width: 100%;
     height: 100%;
+}
+
+.font-ssp-reg {
+    font-family: 'Source sans pro';
+    font-weight: regular;
+}
+
+.font-ssp-light {
+    font-family: 'Source sans pro';
+    font-weight: light;
+}
+
+.font-ssp-semibold {
+    font-family: 'Source sans pro';
+    font-weight: semi-bold;
+}
+
+.font-ssp-bold {
+    font-family: 'Source sans pro';
+    font-weight: bold;
+}
+
+.font-5x {
+    font-size: 5em;
 }
 
 #main-content,
