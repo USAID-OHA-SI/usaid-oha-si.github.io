@@ -11,10 +11,8 @@
 #  link: /news/
 #- name: Resources
 #  link: /resources/
-- name: Cookbooks
-  link: /cookbooks/
-#- name: Style Guide
-#  link: /styles/
+- name: Style Guide
+  link: /styleguide/
 - name: Learn
   link: /learn/
 # - name: Categories
