@@ -35,6 +35,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-toc
+  #- hex_to_rgb
   #- jekyll-paginate
 
 pagination:
