@@ -8,7 +8,7 @@ title: SI - Learning
 
     <div class="row mt-3">
         <div class="col-12">
-            <h3>Learning</h3>
+            <h3>Learning Resources</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla
                 mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
@@ -17,7 +17,7 @@ title: SI - Learning
 
     <div class="row mt-3">
         <div class="col-12">
-            <h3 class="display-5">CATEGORIES</h3>
+            <h4 class="display-5">CATEGORIES</h4>
 
             <div class="tags-expo mb-3">
                 {% for category in site.categories %}
@@ -32,7 +32,7 @@ title: SI - Learning
 
     <div class="row mt-3">
         <div class="col-12">
-            <h3 class="display-5">TAGS</h3>
+            <h4 class="display-5">TAGS</h4>
 
             <div class="tags-expo mb-3">
                 {% for tag in site.tags %}
@@ -47,12 +47,28 @@ title: SI - Learning
 
     <div class="row mt-3">
         <div class="col-12">
-            <h3 class="display-5 mb-5">RECENT POSTS</h3>
+            <h4 class="display-5">AUTHORS</h4>
+
+            <div class="tags-expo mb-3">
+                {% assign authors = site.posts | group_by: "author" %}
+                {% for author in authors %}
+                    <a href="./authors/#{{ author.name | slugize}}"
+                        class="post-tag badge badge-success">
+                        <i class="fa fa-user-circle"></i> {{ author.name | slugize}}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <h4 class="display-5 mb-5">RECENT POSTS</h4>
         </div>
     </div>
 
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-        {% for post in site.posts %}
+        {% assign recent_posts = site.posts | sort: 'date' | reverse %}
+        {% for post in recent_posts limit: 6 %}
         <div class="col mb-4">
             <div class="card h-100">
                 <!-- Post Thumbnail -->

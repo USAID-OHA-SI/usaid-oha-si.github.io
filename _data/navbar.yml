@@ -5,17 +5,11 @@
   link: /packages/
 - name: Projects
   link: /projects/
-#- name: Vignettes
-#  link: /vignettes/
-#- name: News
-#  link: /news/
-#- name: Resources
-#  link: /resources/
-- name: Style Guide
+# - name: Style Guide
+#   link: /styleguide/
+- name: Visualization
   link: /styleguide/
-- name: Learn
+# - name: Learn
+#   link: /learn/
+- name: Resources
   link: /learn/
-# - name: Categories
-#   link: /categories/
-# - name: Tags
-#   link: /tags/
