@@ -417,12 +417,64 @@ div#styleguide-section {
 }
 
 #style-guide-submenu {
-    position: sticky;
+    position: sticky !important;
     top: 100px;
+    height: 100%;
 }
+
+#style-guide-submenu a.list-group-item {
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.style-guide-subgroup a {
+    padding-left: 1rem !important;
+}
+
+/* nav.list-group > div.list-group {
+  display: none;
+  margin-bottom: 0;
+}
+
+.list-group-item:focus + div.list-group {
+  display: block;
+} */
 
 #style-guide-details {
     position: relative;
-    height: 1000px;
-    overflow-y: scroll;
+    /* height: 1000px;
+    overflow-y: scroll; */
+}
+
+/* font weights */
+.font-ssp-reg,
+.font-ssp-light,
+.font-ssp-semibold,
+.font-ssp-bold {
+    font-family: "Souce Sans Pro";
+}
+
+.font-ssp-reg {
+    font-weight: regular !important;
+}
+
+.font-ssp-light {
+    font-weight: light !important;
+}
+
+.font-ssp-semibold {
+    font-weight: semibold !important;
+}
+
+.font-ssp-bold {
+    font-weight: bold !important;
+}
+
+div.font-ssp {
+    display: table-row;
+}
+
+div.font-ssp > div.col-10 {
+    display: table-cell;
+    vertical-align: middle;
 }

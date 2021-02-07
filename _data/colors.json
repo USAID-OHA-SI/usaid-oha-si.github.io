@@ -1,540 +1,2367 @@
-[
-    {
-        "name": "siei",
-        "value": [
-            "#2057a7",
-            "#c43d4d",
-            "#8980cb",
-            "#e07653",
-            "#1e87a5",
-            "#f2bc40",
-            "#287c6f",
-            "#808080"
-        ]
-    },
-    {
-        "name": "denim",
-        "value": [
-            "#2057a7",
-            "#1e87a5",
-            "#e07653",
-            "#f2bc40",
-            "#8980cb"
-        ]
-    },
-    {
-        "name": "old_rose",
-        "value": [
-            "#c43d4d",
-            "#1e87a5",
-            "#8980cb",
-            "#e07653",
-            "#287c6f"
-        ]
-    },
-    {
-        "name": "moody_blue",
-        "value": [
-            "#8980cb",
-            "#287c6f",
-            "#2057a7",
-            "#e07653",
-            "#1e87a5"
-        ]
-    },
-    {
-        "name": "burnt_sienna",
-        "value": [
-            "#e07653",
-            "#8980cb",
-            "#f2bc40",
-            "#c43d4d",
-            "#1e87a5"
-        ]
-    },
-    {
-        "name": "scooter",
-        "value": [
-            "#1e87a5",
-            "#c43d4d",
-            "#8980cb",
-            "#f2bc40",
-            "#287c6f"
-        ]
-    },
-    {
-        "name": "golden_sand",
-        "value": [
-            "#f2bc40",
-            "#2057a7",
-            "#287c6f",
-            "#e07653",
-            "#8980cb"
-        ]
-    },
-    {
-        "name": "genoa",
-        "value": [
-            "#287c6f",
-            "#8980cb",
-            "#f2bc40",
-            "#e07653",
-            "#1e87a5"
-        ]
-    },
-    {
-        "name": "siei_pairs",
-        "value": [
-            "#2057a7",
-            "#BFDDFF",
-            "#c43d4d",
-            "#FF939A",
-            "#8980cb",
-            "#DFD3FF",
-            "#e07653",
-            "#FFCAA2",
-            "#1e87a5",
-            "#83DBFB",
-            "#f2bc40",
-            "#FFDDA2",
-            "#287c6f",
-            "#7ECFC0",
-            "#808080",
-            "#E6E6E6"
-        ]
-    },
-    {
-        "name": "denims",
-        "value": [
-            "#bfddff",
-            "#a5c5ff",
-            "#8badfe",
-            "#7396ee",
-            "#5b82d8",
-            "#436ec1",
-            "#265bab",
-            "#074895",
-            "#00347d",
-            "#002065",
-            "#000c4f"
-        ]
-    },
-    {
-        "name": "old_roses",
-        "value": [
-            "#ffb5ba",
-            "#ff989f",
-            "#fc7a83",
-            "#ee636e",
-            "#d8505d",
-            "#c33c4c",
-            "#af273d",
-            "#990d2e",
-            "#7f001c",
-            "#630005",
-            "#480000"
-        ]
-    },
-    {
-        "name": "moody_blues",
-        "value": [
-            "#e9ddff",
-            "#cfc3ff",
-            "#b5aaf9",
-            "#9e94e0",
-            "#877ec9",
-            "#7069b2",
-            "#5a559b",
-            "#454185",
-            "#2f2e6f",
-            "#171d5a",
-            "#000a45"
-        ]
-    },
-    {
-        "name": "burnt_siennas",
-        "value": [
-            "#ffd4ac",
-            "#ffb790",
-            "#fd9873",
-            "#ec815d",
-            "#d56d4b",
-            "#bf5a39",
-            "#a84728",
-            "#923417",
-            "#7c2105",
-            "#670901",
-            "#4c0000"
-        ]
-    },
-    {
-        "name": "scooters",
-        "value": [
-            "#a6fdff",
-            "#8ce4fe",
-            "#74ccec",
-            "#5bb5d5",
-            "#419fbe",
-            "#228aa8",
-            "#047491",
-            "#005e7a",
-            "#004964",
-            "#00354f",
-            "#00223a"
-        ]
-    },
-    {
-        "name": "golden_sands",
-        "value": [
-            "#ffec6f",
-            "#fcce52",
-            "#eab538",
-            "#d2a01e",
-            "#ba8b00",
-            "#a27600",
-            "#8a6200",
-            "#734f00",
-            "#5e3c00",
-            "#4b2900",
-            "#3b1500"
-        ]
-    },
-    {
-        "name": "genoas",
-        "value": [
-            "#a0f2e2",
-            "#89dacb",
-            "#72c3b4",
-            "#5cac9e",
-            "#459688",
-            "#2d8073",
-            "#0d6c5f",
-            "#01564b",
-            "#004137",
-            "#002e24",
-            "#001b0e"
-        ]
-    },
-    {
-        "name": "trolley_greys",
-        "value": [
-            "#E6E7E8",
-            "#D5D7D8",
-            "#C4C6C8",
-            "#B3B5B8",
-            "#A3A4A8",
-            "#939598",
-            "#838484",
-            "#747576",
-            "#646568",
-            "#535356",
-            "#414042"
-        ]
-    },
-    {
-        "name": "usaid_colors",
-        "value": [
-            "#002a6c",
-            "#ba0c2f",
-            "#212721",
-            "#0067b9",
-            "#a7c6ed",
-            "#6c6463",
-            "#8C8985",
-            "#cfcdc9"
-        ]
-    },
-    {
-        "name": "contrast",
-        "value": [
-            "#E4F4EA",
-            "#364352",
-            "#768491",
-            "#C5CAD0",
-            "#BE311F"
-        ]
-    },
-    {
-        "name": "compliment",
-        "value": [
-            "#6F472E",
-            "#6F827C",
-            "#E4F4EA",
-            "#E4F4EA",
-            "#E4F4EA"
-        ]
-    },
-    {
-        "name": "outbreak_or",
-        "value": [
-            "#F4E5D2",
-            "#FED79C",
-            "#FBA529",
-            "#FF6600"
-        ]
-    },
-    {
-        "name": "seablue",
-        "value": [
-            "#4FAFB6",
-            "#98CBD0",
-            "#D5EAEB",
-            "#086EA1"
-        ]
-    },
-    {
-        "name": "seablue_text",
-        "value": [
-            "#00949D",
-            "#58B2BA",
-            "#B2D8DD",
-            "#2476A6"
-        ]
-    },
-    {
-        "name": "category10",
-        "value": [
-            "#1f77b4",
-            "#ff7f0e",
-            "#2ca02c",
-            "#d62728",
-            "#9467bd",
-            "#8c564b",
-            "#e377c2",
-            "#7f7f7f",
-            "#bcbd22",
-            "#17becf"
-        ]
-    },
-    {
-        "name": "category20",
-        "value": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#ffbb78",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5",
-            "#8c564b",
-            "#c49c94",
-            "#e377c2",
-            "#f7b6d2",
-            "#7f7f7f",
-            "#c7c7c7",
-            "#bcbd22",
-            "#dbdb8d",
-            "#17becf",
-            "#9edae5"
-        ]
-    },
-    {
-        "name": "category20b",
-        "value": [
-            "#393b79",
-            "#5254a3",
-            "#6b6ecf",
-            "#9c9ede",
-            "#637939",
-            "#8ca252",
-            "#b5cf6b",
-            "#cedb9c",
-            "#8c6d31",
-            "#bd9e39",
-            "#e7ba52",
-            "#e7cb94",
-            "#843c39",
-            "#ad494a",
-            "#d6616b",
-            "#e7969c",
-            "#7b4173",
-            "#a55194",
-            "#ce6dbd",
-            "#de9ed6"
-        ]
-    },
-    {
-        "name": "category20c",
-        "value": [
-            "#3182bd",
-            "#6baed6",
-            "#9ecae1",
-            "#c6dbef",
-            "#e6550d",
-            "#fd8d3c",
-            "#fdae6b",
-            "#fdd0a2",
-            "#31a354",
-            "#74c476",
-            "#a1d99b",
-            "#c7e9c0",
-            "#756bb1",
-            "#9e9ac8",
-            "#bcbddc",
-            "#dadaeb",
-            "#636363",
-            "#969696",
-            "#bdbdbd",
-            "#d9d9d9"
-        ]
-    },
-    {
-        "name": "carto_burgyl",
-        "value": [
-            "#fbe6c5",
-            "#f5ba98",
-            "#ee8a82",
-            "#dc7176",
-            "#c8586c",
-            "#9c3f5d",
-            "#70284a"
-        ]
-    },
-    {
-        "name": "carto_sunset",
-        "value": [
-            "#fcde9c",
-            "#faa476",
-            "#f0746e",
-            "#e34f6f",
-            "#dc3977",
-            "#b9257a",
-            "#7c1d6f"
-        ]
-    },
-    {
-        "name": "carto_teal",
-        "value": [
-            "#d1eeea",
-            "#a8dbd9",
-            "#85c4c9",
-            "#68abb8",
-            "#4f90a6",
-            "#3b738f",
-            "#2a5674"
-        ]
-    },
-    {
-        "name": "carto_dmint",
-        "value": [
-            "#d2fbd4",
-            "#a5dbc2",
-            "#7bbcb0",
-            "#559c9e",
-            "#3a7c89",
-            "#235d72",
-            "#123f5a"
-        ]
-    },
-    {
-        "name": "carto_mint",
-        "value": [
-            "#e4f1e1",
-            "#b4d9cc",
-            "#89c0b6",
-            "#63a6a0",
-            "#448c8a",
-            "#287274",
-            "#0d585f"
-        ]
-    },
-    {
-        "name": "carto_brown",
-        "value": [
-            "#ede5cf",
-            "#e0c2a2",
-            "#d39c83",
-            "#c1766f",
-            "#a65461",
-            "#813753",
-            "#541f3f"
-        ]
-    },
-    {
-        "name": "carto_div_armyrose",
-        "value": [
-            "#798234",
-            "#a3ad62",
-            "#d0d3a2",
-            "#fdfbe4",
-            "#f0c6c3",
-            "#df91a3",
-            "#d46780"
-        ]
-    },
-    {
-        "name": "carto_div_fall",
-        "value": [
-            "#3d5941",
-            "#778868",
-            "#b5b991",
-            "#f6edbd",
-            "#edbb8a",
-            "#de8a5a",
-            "#ca562c"
-        ]
-    },
-    {
-        "name": "carto_div_geyser",
-        "value": [
-            "#008080",
-            "#70a494",
-            "#b4c8a8",
-            "#f6edbd",
-            "#edbb8a",
-            "#de8a5a",
-            "#ca562c"
-        ]
-    },
-    {
-        "name": "carto_div_temps",
-        "value": [
-            "#009392",
-            "#39b185",
-            "#9ccb86",
-            "#e9e29c",
-            "#eeb479",
-            "#e88471",
-            "#cf597e"
-        ]
-    },
-    {
-        "name": "carto_div_teal",
-        "value": [
-            "#009392",
-            "#72aaa1",
-            "#b1c7b3",
-            "#f1eac8",
-            "#e5b9ad",
-            "#d98994",
-            "#d0587e"
-        ]
-    },
-    {
-        "name": "carto_div_tropic",
-        "value": [
-            "#009B9E",
-            "#42B7B9",
-            "#A7D3D4",
-            "#F1F1F1",
-            "#E4C1D9",
-            "#D691C1",
-            "#C75DAB"
-        ]
-    },
-    {
-        "name": "carto_div_earth",
-        "value": [
-            "#A16928",
-            "#bd925a",
-            "#d6bd8d",
-            "#edeac2",
-            "#b5c8b8",
-            "#79a7ac",
-            "#2887a1"
-        ]
-    }
-]
+[{
+    "name": "burnt_sienna",
+    "order": 1,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "burnt_sienna",
+    "order": 2,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "burnt_sienna",
+    "order": 3,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "burnt_sienna",
+    "order": 4,
+    "hex": "#c43d4d",
+    "red": 196,
+    "green": 61,
+    "blue": 77
+}, {
+    "name": "burnt_sienna",
+    "order": 5,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "burnt_siennas",
+    "order": 1,
+    "hex": "#ffd4ac",
+    "red": 255,
+    "green": 212,
+    "blue": 172
+}, {
+    "name": "burnt_siennas",
+    "order": 2,
+    "hex": "#ffb790",
+    "red": 255,
+    "green": 183,
+    "blue": 144
+}, {
+    "name": "burnt_siennas",
+    "order": 3,
+    "hex": "#fd9873",
+    "red": 253,
+    "green": 152,
+    "blue": 115
+}, {
+    "name": "burnt_siennas",
+    "order": 4,
+    "hex": "#ec815d",
+    "red": 236,
+    "green": 129,
+    "blue": 93
+}, {
+    "name": "burnt_siennas",
+    "order": 5,
+    "hex": "#d56d4b",
+    "red": 213,
+    "green": 109,
+    "blue": 75
+}, {
+    "name": "burnt_siennas",
+    "order": 6,
+    "hex": "#bf5a39",
+    "red": 191,
+    "green": 90,
+    "blue": 57
+}, {
+    "name": "burnt_siennas",
+    "order": 7,
+    "hex": "#a84728",
+    "red": 168,
+    "green": 71,
+    "blue": 40
+}, {
+    "name": "burnt_siennas",
+    "order": 8,
+    "hex": "#923417",
+    "red": 146,
+    "green": 52,
+    "blue": 23
+}, {
+    "name": "burnt_siennas",
+    "order": 9,
+    "hex": "#7c2105",
+    "red": 124,
+    "green": 33,
+    "blue": 5
+}, {
+    "name": "burnt_siennas",
+    "order": 10,
+    "hex": "#670901",
+    "red": 103,
+    "green": 9,
+    "blue": 1
+}, {
+    "name": "burnt_siennas",
+    "order": 11,
+    "hex": "#4c0000",
+    "red": 76,
+    "green": 0,
+    "blue": 0
+}, {
+    "name": "carto_brown",
+    "order": 1,
+    "hex": "#ede5cf",
+    "red": 237,
+    "green": 229,
+    "blue": 207
+}, {
+    "name": "carto_brown",
+    "order": 2,
+    "hex": "#e0c2a2",
+    "red": 224,
+    "green": 194,
+    "blue": 162
+}, {
+    "name": "carto_brown",
+    "order": 3,
+    "hex": "#d39c83",
+    "red": 211,
+    "green": 156,
+    "blue": 131
+}, {
+    "name": "carto_brown",
+    "order": 4,
+    "hex": "#c1766f",
+    "red": 193,
+    "green": 118,
+    "blue": 111
+}, {
+    "name": "carto_brown",
+    "order": 5,
+    "hex": "#a65461",
+    "red": 166,
+    "green": 84,
+    "blue": 97
+}, {
+    "name": "carto_brown",
+    "order": 6,
+    "hex": "#813753",
+    "red": 129,
+    "green": 55,
+    "blue": 83
+}, {
+    "name": "carto_brown",
+    "order": 7,
+    "hex": "#541f3f",
+    "red": 84,
+    "green": 31,
+    "blue": 63
+}, {
+    "name": "carto_burgyl",
+    "order": 1,
+    "hex": "#fbe6c5",
+    "red": 251,
+    "green": 230,
+    "blue": 197
+}, {
+    "name": "carto_burgyl",
+    "order": 2,
+    "hex": "#f5ba98",
+    "red": 245,
+    "green": 186,
+    "blue": 152
+}, {
+    "name": "carto_burgyl",
+    "order": 3,
+    "hex": "#ee8a82",
+    "red": 238,
+    "green": 138,
+    "blue": 130
+}, {
+    "name": "carto_burgyl",
+    "order": 4,
+    "hex": "#dc7176",
+    "red": 220,
+    "green": 113,
+    "blue": 118
+}, {
+    "name": "carto_burgyl",
+    "order": 5,
+    "hex": "#c8586c",
+    "red": 200,
+    "green": 88,
+    "blue": 108
+}, {
+    "name": "carto_burgyl",
+    "order": 6,
+    "hex": "#9c3f5d",
+    "red": 156,
+    "green": 63,
+    "blue": 93
+}, {
+    "name": "carto_burgyl",
+    "order": 7,
+    "hex": "#70284a",
+    "red": 112,
+    "green": 40,
+    "blue": 74
+}, {
+    "name": "carto_div_armyrose",
+    "order": 1,
+    "hex": "#798234",
+    "red": 121,
+    "green": 130,
+    "blue": 52
+}, {
+    "name": "carto_div_armyrose",
+    "order": 2,
+    "hex": "#a3ad62",
+    "red": 163,
+    "green": 173,
+    "blue": 98
+}, {
+    "name": "carto_div_armyrose",
+    "order": 3,
+    "hex": "#d0d3a2",
+    "red": 208,
+    "green": 211,
+    "blue": 162
+}, {
+    "name": "carto_div_armyrose",
+    "order": 4,
+    "hex": "#fdfbe4",
+    "red": 253,
+    "green": 251,
+    "blue": 228
+}, {
+    "name": "carto_div_armyrose",
+    "order": 5,
+    "hex": "#f0c6c3",
+    "red": 240,
+    "green": 198,
+    "blue": 195
+}, {
+    "name": "carto_div_armyrose",
+    "order": 6,
+    "hex": "#df91a3",
+    "red": 223,
+    "green": 145,
+    "blue": 163
+}, {
+    "name": "carto_div_armyrose",
+    "order": 7,
+    "hex": "#d46780",
+    "red": 212,
+    "green": 103,
+    "blue": 128
+}, {
+    "name": "carto_div_earth",
+    "order": 1,
+    "hex": "#A16928",
+    "red": 161,
+    "green": 105,
+    "blue": 40
+}, {
+    "name": "carto_div_earth",
+    "order": 2,
+    "hex": "#bd925a",
+    "red": 189,
+    "green": 146,
+    "blue": 90
+}, {
+    "name": "carto_div_earth",
+    "order": 3,
+    "hex": "#d6bd8d",
+    "red": 214,
+    "green": 189,
+    "blue": 141
+}, {
+    "name": "carto_div_earth",
+    "order": 4,
+    "hex": "#edeac2",
+    "red": 237,
+    "green": 234,
+    "blue": 194
+}, {
+    "name": "carto_div_earth",
+    "order": 5,
+    "hex": "#b5c8b8",
+    "red": 181,
+    "green": 200,
+    "blue": 184
+}, {
+    "name": "carto_div_earth",
+    "order": 6,
+    "hex": "#79a7ac",
+    "red": 121,
+    "green": 167,
+    "blue": 172
+}, {
+    "name": "carto_div_earth",
+    "order": 7,
+    "hex": "#2887a1",
+    "red": 40,
+    "green": 135,
+    "blue": 161
+}, {
+    "name": "carto_div_fall",
+    "order": 1,
+    "hex": "#3d5941",
+    "red": 61,
+    "green": 89,
+    "blue": 65
+}, {
+    "name": "carto_div_fall",
+    "order": 2,
+    "hex": "#778868",
+    "red": 119,
+    "green": 136,
+    "blue": 104
+}, {
+    "name": "carto_div_fall",
+    "order": 3,
+    "hex": "#b5b991",
+    "red": 181,
+    "green": 185,
+    "blue": 145
+}, {
+    "name": "carto_div_fall",
+    "order": 4,
+    "hex": "#f6edbd",
+    "red": 246,
+    "green": 237,
+    "blue": 189
+}, {
+    "name": "carto_div_fall",
+    "order": 5,
+    "hex": "#edbb8a",
+    "red": 237,
+    "green": 187,
+    "blue": 138
+}, {
+    "name": "carto_div_fall",
+    "order": 6,
+    "hex": "#de8a5a",
+    "red": 222,
+    "green": 138,
+    "blue": 90
+}, {
+    "name": "carto_div_fall",
+    "order": 7,
+    "hex": "#ca562c",
+    "red": 202,
+    "green": 86,
+    "blue": 44
+}, {
+    "name": "carto_div_geyser",
+    "order": 1,
+    "hex": "#008080",
+    "red": 0,
+    "green": 128,
+    "blue": 128
+}, {
+    "name": "carto_div_geyser",
+    "order": 2,
+    "hex": "#70a494",
+    "red": 112,
+    "green": 164,
+    "blue": 148
+}, {
+    "name": "carto_div_geyser",
+    "order": 3,
+    "hex": "#b4c8a8",
+    "red": 180,
+    "green": 200,
+    "blue": 168
+}, {
+    "name": "carto_div_geyser",
+    "order": 4,
+    "hex": "#f6edbd",
+    "red": 246,
+    "green": 237,
+    "blue": 189
+}, {
+    "name": "carto_div_geyser",
+    "order": 5,
+    "hex": "#edbb8a",
+    "red": 237,
+    "green": 187,
+    "blue": 138
+}, {
+    "name": "carto_div_geyser",
+    "order": 6,
+    "hex": "#de8a5a",
+    "red": 222,
+    "green": 138,
+    "blue": 90
+}, {
+    "name": "carto_div_geyser",
+    "order": 7,
+    "hex": "#ca562c",
+    "red": 202,
+    "green": 86,
+    "blue": 44
+}, {
+    "name": "carto_div_teal",
+    "order": 1,
+    "hex": "#009392",
+    "red": 0,
+    "green": 147,
+    "blue": 146
+}, {
+    "name": "carto_div_teal",
+    "order": 2,
+    "hex": "#72aaa1",
+    "red": 114,
+    "green": 170,
+    "blue": 161
+}, {
+    "name": "carto_div_teal",
+    "order": 3,
+    "hex": "#b1c7b3",
+    "red": 177,
+    "green": 199,
+    "blue": 179
+}, {
+    "name": "carto_div_teal",
+    "order": 4,
+    "hex": "#f1eac8",
+    "red": 241,
+    "green": 234,
+    "blue": 200
+}, {
+    "name": "carto_div_teal",
+    "order": 5,
+    "hex": "#e5b9ad",
+    "red": 229,
+    "green": 185,
+    "blue": 173
+}, {
+    "name": "carto_div_teal",
+    "order": 6,
+    "hex": "#d98994",
+    "red": 217,
+    "green": 137,
+    "blue": 148
+}, {
+    "name": "carto_div_teal",
+    "order": 7,
+    "hex": "#d0587e",
+    "red": 208,
+    "green": 88,
+    "blue": 126
+}, {
+    "name": "carto_div_temps",
+    "order": 1,
+    "hex": "#009392",
+    "red": 0,
+    "green": 147,
+    "blue": 146
+}, {
+    "name": "carto_div_temps",
+    "order": 2,
+    "hex": "#39b185",
+    "red": 57,
+    "green": 177,
+    "blue": 133
+}, {
+    "name": "carto_div_temps",
+    "order": 3,
+    "hex": "#9ccb86",
+    "red": 156,
+    "green": 203,
+    "blue": 134
+}, {
+    "name": "carto_div_temps",
+    "order": 4,
+    "hex": "#e9e29c",
+    "red": 233,
+    "green": 226,
+    "blue": 156
+}, {
+    "name": "carto_div_temps",
+    "order": 5,
+    "hex": "#eeb479",
+    "red": 238,
+    "green": 180,
+    "blue": 121
+}, {
+    "name": "carto_div_temps",
+    "order": 6,
+    "hex": "#e88471",
+    "red": 232,
+    "green": 132,
+    "blue": 113
+}, {
+    "name": "carto_div_temps",
+    "order": 7,
+    "hex": "#cf597e",
+    "red": 207,
+    "green": 89,
+    "blue": 126
+}, {
+    "name": "carto_div_tropic",
+    "order": 1,
+    "hex": "#009B9E",
+    "red": 0,
+    "green": 155,
+    "blue": 158
+}, {
+    "name": "carto_div_tropic",
+    "order": 2,
+    "hex": "#42B7B9",
+    "red": 66,
+    "green": 183,
+    "blue": 185
+}, {
+    "name": "carto_div_tropic",
+    "order": 3,
+    "hex": "#A7D3D4",
+    "red": 167,
+    "green": 211,
+    "blue": 212
+}, {
+    "name": "carto_div_tropic",
+    "order": 4,
+    "hex": "#F1F1F1",
+    "red": 241,
+    "green": 241,
+    "blue": 241
+}, {
+    "name": "carto_div_tropic",
+    "order": 5,
+    "hex": "#E4C1D9",
+    "red": 228,
+    "green": 193,
+    "blue": 217
+}, {
+    "name": "carto_div_tropic",
+    "order": 6,
+    "hex": "#D691C1",
+    "red": 214,
+    "green": 145,
+    "blue": 193
+}, {
+    "name": "carto_div_tropic",
+    "order": 7,
+    "hex": "#C75DAB",
+    "red": 199,
+    "green": 93,
+    "blue": 171
+}, {
+    "name": "carto_dmint",
+    "order": 1,
+    "hex": "#d2fbd4",
+    "red": 210,
+    "green": 251,
+    "blue": 212
+}, {
+    "name": "carto_dmint",
+    "order": 2,
+    "hex": "#a5dbc2",
+    "red": 165,
+    "green": 219,
+    "blue": 194
+}, {
+    "name": "carto_dmint",
+    "order": 3,
+    "hex": "#7bbcb0",
+    "red": 123,
+    "green": 188,
+    "blue": 176
+}, {
+    "name": "carto_dmint",
+    "order": 4,
+    "hex": "#559c9e",
+    "red": 85,
+    "green": 156,
+    "blue": 158
+}, {
+    "name": "carto_dmint",
+    "order": 5,
+    "hex": "#3a7c89",
+    "red": 58,
+    "green": 124,
+    "blue": 137
+}, {
+    "name": "carto_dmint",
+    "order": 6,
+    "hex": "#235d72",
+    "red": 35,
+    "green": 93,
+    "blue": 114
+}, {
+    "name": "carto_dmint",
+    "order": 7,
+    "hex": "#123f5a",
+    "red": 18,
+    "green": 63,
+    "blue": 90
+}, {
+    "name": "carto_mint",
+    "order": 1,
+    "hex": "#e4f1e1",
+    "red": 228,
+    "green": 241,
+    "blue": 225
+}, {
+    "name": "carto_mint",
+    "order": 2,
+    "hex": "#b4d9cc",
+    "red": 180,
+    "green": 217,
+    "blue": 204
+}, {
+    "name": "carto_mint",
+    "order": 3,
+    "hex": "#89c0b6",
+    "red": 137,
+    "green": 192,
+    "blue": 182
+}, {
+    "name": "carto_mint",
+    "order": 4,
+    "hex": "#63a6a0",
+    "red": 99,
+    "green": 166,
+    "blue": 160
+}, {
+    "name": "carto_mint",
+    "order": 5,
+    "hex": "#448c8a",
+    "red": 68,
+    "green": 140,
+    "blue": 138
+}, {
+    "name": "carto_mint",
+    "order": 6,
+    "hex": "#287274",
+    "red": 40,
+    "green": 114,
+    "blue": 116
+}, {
+    "name": "carto_mint",
+    "order": 7,
+    "hex": "#0d585f",
+    "red": 13,
+    "green": 88,
+    "blue": 95
+}, {
+    "name": "carto_sunset",
+    "order": 1,
+    "hex": "#fcde9c",
+    "red": 252,
+    "green": 222,
+    "blue": 156
+}, {
+    "name": "carto_sunset",
+    "order": 2,
+    "hex": "#faa476",
+    "red": 250,
+    "green": 164,
+    "blue": 118
+}, {
+    "name": "carto_sunset",
+    "order": 3,
+    "hex": "#f0746e",
+    "red": 240,
+    "green": 116,
+    "blue": 110
+}, {
+    "name": "carto_sunset",
+    "order": 4,
+    "hex": "#e34f6f",
+    "red": 227,
+    "green": 79,
+    "blue": 111
+}, {
+    "name": "carto_sunset",
+    "order": 5,
+    "hex": "#dc3977",
+    "red": 220,
+    "green": 57,
+    "blue": 119
+}, {
+    "name": "carto_sunset",
+    "order": 6,
+    "hex": "#b9257a",
+    "red": 185,
+    "green": 37,
+    "blue": 122
+}, {
+    "name": "carto_sunset",
+    "order": 7,
+    "hex": "#7c1d6f",
+    "red": 124,
+    "green": 29,
+    "blue": 111
+}, {
+    "name": "carto_teal",
+    "order": 1,
+    "hex": "#d1eeea",
+    "red": 209,
+    "green": 238,
+    "blue": 234
+}, {
+    "name": "carto_teal",
+    "order": 2,
+    "hex": "#a8dbd9",
+    "red": 168,
+    "green": 219,
+    "blue": 217
+}, {
+    "name": "carto_teal",
+    "order": 3,
+    "hex": "#85c4c9",
+    "red": 133,
+    "green": 196,
+    "blue": 201
+}, {
+    "name": "carto_teal",
+    "order": 4,
+    "hex": "#68abb8",
+    "red": 104,
+    "green": 171,
+    "blue": 184
+}, {
+    "name": "carto_teal",
+    "order": 5,
+    "hex": "#4f90a6",
+    "red": 79,
+    "green": 144,
+    "blue": 166
+}, {
+    "name": "carto_teal",
+    "order": 6,
+    "hex": "#3b738f",
+    "red": 59,
+    "green": 115,
+    "blue": 143
+}, {
+    "name": "carto_teal",
+    "order": 7,
+    "hex": "#2a5674",
+    "red": 42,
+    "green": 86,
+    "blue": 116
+}, {
+    "name": "category10",
+    "order": 1,
+    "hex": "#1f77b4",
+    "red": 31,
+    "green": 119,
+    "blue": 180
+}, {
+    "name": "category10",
+    "order": 2,
+    "hex": "#ff7f0e",
+    "red": 255,
+    "green": 127,
+    "blue": 14
+}, {
+    "name": "category10",
+    "order": 3,
+    "hex": "#2ca02c",
+    "red": 44,
+    "green": 160,
+    "blue": 44
+}, {
+    "name": "category10",
+    "order": 4,
+    "hex": "#d62728",
+    "red": 214,
+    "green": 39,
+    "blue": 40
+}, {
+    "name": "category10",
+    "order": 5,
+    "hex": "#9467bd",
+    "red": 148,
+    "green": 103,
+    "blue": 189
+}, {
+    "name": "category10",
+    "order": 6,
+    "hex": "#8c564b",
+    "red": 140,
+    "green": 86,
+    "blue": 75
+}, {
+    "name": "category10",
+    "order": 7,
+    "hex": "#e377c2",
+    "red": 227,
+    "green": 119,
+    "blue": 194
+}, {
+    "name": "category10",
+    "order": 8,
+    "hex": "#7f7f7f",
+    "red": 127,
+    "green": 127,
+    "blue": 127
+}, {
+    "name": "category10",
+    "order": 9,
+    "hex": "#bcbd22",
+    "red": 188,
+    "green": 189,
+    "blue": 34
+}, {
+    "name": "category10",
+    "order": 10,
+    "hex": "#17becf",
+    "red": 23,
+    "green": 190,
+    "blue": 207
+}, {
+    "name": "category20",
+    "order": 1,
+    "hex": "#1f77b4",
+    "red": 31,
+    "green": 119,
+    "blue": 180
+}, {
+    "name": "category20",
+    "order": 2,
+    "hex": "#aec7e8",
+    "red": 174,
+    "green": 199,
+    "blue": 232
+}, {
+    "name": "category20",
+    "order": 3,
+    "hex": "#ff7f0e",
+    "red": 255,
+    "green": 127,
+    "blue": 14
+}, {
+    "name": "category20",
+    "order": 4,
+    "hex": "#ffbb78",
+    "red": 255,
+    "green": 187,
+    "blue": 120
+}, {
+    "name": "category20",
+    "order": 5,
+    "hex": "#2ca02c",
+    "red": 44,
+    "green": 160,
+    "blue": 44
+}, {
+    "name": "category20",
+    "order": 6,
+    "hex": "#98df8a",
+    "red": 152,
+    "green": 223,
+    "blue": 138
+}, {
+    "name": "category20",
+    "order": 7,
+    "hex": "#d62728",
+    "red": 214,
+    "green": 39,
+    "blue": 40
+}, {
+    "name": "category20",
+    "order": 8,
+    "hex": "#ff9896",
+    "red": 255,
+    "green": 152,
+    "blue": 150
+}, {
+    "name": "category20",
+    "order": 9,
+    "hex": "#9467bd",
+    "red": 148,
+    "green": 103,
+    "blue": 189
+}, {
+    "name": "category20",
+    "order": 10,
+    "hex": "#c5b0d5",
+    "red": 197,
+    "green": 176,
+    "blue": 213
+}, {
+    "name": "category20",
+    "order": 11,
+    "hex": "#8c564b",
+    "red": 140,
+    "green": 86,
+    "blue": 75
+}, {
+    "name": "category20",
+    "order": 12,
+    "hex": "#c49c94",
+    "red": 196,
+    "green": 156,
+    "blue": 148
+}, {
+    "name": "category20",
+    "order": 13,
+    "hex": "#e377c2",
+    "red": 227,
+    "green": 119,
+    "blue": 194
+}, {
+    "name": "category20",
+    "order": 14,
+    "hex": "#f7b6d2",
+    "red": 247,
+    "green": 182,
+    "blue": 210
+}, {
+    "name": "category20",
+    "order": 15,
+    "hex": "#7f7f7f",
+    "red": 127,
+    "green": 127,
+    "blue": 127
+}, {
+    "name": "category20",
+    "order": 16,
+    "hex": "#c7c7c7",
+    "red": 199,
+    "green": 199,
+    "blue": 199
+}, {
+    "name": "category20",
+    "order": 17,
+    "hex": "#bcbd22",
+    "red": 188,
+    "green": 189,
+    "blue": 34
+}, {
+    "name": "category20",
+    "order": 18,
+    "hex": "#dbdb8d",
+    "red": 219,
+    "green": 219,
+    "blue": 141
+}, {
+    "name": "category20",
+    "order": 19,
+    "hex": "#17becf",
+    "red": 23,
+    "green": 190,
+    "blue": 207
+}, {
+    "name": "category20",
+    "order": 20,
+    "hex": "#9edae5",
+    "red": 158,
+    "green": 218,
+    "blue": 229
+}, {
+    "name": "category20b",
+    "order": 1,
+    "hex": "#393b79",
+    "red": 57,
+    "green": 59,
+    "blue": 121
+}, {
+    "name": "category20b",
+    "order": 2,
+    "hex": "#5254a3",
+    "red": 82,
+    "green": 84,
+    "blue": 163
+}, {
+    "name": "category20b",
+    "order": 3,
+    "hex": "#6b6ecf",
+    "red": 107,
+    "green": 110,
+    "blue": 207
+}, {
+    "name": "category20b",
+    "order": 4,
+    "hex": "#9c9ede",
+    "red": 156,
+    "green": 158,
+    "blue": 222
+}, {
+    "name": "category20b",
+    "order": 5,
+    "hex": "#637939",
+    "red": 99,
+    "green": 121,
+    "blue": 57
+}, {
+    "name": "category20b",
+    "order": 6,
+    "hex": "#8ca252",
+    "red": 140,
+    "green": 162,
+    "blue": 82
+}, {
+    "name": "category20b",
+    "order": 7,
+    "hex": "#b5cf6b",
+    "red": 181,
+    "green": 207,
+    "blue": 107
+}, {
+    "name": "category20b",
+    "order": 8,
+    "hex": "#cedb9c",
+    "red": 206,
+    "green": 219,
+    "blue": 156
+}, {
+    "name": "category20b",
+    "order": 9,
+    "hex": "#8c6d31",
+    "red": 140,
+    "green": 109,
+    "blue": 49
+}, {
+    "name": "category20b",
+    "order": 10,
+    "hex": "#bd9e39",
+    "red": 189,
+    "green": 158,
+    "blue": 57
+}, {
+    "name": "category20b",
+    "order": 11,
+    "hex": "#e7ba52",
+    "red": 231,
+    "green": 186,
+    "blue": 82
+}, {
+    "name": "category20b",
+    "order": 12,
+    "hex": "#e7cb94",
+    "red": 231,
+    "green": 203,
+    "blue": 148
+}, {
+    "name": "category20b",
+    "order": 13,
+    "hex": "#843c39",
+    "red": 132,
+    "green": 60,
+    "blue": 57
+}, {
+    "name": "category20b",
+    "order": 14,
+    "hex": "#ad494a",
+    "red": 173,
+    "green": 73,
+    "blue": 74
+}, {
+    "name": "category20b",
+    "order": 15,
+    "hex": "#d6616b",
+    "red": 214,
+    "green": 97,
+    "blue": 107
+}, {
+    "name": "category20b",
+    "order": 16,
+    "hex": "#e7969c",
+    "red": 231,
+    "green": 150,
+    "blue": 156
+}, {
+    "name": "category20b",
+    "order": 17,
+    "hex": "#7b4173",
+    "red": 123,
+    "green": 65,
+    "blue": 115
+}, {
+    "name": "category20b",
+    "order": 18,
+    "hex": "#a55194",
+    "red": 165,
+    "green": 81,
+    "blue": 148
+}, {
+    "name": "category20b",
+    "order": 19,
+    "hex": "#ce6dbd",
+    "red": 206,
+    "green": 109,
+    "blue": 189
+}, {
+    "name": "category20b",
+    "order": 20,
+    "hex": "#de9ed6",
+    "red": 222,
+    "green": 158,
+    "blue": 214
+}, {
+    "name": "category20c",
+    "order": 1,
+    "hex": "#3182bd",
+    "red": 49,
+    "green": 130,
+    "blue": 189
+}, {
+    "name": "category20c",
+    "order": 2,
+    "hex": "#6baed6",
+    "red": 107,
+    "green": 174,
+    "blue": 214
+}, {
+    "name": "category20c",
+    "order": 3,
+    "hex": "#9ecae1",
+    "red": 158,
+    "green": 202,
+    "blue": 225
+}, {
+    "name": "category20c",
+    "order": 4,
+    "hex": "#c6dbef",
+    "red": 198,
+    "green": 219,
+    "blue": 239
+}, {
+    "name": "category20c",
+    "order": 5,
+    "hex": "#e6550d",
+    "red": 230,
+    "green": 85,
+    "blue": 13
+}, {
+    "name": "category20c",
+    "order": 6,
+    "hex": "#fd8d3c",
+    "red": 253,
+    "green": 141,
+    "blue": 60
+}, {
+    "name": "category20c",
+    "order": 7,
+    "hex": "#fdae6b",
+    "red": 253,
+    "green": 174,
+    "blue": 107
+}, {
+    "name": "category20c",
+    "order": 8,
+    "hex": "#fdd0a2",
+    "red": 253,
+    "green": 208,
+    "blue": 162
+}, {
+    "name": "category20c",
+    "order": 9,
+    "hex": "#31a354",
+    "red": 49,
+    "green": 163,
+    "blue": 84
+}, {
+    "name": "category20c",
+    "order": 10,
+    "hex": "#74c476",
+    "red": 116,
+    "green": 196,
+    "blue": 118
+}, {
+    "name": "category20c",
+    "order": 11,
+    "hex": "#a1d99b",
+    "red": 161,
+    "green": 217,
+    "blue": 155
+}, {
+    "name": "category20c",
+    "order": 12,
+    "hex": "#c7e9c0",
+    "red": 199,
+    "green": 233,
+    "blue": 192
+}, {
+    "name": "category20c",
+    "order": 13,
+    "hex": "#756bb1",
+    "red": 117,
+    "green": 107,
+    "blue": 177
+}, {
+    "name": "category20c",
+    "order": 14,
+    "hex": "#9e9ac8",
+    "red": 158,
+    "green": 154,
+    "blue": 200
+}, {
+    "name": "category20c",
+    "order": 15,
+    "hex": "#bcbddc",
+    "red": 188,
+    "green": 189,
+    "blue": 220
+}, {
+    "name": "category20c",
+    "order": 16,
+    "hex": "#dadaeb",
+    "red": 218,
+    "green": 218,
+    "blue": 235
+}, {
+    "name": "category20c",
+    "order": 17,
+    "hex": "#636363",
+    "red": 99,
+    "green": 99,
+    "blue": 99
+}, {
+    "name": "category20c",
+    "order": 18,
+    "hex": "#969696",
+    "red": 150,
+    "green": 150,
+    "blue": 150
+}, {
+    "name": "category20c",
+    "order": 19,
+    "hex": "#bdbdbd",
+    "red": 189,
+    "green": 189,
+    "blue": 189
+}, {
+    "name": "category20c",
+    "order": 20,
+    "hex": "#d9d9d9",
+    "red": 217,
+    "green": 217,
+    "blue": 217
+}, {
+    "name": "compliment",
+    "order": 1,
+    "hex": "#6F472E",
+    "red": 111,
+    "green": 71,
+    "blue": 46
+}, {
+    "name": "compliment",
+    "order": 2,
+    "hex": "#6F827C",
+    "red": 111,
+    "green": 130,
+    "blue": 124
+}, {
+    "name": "compliment",
+    "order": 3,
+    "hex": "#E4F4EA",
+    "red": 228,
+    "green": 244,
+    "blue": 234
+}, {
+    "name": "compliment",
+    "order": 4,
+    "hex": "#E4F4EA",
+    "red": 228,
+    "green": 244,
+    "blue": 234
+}, {
+    "name": "compliment",
+    "order": 5,
+    "hex": "#E4F4EA",
+    "red": 228,
+    "green": 244,
+    "blue": 234
+}, {
+    "name": "contrast",
+    "order": 1,
+    "hex": "#E4F4EA",
+    "red": 228,
+    "green": 244,
+    "blue": 234
+}, {
+    "name": "contrast",
+    "order": 2,
+    "hex": "#364352",
+    "red": 54,
+    "green": 67,
+    "blue": 82
+}, {
+    "name": "contrast",
+    "order": 3,
+    "hex": "#768491",
+    "red": 118,
+    "green": 132,
+    "blue": 145
+}, {
+    "name": "contrast",
+    "order": 4,
+    "hex": "#C5CAD0",
+    "red": 197,
+    "green": 202,
+    "blue": 208
+}, {
+    "name": "contrast",
+    "order": 5,
+    "hex": "#BE311F",
+    "red": 190,
+    "green": 49,
+    "blue": 31
+}, {
+    "name": "denim",
+    "order": 1,
+    "hex": "#2057a7",
+    "red": 32,
+    "green": 87,
+    "blue": 167
+}, {
+    "name": "denim",
+    "order": 2,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "denim",
+    "order": 3,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "denim",
+    "order": 4,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "denim",
+    "order": 5,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "denims",
+    "order": 1,
+    "hex": "#bfddff",
+    "red": 191,
+    "green": 221,
+    "blue": 255
+}, {
+    "name": "denims",
+    "order": 2,
+    "hex": "#a5c5ff",
+    "red": 165,
+    "green": 197,
+    "blue": 255
+}, {
+    "name": "denims",
+    "order": 3,
+    "hex": "#8badfe",
+    "red": 139,
+    "green": 173,
+    "blue": 254
+}, {
+    "name": "denims",
+    "order": 4,
+    "hex": "#7396ee",
+    "red": 115,
+    "green": 150,
+    "blue": 238
+}, {
+    "name": "denims",
+    "order": 5,
+    "hex": "#5b82d8",
+    "red": 91,
+    "green": 130,
+    "blue": 216
+}, {
+    "name": "denims",
+    "order": 6,
+    "hex": "#436ec1",
+    "red": 67,
+    "green": 110,
+    "blue": 193
+}, {
+    "name": "denims",
+    "order": 7,
+    "hex": "#265bab",
+    "red": 38,
+    "green": 91,
+    "blue": 171
+}, {
+    "name": "denims",
+    "order": 8,
+    "hex": "#074895",
+    "red": 7,
+    "green": 72,
+    "blue": 149
+}, {
+    "name": "denims",
+    "order": 9,
+    "hex": "#00347d",
+    "red": 0,
+    "green": 52,
+    "blue": 125
+}, {
+    "name": "denims",
+    "order": 10,
+    "hex": "#002065",
+    "red": 0,
+    "green": 32,
+    "blue": 101
+}, {
+    "name": "denims",
+    "order": 11,
+    "hex": "#000c4f",
+    "red": 0,
+    "green": 12,
+    "blue": 79
+}, {
+    "name": "genoa",
+    "order": 1,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "genoa",
+    "order": 2,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "genoa",
+    "order": 3,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "genoa",
+    "order": 4,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "genoa",
+    "order": 5,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "genoas",
+    "order": 1,
+    "hex": "#a0f2e2",
+    "red": 160,
+    "green": 242,
+    "blue": 226
+}, {
+    "name": "genoas",
+    "order": 2,
+    "hex": "#89dacb",
+    "red": 137,
+    "green": 218,
+    "blue": 203
+}, {
+    "name": "genoas",
+    "order": 3,
+    "hex": "#72c3b4",
+    "red": 114,
+    "green": 195,
+    "blue": 180
+}, {
+    "name": "genoas",
+    "order": 4,
+    "hex": "#5cac9e",
+    "red": 92,
+    "green": 172,
+    "blue": 158
+}, {
+    "name": "genoas",
+    "order": 5,
+    "hex": "#459688",
+    "red": 69,
+    "green": 150,
+    "blue": 136
+}, {
+    "name": "genoas",
+    "order": 6,
+    "hex": "#2d8073",
+    "red": 45,
+    "green": 128,
+    "blue": 115
+}, {
+    "name": "genoas",
+    "order": 7,
+    "hex": "#0d6c5f",
+    "red": 13,
+    "green": 108,
+    "blue": 95
+}, {
+    "name": "genoas",
+    "order": 8,
+    "hex": "#01564b",
+    "red": 1,
+    "green": 86,
+    "blue": 75
+}, {
+    "name": "genoas",
+    "order": 9,
+    "hex": "#004137",
+    "red": 0,
+    "green": 65,
+    "blue": 55
+}, {
+    "name": "genoas",
+    "order": 10,
+    "hex": "#002e24",
+    "red": 0,
+    "green": 46,
+    "blue": 36
+}, {
+    "name": "genoas",
+    "order": 11,
+    "hex": "#001b0e",
+    "red": 0,
+    "green": 27,
+    "blue": 14
+}, {
+    "name": "golden_sand",
+    "order": 1,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "golden_sand",
+    "order": 2,
+    "hex": "#2057a7",
+    "red": 32,
+    "green": 87,
+    "blue": 167
+}, {
+    "name": "golden_sand",
+    "order": 3,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "golden_sand",
+    "order": 4,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "golden_sand",
+    "order": 5,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "golden_sands",
+    "order": 1,
+    "hex": "#ffec6f",
+    "red": 255,
+    "green": 236,
+    "blue": 111
+}, {
+    "name": "golden_sands",
+    "order": 2,
+    "hex": "#fcce52",
+    "red": 252,
+    "green": 206,
+    "blue": 82
+}, {
+    "name": "golden_sands",
+    "order": 3,
+    "hex": "#eab538",
+    "red": 234,
+    "green": 181,
+    "blue": 56
+}, {
+    "name": "golden_sands",
+    "order": 4,
+    "hex": "#d2a01e",
+    "red": 210,
+    "green": 160,
+    "blue": 30
+}, {
+    "name": "golden_sands",
+    "order": 5,
+    "hex": "#ba8b00",
+    "red": 186,
+    "green": 139,
+    "blue": 0
+}, {
+    "name": "golden_sands",
+    "order": 6,
+    "hex": "#a27600",
+    "red": 162,
+    "green": 118,
+    "blue": 0
+}, {
+    "name": "golden_sands",
+    "order": 7,
+    "hex": "#8a6200",
+    "red": 138,
+    "green": 98,
+    "blue": 0
+}, {
+    "name": "golden_sands",
+    "order": 8,
+    "hex": "#734f00",
+    "red": 115,
+    "green": 79,
+    "blue": 0
+}, {
+    "name": "golden_sands",
+    "order": 9,
+    "hex": "#5e3c00",
+    "red": 94,
+    "green": 60,
+    "blue": 0
+}, {
+    "name": "golden_sands",
+    "order": 10,
+    "hex": "#4b2900",
+    "red": 75,
+    "green": 41,
+    "blue": 0
+}, {
+    "name": "golden_sands",
+    "order": 11,
+    "hex": "#3b1500",
+    "red": 59,
+    "green": 21,
+    "blue": 0
+}, {
+    "name": "moody_blue",
+    "order": 1,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "moody_blue",
+    "order": 2,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "moody_blue",
+    "order": 3,
+    "hex": "#2057a7",
+    "red": 32,
+    "green": 87,
+    "blue": 167
+}, {
+    "name": "moody_blue",
+    "order": 4,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "moody_blue",
+    "order": 5,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "moody_blues",
+    "order": 1,
+    "hex": "#e9ddff",
+    "red": 233,
+    "green": 221,
+    "blue": 255
+}, {
+    "name": "moody_blues",
+    "order": 2,
+    "hex": "#cfc3ff",
+    "red": 207,
+    "green": 195,
+    "blue": 255
+}, {
+    "name": "moody_blues",
+    "order": 3,
+    "hex": "#b5aaf9",
+    "red": 181,
+    "green": 170,
+    "blue": 249
+}, {
+    "name": "moody_blues",
+    "order": 4,
+    "hex": "#9e94e0",
+    "red": 158,
+    "green": 148,
+    "blue": 224
+}, {
+    "name": "moody_blues",
+    "order": 5,
+    "hex": "#877ec9",
+    "red": 135,
+    "green": 126,
+    "blue": 201
+}, {
+    "name": "moody_blues",
+    "order": 6,
+    "hex": "#7069b2",
+    "red": 112,
+    "green": 105,
+    "blue": 178
+}, {
+    "name": "moody_blues",
+    "order": 7,
+    "hex": "#5a559b",
+    "red": 90,
+    "green": 85,
+    "blue": 155
+}, {
+    "name": "moody_blues",
+    "order": 8,
+    "hex": "#454185",
+    "red": 69,
+    "green": 65,
+    "blue": 133
+}, {
+    "name": "moody_blues",
+    "order": 9,
+    "hex": "#2f2e6f",
+    "red": 47,
+    "green": 46,
+    "blue": 111
+}, {
+    "name": "moody_blues",
+    "order": 10,
+    "hex": "#171d5a",
+    "red": 23,
+    "green": 29,
+    "blue": 90
+}, {
+    "name": "moody_blues",
+    "order": 11,
+    "hex": "#000a45",
+    "red": 0,
+    "green": 10,
+    "blue": 69
+}, {
+    "name": "old_rose",
+    "order": 1,
+    "hex": "#c43d4d",
+    "red": 196,
+    "green": 61,
+    "blue": 77
+}, {
+    "name": "old_rose",
+    "order": 2,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "old_rose",
+    "order": 3,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "old_rose",
+    "order": 4,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "old_rose",
+    "order": 5,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "old_roses",
+    "order": 1,
+    "hex": "#ffb5ba",
+    "red": 255,
+    "green": 181,
+    "blue": 186
+}, {
+    "name": "old_roses",
+    "order": 2,
+    "hex": "#ff989f",
+    "red": 255,
+    "green": 152,
+    "blue": 159
+}, {
+    "name": "old_roses",
+    "order": 3,
+    "hex": "#fc7a83",
+    "red": 252,
+    "green": 122,
+    "blue": 131
+}, {
+    "name": "old_roses",
+    "order": 4,
+    "hex": "#ee636e",
+    "red": 238,
+    "green": 99,
+    "blue": 110
+}, {
+    "name": "old_roses",
+    "order": 5,
+    "hex": "#d8505d",
+    "red": 216,
+    "green": 80,
+    "blue": 93
+}, {
+    "name": "old_roses",
+    "order": 6,
+    "hex": "#c33c4c",
+    "red": 195,
+    "green": 60,
+    "blue": 76
+}, {
+    "name": "old_roses",
+    "order": 7,
+    "hex": "#af273d",
+    "red": 175,
+    "green": 39,
+    "blue": 61
+}, {
+    "name": "old_roses",
+    "order": 8,
+    "hex": "#990d2e",
+    "red": 153,
+    "green": 13,
+    "blue": 46
+}, {
+    "name": "old_roses",
+    "order": 9,
+    "hex": "#7f001c",
+    "red": 127,
+    "green": 0,
+    "blue": 28
+}, {
+    "name": "old_roses",
+    "order": 10,
+    "hex": "#630005",
+    "red": 99,
+    "green": 0,
+    "blue": 5
+}, {
+    "name": "old_roses",
+    "order": 11,
+    "hex": "#480000",
+    "red": 72,
+    "green": 0,
+    "blue": 0
+}, {
+    "name": "outbreak_or",
+    "order": 1,
+    "hex": "#F4E5D2",
+    "red": 244,
+    "green": 229,
+    "blue": 210
+}, {
+    "name": "outbreak_or",
+    "order": 2,
+    "hex": "#FED79C",
+    "red": 254,
+    "green": 215,
+    "blue": 156
+}, {
+    "name": "outbreak_or",
+    "order": 3,
+    "hex": "#FBA529",
+    "red": 251,
+    "green": 165,
+    "blue": 41
+}, {
+    "name": "outbreak_or",
+    "order": 4,
+    "hex": "#FF6600",
+    "red": 255,
+    "green": 102,
+    "blue": 0
+}, {
+    "name": "scooter",
+    "order": 1,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "scooter",
+    "order": 2,
+    "hex": "#c43d4d",
+    "red": 196,
+    "green": 61,
+    "blue": 77
+}, {
+    "name": "scooter",
+    "order": 3,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "scooter",
+    "order": 4,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "scooter",
+    "order": 5,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "scooters",
+    "order": 1,
+    "hex": "#a6fdff",
+    "red": 166,
+    "green": 253,
+    "blue": 255
+}, {
+    "name": "scooters",
+    "order": 2,
+    "hex": "#8ce4fe",
+    "red": 140,
+    "green": 228,
+    "blue": 254
+}, {
+    "name": "scooters",
+    "order": 3,
+    "hex": "#74ccec",
+    "red": 116,
+    "green": 204,
+    "blue": 236
+}, {
+    "name": "scooters",
+    "order": 4,
+    "hex": "#5bb5d5",
+    "red": 91,
+    "green": 181,
+    "blue": 213
+}, {
+    "name": "scooters",
+    "order": 5,
+    "hex": "#419fbe",
+    "red": 65,
+    "green": 159,
+    "blue": 190
+}, {
+    "name": "scooters",
+    "order": 6,
+    "hex": "#228aa8",
+    "red": 34,
+    "green": 138,
+    "blue": 168
+}, {
+    "name": "scooters",
+    "order": 7,
+    "hex": "#047491",
+    "red": 4,
+    "green": 116,
+    "blue": 145
+}, {
+    "name": "scooters",
+    "order": 8,
+    "hex": "#005e7a",
+    "red": 0,
+    "green": 94,
+    "blue": 122
+}, {
+    "name": "scooters",
+    "order": 9,
+    "hex": "#004964",
+    "red": 0,
+    "green": 73,
+    "blue": 100
+}, {
+    "name": "scooters",
+    "order": 10,
+    "hex": "#00354f",
+    "red": 0,
+    "green": 53,
+    "blue": 79
+}, {
+    "name": "scooters",
+    "order": 11,
+    "hex": "#00223a",
+    "red": 0,
+    "green": 34,
+    "blue": 58
+}, {
+    "name": "seablue",
+    "order": 1,
+    "hex": "#4FAFB6",
+    "red": 79,
+    "green": 175,
+    "blue": 182
+}, {
+    "name": "seablue",
+    "order": 2,
+    "hex": "#98CBD0",
+    "red": 152,
+    "green": 203,
+    "blue": 208
+}, {
+    "name": "seablue",
+    "order": 3,
+    "hex": "#D5EAEB",
+    "red": 213,
+    "green": 234,
+    "blue": 235
+}, {
+    "name": "seablue",
+    "order": 4,
+    "hex": "#086EA1",
+    "red": 8,
+    "green": 110,
+    "blue": 161
+}, {
+    "name": "seablue_text",
+    "order": 1,
+    "hex": "#00949D",
+    "red": 0,
+    "green": 148,
+    "blue": 157
+}, {
+    "name": "seablue_text",
+    "order": 2,
+    "hex": "#58B2BA",
+    "red": 88,
+    "green": 178,
+    "blue": 186
+}, {
+    "name": "seablue_text",
+    "order": 3,
+    "hex": "#B2D8DD",
+    "red": 178,
+    "green": 216,
+    "blue": 221
+}, {
+    "name": "seablue_text",
+    "order": 4,
+    "hex": "#2476A6",
+    "red": 36,
+    "green": 118,
+    "blue": 166
+}, {
+    "name": "siei",
+    "order": 1,
+    "hex": "#2057a7",
+    "red": 32,
+    "green": 87,
+    "blue": 167
+}, {
+    "name": "siei",
+    "order": 2,
+    "hex": "#c43d4d",
+    "red": 196,
+    "green": 61,
+    "blue": 77
+}, {
+    "name": "siei",
+    "order": 3,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "siei",
+    "order": 4,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "siei",
+    "order": 5,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "siei",
+    "order": 6,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "siei",
+    "order": 7,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "siei",
+    "order": 8,
+    "hex": "#808080",
+    "red": 128,
+    "green": 128,
+    "blue": 128
+}, {
+    "name": "siei_pairs",
+    "order": 1,
+    "hex": "#2057a7",
+    "red": 32,
+    "green": 87,
+    "blue": 167
+}, {
+    "name": "siei_pairs",
+    "order": 2,
+    "hex": "#BFDDFF",
+    "red": 191,
+    "green": 221,
+    "blue": 255
+}, {
+    "name": "siei_pairs",
+    "order": 3,
+    "hex": "#c43d4d",
+    "red": 196,
+    "green": 61,
+    "blue": 77
+}, {
+    "name": "siei_pairs",
+    "order": 4,
+    "hex": "#FF939A",
+    "red": 255,
+    "green": 147,
+    "blue": 154
+}, {
+    "name": "siei_pairs",
+    "order": 5,
+    "hex": "#8980cb",
+    "red": 137,
+    "green": 128,
+    "blue": 203
+}, {
+    "name": "siei_pairs",
+    "order": 6,
+    "hex": "#DFD3FF",
+    "red": 223,
+    "green": 211,
+    "blue": 255
+}, {
+    "name": "siei_pairs",
+    "order": 7,
+    "hex": "#e07653",
+    "red": 224,
+    "green": 118,
+    "blue": 83
+}, {
+    "name": "siei_pairs",
+    "order": 8,
+    "hex": "#FFCAA2",
+    "red": 255,
+    "green": 202,
+    "blue": 162
+}, {
+    "name": "siei_pairs",
+    "order": 9,
+    "hex": "#1e87a5",
+    "red": 30,
+    "green": 135,
+    "blue": 165
+}, {
+    "name": "siei_pairs",
+    "order": 10,
+    "hex": "#83DBFB",
+    "red": 131,
+    "green": 219,
+    "blue": 251
+}, {
+    "name": "siei_pairs",
+    "order": 11,
+    "hex": "#f2bc40",
+    "red": 242,
+    "green": 188,
+    "blue": 64
+}, {
+    "name": "siei_pairs",
+    "order": 12,
+    "hex": "#FFDDA2",
+    "red": 255,
+    "green": 221,
+    "blue": 162
+}, {
+    "name": "siei_pairs",
+    "order": 13,
+    "hex": "#287c6f",
+    "red": 40,
+    "green": 124,
+    "blue": 111
+}, {
+    "name": "siei_pairs",
+    "order": 14,
+    "hex": "#7ECFC0",
+    "red": 126,
+    "green": 207,
+    "blue": 192
+}, {
+    "name": "siei_pairs",
+    "order": 15,
+    "hex": "#808080",
+    "red": 128,
+    "green": 128,
+    "blue": 128
+}, {
+    "name": "siei_pairs",
+    "order": 16,
+    "hex": "#E6E6E6",
+    "red": 230,
+    "green": 230,
+    "blue": 230
+}, {
+    "name": "trolley_greys",
+    "order": 1,
+    "hex": "#E6E7E8",
+    "red": 230,
+    "green": 231,
+    "blue": 232
+}, {
+    "name": "trolley_greys",
+    "order": 2,
+    "hex": "#D5D7D8",
+    "red": 213,
+    "green": 215,
+    "blue": 216
+}, {
+    "name": "trolley_greys",
+    "order": 3,
+    "hex": "#C4C6C8",
+    "red": 196,
+    "green": 198,
+    "blue": 200
+}, {
+    "name": "trolley_greys",
+    "order": 4,
+    "hex": "#B3B5B8",
+    "red": 179,
+    "green": 181,
+    "blue": 184
+}, {
+    "name": "trolley_greys",
+    "order": 5,
+    "hex": "#A3A4A8",
+    "red": 163,
+    "green": 164,
+    "blue": 168
+}, {
+    "name": "trolley_greys",
+    "order": 6,
+    "hex": "#939598",
+    "red": 147,
+    "green": 149,
+    "blue": 152
+}, {
+    "name": "trolley_greys",
+    "order": 7,
+    "hex": "#838484",
+    "red": 131,
+    "green": 132,
+    "blue": 132
+}, {
+    "name": "trolley_greys",
+    "order": 8,
+    "hex": "#747576",
+    "red": 116,
+    "green": 117,
+    "blue": 118
+}, {
+    "name": "trolley_greys",
+    "order": 9,
+    "hex": "#646568",
+    "red": 100,
+    "green": 101,
+    "blue": 104
+}, {
+    "name": "trolley_greys",
+    "order": 10,
+    "hex": "#535356",
+    "red": 83,
+    "green": 83,
+    "blue": 86
+}, {
+    "name": "trolley_greys",
+    "order": 11,
+    "hex": "#414042",
+    "red": 65,
+    "green": 64,
+    "blue": 66
+}, {
+    "name": "usaid_colors",
+    "order": 1,
+    "hex": "#002a6c",
+    "red": 0,
+    "green": 42,
+    "blue": 108
+}, {
+    "name": "usaid_colors",
+    "order": 2,
+    "hex": "#ba0c2f",
+    "red": 186,
+    "green": 12,
+    "blue": 47
+}, {
+    "name": "usaid_colors",
+    "order": 3,
+    "hex": "#212721",
+    "red": 33,
+    "green": 39,
+    "blue": 33
+}, {
+    "name": "usaid_colors",
+    "order": 4,
+    "hex": "#0067b9",
+    "red": 0,
+    "green": 103,
+    "blue": 185
+}, {
+    "name": "usaid_colors",
+    "order": 5,
+    "hex": "#a7c6ed",
+    "red": 167,
+    "green": 198,
+    "blue": 237
+}, {
+    "name": "usaid_colors",
+    "order": 6,
+    "hex": "#6c6463",
+    "red": 108,
+    "green": 100,
+    "blue": 99
+}, {
+    "name": "usaid_colors",
+    "order": 7,
+    "hex": "#8C8985",
+    "red": 140,
+    "green": 137,
+    "blue": 133
+}, {
+    "name": "usaid_colors",
+    "order": 8,
+    "hex": "#cfcdc9",
+    "red": 207,
+    "green": 205,
+    "blue": 201
+}]
