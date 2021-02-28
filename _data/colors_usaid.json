@@ -1,0 +1,33 @@
+[{
+    "name": "blue",
+    "hex_value": "#002a6c",
+    "rgb_value": "rgb(0, 42, 108)"
+}, {
+    "name": "red",
+    "hex_value": "#ba0c2f",
+    "rgb_value": "rgb(186, 12, 47)"
+}, {
+    "name": "black",
+    "hex_value": "#212721",
+    "rgb_value": "rgb(33, 39, 33)"
+}, {
+    "name": "med blue",
+    "hex_value": "#0067b9",
+    "rgb_value": "rgb(0, 103, 185)"
+}, {
+    "name": "light blue",
+    "hex_value": "#a7c6ed",
+    "rgb_value": "rgb(167, 198, 237)"
+}, {
+    "name": "dark gray",
+    "hex_value": "#6c6463",
+    "rgb_value": "rgb(108, 100, 99)"
+}, {
+    "name": "med gray",
+    "hex_value": "#6c6463",
+    "rgb_value": "rgb(108, 100, 99)"
+}, {
+    "name": "light gray",
+    "hex_value": "#cfcdc9",
+    "rgb_value": "rgb(207, 205, 201)"
+}]
