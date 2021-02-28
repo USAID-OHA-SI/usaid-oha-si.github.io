@@ -8,7 +8,7 @@ tags: [ggplot, vizualisation]
 thumbnail: "iris_scatter_plot_si_style.png"
 ---
 
-How to create standard visualizations across SI team with USAID's alternate fonts, Sans Source Pro. 
+How to create standard visualizations across SI team with USAID's alternate fonts, Sans Source Pro.
 
 This font is not only not native to R, nor is it a standard to Windows.
 
@@ -34,25 +34,25 @@ library(glitr)
 - Make sure iris sample data is loaded
 
 ```{r}
-iris %>% 
+iris %>%
   glimpse()
 ```
 
 ```{r}
 iris %>% head()
 ```
-  
+
 - Create a scatter plot with with default ggplot options
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
       title = "IRIS Flowers Study",
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data")
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_default.png")
 ```
 
@@ -63,7 +63,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_default.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -71,7 +71,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   theme_minimal()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_minimal.png")
 ```
 
@@ -83,7 +83,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_minimal.png")
 *si_style()* function extends ggplot _minimal theme_ along with a re-adjustement of the plot title, subtitle and capture.
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -91,7 +91,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   si_style()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_si_style.png")
 ```
 
@@ -102,7 +102,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_si_style.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -121,7 +121,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_si_style_xgrid.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -129,7 +129,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   si_style_ygrid()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_si_style_ygrid.png")
 ```
 
@@ -140,7 +140,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_si_style_ygrid.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -148,7 +148,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   si_style_xline()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_si_style_xline.png")
 ```
 
@@ -159,7 +159,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_si_style_xline.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -167,7 +167,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   si_style_yline()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_si_style_yline.png")
 ```
 
@@ -178,7 +178,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_si_style_yline.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -186,7 +186,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   si_style_xyline()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_si_style_xyline.png")
 ```
 
@@ -197,7 +197,7 @@ ggsave("assets/img/tutorials/iris_scatter_plot_si_style_xyline.png")
 
 
 ```{r}
-iris %>% 
+iris %>%
   ggplot(aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() +
   labs(x="Length", y="Width",
@@ -205,7 +205,7 @@ iris %>%
       subtitle = "Sepal Dimensions",
       caption = "source: Edgar Anderson's Iris Data") +
   si_style_nolines()
-  
+
 ggsave("assets/img/tutorials/iris_scatter_plot_si_style_nolines.png")
 ```
 ![ggplot SI Style no lines](/assets/img/tutorials/iris_scatter_plot_si_style_nolines.png)
