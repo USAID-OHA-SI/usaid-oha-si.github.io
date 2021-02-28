@@ -320,6 +320,44 @@ body {
     font-size: 5em;
 }
 
+/* Background Call out */
+.bg-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+
+.bg-callout-red {
+    border-left-color: #ba0c2f;
+}
+
+.bg-callout-blue {
+    border-left-color: #002a6c;
+}
+
+.bg-callout-midblue {
+    border-left-color: #0067b9;
+}
+
+.bg-callout-lightblue {
+    border-left-color: #a7c6ed;
+}
+
+.bg-callout-darkgray {
+    border-left-color: #6c6463;
+}
+
+.bg-callout-lightblue {
+    border-left-color: #808080;
+}
+
+.bg-callout-lightblue {
+    border-left-color: #cfcdc9;
+}
+
 #main-content,
 .content {
     padding-top: 80px;
