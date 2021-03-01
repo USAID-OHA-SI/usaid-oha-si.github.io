@@ -1,0 +1,53 @@
+---
+layout: default
+permalink: /learn/categories/
+title: SI - Recurrent categories
+---
+
+<div class="content container">
+
+    <!-- <div class="row">
+        <div class="col-12">
+            <h3>POSTS ARE GROUPED BY CATEGORY</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla
+                mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div class="col-12">
+            <h3 class="display-5">LIST OF POSTS BY CATEGORY</h3>
+
+            <ul>
+            {% for category in site.categories %}
+                {% capture categoryname %}{{ category | first }}{% endcapture %}
+                <li><h5 id="{{ categoryname }}">{{ categoryname | upcase }}</h5></li>
+
+                <ul class="mb-3">
+                    {% for post in site.categories[categoryname] %}
+                    <li class="mb-2">
+                        <i class="fa fa-file-o" title="post"></i>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <br/> &nbsp;&nbsp;
+                        <span class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 80 }}</span>
+                        <br/> &nbsp;&nbsp;
+                        <small>
+                            <i class="fa fa-calendar" title="date"></i> {{post.date | date: "%Y-%m-%d" }} &nbsp;&nbsp;
+                            <i class="fa fa-user-circle" title="author"></i> {{post.author | default: "Not available"}} &nbsp;&nbsp;
+                            <i class="fa fa-tags" title="tags"></i>
+                            {% for tag in post.tags %}
+                                <a href="{{site.url}}/learn/tags/#{{ tag | slugify }}"
+                                    class="badge badge-info">
+                                    {{ tag | slugify }}</a>
+                            {% endfor %}
+                        </small>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+</div>

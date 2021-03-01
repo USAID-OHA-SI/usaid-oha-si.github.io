@@ -1,0 +1,617 @@
+---
+layout: default
+title: Cookbook
+---
+
+<div class="content container">
+
+    <div class="row">
+        <div class="col-12">
+            <h5>DATA VISUALIZATION STYLE GUIDE</h5>
+            <p>Welcome to the OHA SIEI data visualization style guide.</p>
+            <p>The purpose of this product is to provide SIEI a set of guide rails on how to present data in-line with an overall vision so that all SIEI data visualizations have a common look and feel. SIEI produced visualizations do not need to all be identical, but they should appear as if they belong to the same family. This common appearance is achieved through the use of a set of elements belonging to an organization’s graphical style. For example, by using the same font, font size, color schemes, graphical elements, annotation patterns, and placement options, different users can create graphics grounded in a base style, while still allowing for creative flexibility. Think of organizations like FiveThirtyEight, Financial Times or BBC which have such distinctive styles that even on their own in the wild, you can clearly identify their origin.</p>
+            <p>Creating a consistent look and feel for graphics has at least three organizational benefits. First, product creators can spend more time focusing on graphical content and messaging as the style elements are pre-defined for them. Secondly, a regular consumer of SIEI’s analytic products will be able to more easily read and interpret the graphical content based on familiarity of its preset guidelines. Finally, product consumers will come to recognize SIEI graphical products based on their style and may place more trustworthiness in them due to their familiarity with the product. At the end of the day, we want to create and disseminate visualizations that are consistent, trustworthy and easily identifiable as belonging to SIEI.</p>
+        </div>
+    </div>
+
+    <div id="styleguide-section" class="row">
+        <div class="col-12">
+
+        <nav id="viz-tabs">
+            <div id="tabs-header" class="nav nav-tabs" role="tablist">
+                <a class="nav-item nav-link active" id="tab-styleguide"
+                    data-toggle="tab" href="#styleguide" role="tab"
+                    aria-controls="styleguide" aria-selected="true">Style Guide</a>
+
+                <a class="nav-item nav-link" id="tab-r-integration"
+                    data-toggle="tab" href="#r-integration" role="tab"
+                    aria-controls="r-integration" aria-selected="false">Integration with R</a>
+
+                <a class="nav-item nav-link" id="tab-wavelength"
+                    data-toggle="tab" href="#tbw-integration" role="tab"
+                    aria-controls="tbw-integration" aria-selected="false">Tableau Workbooks</a>
+
+                <a class="nav-item nav-link" id="tab-xls-integration"
+                    data-toggle="tab" href="#xls-integration" role="tab"
+                    aria-controls="xls-integration" aria-selected="false">Excel Dashboards</a>
+
+            </div>
+        </nav>
+
+        <div class="tab-content mt-3" id="tabs-content">
+            <!-- style guide -->
+            <div class="tab-pane fade show active"
+                id="styleguide" role="tabpanel"
+                aria-labelledby="tab-styleguide">
+
+                <div class="row">
+
+                    <!-- Side Menu -->
+                    <div id="style-guide-submenu" class="col-md-4 col-lg-3">
+                        <nav id="style-guide-nav" class="list-group">
+
+                            <a href="#sg-toc" class="list-group-item list-group-item-action bg-secondary text-light">TOC</a>
+                            <a href="#sg-overview" class="list-group-item list-group-item-action">Overview</a>
+                            <a href="#sg-why" class="list-group-item list-group-item-action">Motivation</a>
+                            <a href="#sg-how" class="list-group-item list-group-item-action">How to use</a>
+
+                            <a id="sg-ctl-elements"
+                                href="#sg-grp-elements"
+                                data-toggle="collapse"
+                                aria-expanded="false"
+                                aria-controls="sg-grp-elements"
+                                class="list-group-item list-group-item-action">Charts Elements</a>
+
+                            <div id="sg-grp-elements"
+                                data-parent="#style-guide-nav"
+                                aria-expanded="false"
+                                aria-controls="sg-grp-elements"
+                                class="style-guide-subgroup list-group collapse">
+                                <a href="#sg-ch-elements" class="list-group-item list-group-item-action">Elements</a>
+                                <a href="#sg-ch-title" class="list-group-item list-group-item-action">Title</a>
+                                <a href="#sg-ch-subtitle" class="list-group-item list-group-item-action">Subtitle</a>
+                                <a href="#sg-ch-axes" class="list-group-item list-group-item-action">Axes/Grid</a>
+                                <a href="#sg-ch-annotation" class="list-group-item list-group-item-action">Annotation</a>
+                                <a href="#sg-ch-caption" class="list-group-item list-group-item-action">Caption</a>
+                                <a href="#sg-ch-legend" class="list-group-item list-group-item-action">Legend</a>
+                            </div>
+
+                            <a id="sg-ctl-principles"
+                                href="#sg-grp-principles"
+                                data-toggle="collapse"
+                                aria-expanded="false"
+                                aria-controls="sg-grp-principles"
+                                class="list-group-item list-group-item-action">Charts Principles</a>
+
+                            <div id="sg-grp-principles"
+                                data-parent="#style-guide-nav"
+                                aria-expanded="false"
+                                aria-controls="sg-grp-principles"
+                                class="style-guide-subgroup list-group collapse">
+                                <a href="#sg-ch-principles" class="list-group-item list-group-item-action">Principles</a>
+                                <a href="#sg-ch-text" class="list-group-item list-group-item-action">Text</a>
+                                <a href="#sg-ch-lines" class="list-group-item list-group-item-action">Lines</a>
+                                <a href="#sg-ch-position" class="list-group-item list-group-item-action">Position</a>
+                                <a href="#sg-ch-color" class="list-group-item list-group-item-action">Color</a>
+                                <a href="#sg-ch-typography" class="list-group-item list-group-item-action">Typography</a>
+                            </div>
+
+                            <a id="sg-ctl-colors"
+                                href="#sg-grp-colors"
+                                data-toggle="collapse"
+                                aria-expanded="false"
+                                aria-controls="sg-grp-colors"
+                                class="list-group-item list-group-item-action">Main Colors</a>
+
+                            <div id="sg-grp-colors"
+                                data-parent="#style-guide-nav"
+                                aria-expanded="false"
+                                aria-controls="sg-grp-colors"
+                                class="style-guide-subgroup list-group collapse">
+                                <a href="#sg-co-colors" class="list-group-item list-group-item-action">Colors</a>
+                                <a href="#sg-co-usaid" class="list-group-item list-group-item-action">USAID Colors</a>
+                                <a href="#sg-co-siei" class="list-group-item list-group-item-action">SIEI Colors</a>
+                                <a href="#sg-co-cont" class="list-group-item list-group-item-action">Continuous Colors</a>
+                                <a href="#sg-co-div" class="list-group-item list-group-item-action">Diverging Colors</a>
+                                <a href="#sg-co-cat" class="list-group-item list-group-item-action">Categorical Colors</a>
+                            </div>
+
+                        </nav>
+                    </div>
+
+                    <!-- Content -->
+                    <div id="style-guide-details" class="col-md-8 col-lg-9"
+                        data-spy="scroll" data-offset="0"
+                        data-target="#style-guide-submenuu">
+
+                        <!-- Overview -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 id="sg-overview" class="mb-3">OVERVIEW</h5>
+                                <img src="https://user-images.githubusercontent.com/5873344/100870163-2661fb80-346c-11eb-8114-bf677f8cc6fb.png" />
+                            </div>
+                        </div>
+
+                        <!-- Intro -->
+                        <div class="row">
+                            <div class="col-12 mt-3">
+                                <h5 id="sg-why" class="mb-3">WHY A STYLE GUIDE</h5>
+                                <p>The motivation for creating this style guide comes from an SI assessment of Q1 Review presentation. The study documented over 150 different colors that were used for encoding data or annotations in visualizations contained in the Q1 Review.</p>
+                                <p>This not only results in a set of graphics that lack a standard look and forces a user to reorient themselves each time, it also creates a brand that is unmemorable/ unrecognizable and potentially not as trusted as a more polished product.</p>
+                                <p>This style guide serves as a tool to define and enhance brand cohesion. It is designed to save you and your SIEI colleagues time in the long run by reducing the number of decisions you have to make about chart size, graphical elements, which font, font sizes etc. This style guide is meant to provide clear recommendations on nearly every aspect of data visualizations. The guide can also help improve your data visualization skills as the recommendations contained within are built on the foundation of tested visualization principles. Lastly, a cohesive look for all our charts will improve our professionalism and help communicate messages to stakeholders more effectively.</p>
+
+                                <h5 id="sg-how" class="mb-3">HOW TO USE</h5>
+                                <p>This guide should not be viewed as a software specific tool that will tell you how to create visualizations, but rather a tool that lays out the foundational elements of the OHA brand. There are definitely things that you should and should not do when creating a visualization. But, because of the diversity of visualization tools used across the office there is no one size fits all solution to data visualization creation. Instead, this document is simply a guide complete with suggestions that are to be emulated. The chart types presented herein are not meant to be exhaustive. They are there to illustrate a stylistic approach that is consistent, identifiable and built on industry best practices. A situation may call for the use of a bee-swarm diagram or bump chart. Our hope is that this guide provides you the stylistic rationale that is to be applied to these types of visualizations and beyond.</p>
+                            </div>
+                        </div>
+
+                        <!-- Charts Elements-->
+                        <div class="row">
+                            <div class="col-12">
+                                <h5 id="sg-ch-elements" class="mt-3 mb-3">CHART ELEMENTS</h5>
+
+                                <h5 id="sg-ch-title">Title</h5>
+
+                                <p class="text-justify">Convey the takeaway message you want the audience to come away with.
+                                    Should be written in all upper case letters.</p>
+
+                                <h5 id="sg-ch-subtitle">Subtitle</h5>
+
+                                <p  class="text-justify">Provides additional contextual information not covered in the title.
+                                    Smaller in size, not bolded or italicized, and may be a lighter color than the title.</p>
+
+                                <h5 id="sg-ch-axes">Axes/Grid</h5>
+
+                                <p>Thin and dark in appearance so as not to detract attention from the information in the visual.
+                                    Text should always, always, always be horizontal as opposed to vertical or at a 45 degree angle.
+                                    Values use a comma separator and limit the use of decimal places. If directly labeling all values
+                                    on the chart elements, you should not also include axis text.
+                                    Axis ticks detract more than they add to the visual and should be removed.
+                                    Labels should be used sparingly and should be added only when it’s unclear what the values are.</p>
+
+                                <h5 id="sg-ch-annotation">Annotation</h5>
+
+                                <p class="text-justify">Provides contextual information beyond the values stored in the graph.
+                                    Draws the reader’s eye to important information, such as highlighting outliers,
+                                    important countries/partners, and helps tell a story about the data.
+                                    Annotations include direct labels of data elements and longer comments about the context or data.
+                                    Annotations should be used sparingly; rather than directly labeling every point or column,
+                                    they should only highlight the important elements of the visual.
+                                    Text should be thin and light to not overpower or detract from the data in the visual.
+
+                                <h5 id="sg-ch-caption">Caption</h5>
+
+                                <p class="text-justify">Footer text containing the data source and notes or caveats about the data,
+                                    providing information critical for integrity and transparency.
+                                    Located in the lower right hand corner of the visual and be a light shade of gray.</p>
+
+                                <h5 id="sg-ch-legend">Legend</h5>
+
+                                <p class="text-justify">Mapping between colors/sizes and values used in a graph.
+                                Where possible, incorporate into direct labeling or graph title/subtitle.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/chart-elements.png"
+                                    title="Chart Elements" />
+                            </div>
+                        </div>
+
+                        <!-- Chart Principles -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 id="sg-ch-principles" class="mt-3 mb-3">CHART PRINCIPLES</h4>
+
+                                <h5 id="sg-ch-text" class="mb-3">TEXT</h5>
+
+                                <h5>Title conveys takeaway message</h5>
+
+                                <p class="text-justify">Titles are a critical, but often overlooked, element of a visualization.
+                                    All plots should have purpose that should be conveyed in the title.
+                                    What do you want the reader to come away knowing? Avoid being vague and emphasize your point.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-01.png"
+                                    title="Title Element" />
+
+                                <h5 class="mt-3">Subtitle adds context</h5>
+
+                                <p class="text-justify">Subtitles convey additional information not contained in the title,
+                                    typically written as a full sentence describing what is going on.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-02.png"
+                                    title="Subtitle Element" />
+
+                                <h5 class="mt-3">Consistent typeface and sizing</h5>
+
+                                <p class="text-justify">Using the same font across visualization will convey uniformity and care put into the work.
+                                    OHA/SIEI uses Source Sans Pro as the primary typeface and should be used throughout.
+                                    Arial or Gill Sans are alternatives if Source Sans Pro is not available. Text sizing,
+                                    not just typeface, should be used consistently for each plot element to convey hierarchy and importance.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-21.png"
+                                    title="Type face Element" />
+
+                                <h5 class="mt-3">Annotations provide clarifying details</h5>
+
+                                <p class="text-justify">Annotations add addition information directly within the visualization
+                                    to both provide the audience with additional context not found in the numbers themselves.
+                                    Thin, gray arrows are good to pair with annotations.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-03.png"
+                                    title="Annotation Element" />
+
+                                <h5 class="mt-3">Integrated legend</h5>
+
+                                <p class="text-justify">Legends take up valuable real estate and make the audience work harder to flip between the legend and the plot.
+                                    A better practice is to label elements directly or to integrate your legend into your title where appropriate.
+                                    Remove axis labels when direct labels are used.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-04.png"
+                                    title="Legend Element" />
+
+                                <h5 class="mt-3">Category labels abbreviated where needed</h5>
+
+                                <p class="text-justify">Avoid clutter or taking up ample space by abbreviating labels.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-05.png"
+                                    title="Category Element" />
+
+                                <h5 class="mt-3">Clean numbers</h5>
+
+                                <p class="text-justify">Round numbers to avoid false precision and minimize clutter. Add commas for thousands/millions separator.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-06.png"
+                                    title="Numbers Element" />
+
+                                <h5 id="sg-ch-lines" class="mt-5">LINES</h5>
+
+                                <h5>Plot is void of border and thick lines, unnecessary tick marks and lines removed</h5>
+
+                                <p class="text-justify">Avoid clutter that distracts from your visualization by removing tick marks and unneeded lines, maximizing the data-ink ratio as Edward Tufte would say.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-07.png"
+                                    title="Border Element" />
+
+                                <h5 class="mt-3">Avoid dual axes plots</h5>
+
+                                <p class="text-justify">Dual axes are more difficult to interpret. “The scales of dual axis charts are arbitrary and can therefore (deliberately) mislead readers about the relationship between the two data series” (Rost 2018). Consider using two side by side graphs.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-08.png"
+                                    title="Dual Axis Element" />
+
+                                <h5 class="mt-3">Reference lines/areas used to provide context</h5>
+
+                                <p class="text-justify">Extra information can be provide by adding reference lines or areas, as a point of comparison, like an average line, or to denote a period.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-09.png"
+                                    title="Dual Axis Element" />
+
+                                <h5 id="sg-ch-position" class="mt-5">POSITION AND ARRANGEMENT</h5>
+
+                                <h5>Data ordered in an intentional manner</h5>
+
+                                <p class="text-justify">The default ordering for graphs often is alphabetical,
+                                    which should be avoided. Graphs should be ordered strategically.
+                                    For instance you may want to order on a particular category or value,
+                                    helping convey a focus or underlying purpose</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-10.png"
+                                    title="Data ordered Element" />
+
+                                <h5 class="mt-3">Chart text is consistently aligned, axis intervals consistent and evenly spaced</h5>
+
+                                <p>Having good chart hygiene will convey that care was taken in creating the plot,
+                                    improve trust and legibility for your audience.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-11.png"
+                                    title="Chart text Element" />
+
+                                <h5 class="mt-3">Axis lines start at appropriate values</h5>
+
+                                <p class="text-justify">Bar and area charts should always start at zero. Other charts may start at other values,
+                                    but should not mislead the audience.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-12.png"
+                                    title="Axis lines Element" />
+
+                                <h5 class="mt-3">Small multiples show data across categories</h5>
+
+                                <p class="text-justify">Reduce chart clutter by breaking out each category into its own graph and displaying
+                                    these in a grid. A small multiples structure allows the viewer to see each category’s
+                                    data on its own and compare that to the data in other categories.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-13.png"
+                                    title="Small multiples Element" />
+
+                                <h5 class="mt-3">All graphics are two dimensions (no-3D)</h5>
+
+                                <p class="text-justify">Nothing added with the extra dimension and should be completely avoided.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-14.png"
+                                    title="All Graphics Element" />
+
+                                <h5 class="mt-3">Plot is free from decoration (chart junk)</h5>
+
+                                <p class="text-justify">Reduce visual clutter in your plot in order to maximize the data-ink ratio and show the data.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-15.png"
+                                    title="Plot is free Element" />
+
+                                <h5 id="sg-ch-color" class="mt-5">COLOR</h5>
+
+                                <h5>Color use is intentional and consistent</h5>
+
+                                <p class="text-justify">Use color sparingly; it should be used to convey a message.
+                                    Thought should go into each color used, not just defaulting to
+                                    the software default palette.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-16.png"
+                                    title="Color Element" />
+
+                                <h5 class="mt-3">Text color sufficiently contrasts with background</h5>
+
+                                <p class="text-justify">Ensure that your text is legible and stands out from the plot of slide background.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-17.png"
+                                    title="Text color Element" />
+
+                                <h5 class="mt-3">Approved colors applied throughout</h5>
+
+                                <p class="text-justify">Use the specified OHA/SIEI colors that are color-blind safe and chosen with care.
+                                    If plot will be used for external engagement, USAID colors should be the default.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-18.png"
+                                    title="Approved Color Element" />
+
+                                <h5 class="mt-3">Annotation colors are subtle</h5>
+
+                                <p class="text-justify">Annotations provide additional context but should not detract from the visual.
+                                    Avoid colored boxes or arrows.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-19.png"
+                                    title="Annotation color Element" />
+
+                                <h5 class="mt-3">Color gradients applied appropriately</h5>
+
+                                <p class="text-justify">Ensure there is enough contrast between different steps of lightness and saturation
+                                    when using a continuous or diverging color palette.</p>
+
+                                <img class=""
+                                    src="/assets/img/styleguide/ChartPrinciples-20.png"
+                                    title="Color gradient Element" />
+
+                                <h5 id="sg-ch-typography" class="mt-5">TYPOGRAPHY</h5>
+
+                                <p class="text-justify">Font, or typeface, can convey lots of information to the audience and
+                                    create a sense of branding consistency.
+                                    OHA/SIEI uses the Source Sans Pro family for visualizations.
+                                    If Source Sans Pro is not available, Arial can be used as an alternative.</p>
+
+                                <p class="text-justify">The table below provides the attributes associated with each typography
+                                    option from the chart elements. Use the following elements to structure your
+                                    visual along the OHA/SIEI guidelines. As with color and other elements,
+                                    these are guides not laws so artistic license can be taken, but know that
+                                    the less the guidelines are adhered to, the less the visualization will look
+                                    like an OHA/SIEI product.</p>
+
+                                <h5 id="sg-ch-font" class="mb-3">Source Sans Pro Family</h5>
+
+                                <div class="font-ssp row">
+                                    <div class="col-2"><span class="font-ssp-reg font-5x">Aa</span></div>
+                                    <div class="col-10">
+                                        <span class="font-ssp-reg">Source Sans Pro, Regular</span> <br/>
+                                        <span class="font-ssp-reg">1234567890-!@#$%^&*()_{}:”<>?</span>
+                                    </div>
+                                </div>
+
+                                <div class="font-ssp row">
+                                    <div class="col-2"><span class="font-ssp-light font-5x">Aa</span></div>
+                                    <div class="col-10">
+                                        <span class="font-ssp-light">Source Sans Pro, Light</span> <br/>
+                                        <span class="font-ssp-light">1234567890-!@#$%^&*()_{}:”<>?</span>
+                                    </div>
+                                </div>
+
+                               <div class="font-ssp row">
+                                    <div class="col-2"><span class="font-ssp-semibold font-5x">Aa</span></div>
+                                    <div class="col-10">
+                                        <span class="font-ssp-semibold">Source Sans Pro, Semi Bold</span> <br/>
+                                        <span class="font-ssp-semibold">1234567890-!@#$%^&*()_{}:”<>?</span>
+                                    </div>
+                                </div>
+
+                                <div class="font-ssp row">
+                                    <div class="col-2"><span class="font-ssp-bold font-5x">Aa</span></div>
+                                    <div class="col-10">
+                                        <span class="font-ssp-bold">Source Sans Pro, Bold</span> <br/>
+                                        <span class="font-ssp-bold">1234567890-!@#$%^&*()_{}:”<>?</span>
+                                    </div>
+                                </div>
+
+                                <h5 id="sg-ch-download" class="mb-3">HOW TO DOWNLOAD</h5>
+
+                                <p class="text-justify">Source Sans Pro does not come standard on PCs or Macs,
+                                    but they accessible from Google Fonts. Search for “Source San Pro”
+                                    and then click on the “Download family” in the upper right hand corner.
+                                    When its downloaded, unzip the folder, right click on one of the typefaces
+                                    in the folder and select “Install.” The typeface should now be available.
+                                    If you are unable to install, you may need to reach out to M/CIO to have them install it for you.
+                                    They are currently working on making this accessible from Software Center.</p>
+
+                            </div>
+                        </div>
+
+                        <!-- Colors -->
+                        <div class="row">
+                            <div class="col-12">
+
+                                <h4 id="sg-co-colors">COLORS</h4>
+
+                                <p class="text-justify">The USAID Graphics Standard Manual lay out the two colors found in the agency’s logo as the primary color palette,
+                                    USAID Blue and USAID Red. These colors are used to “reinforces that the aid is From the American people”
+                                    but provides a limited ranges of colors to work with for data visualization.</p>
+
+                                <p class="text-justify">OHA/SIEI has developed an offshoot of these colors for visualization,
+                                    expanding the number of categorical colors to choose from and create a color-blind friendly palette (508 compliant).
+                                    We started with Medium Blue and USAID Red and used a combination of platforms
+                                    (Adobe Color, Palettable, Viz Palette and chroma.js), modifying them into Denim and Old Rose.
+                                    From there, we expand these colors into a full palette of categorical and continuous colors.</p>
+
+                                <p class="text-justify">Using the following palette strategically will allow for consistent branding and
+                                    reduce the time needed to think through color choices in every visualization.
+                                    Colors should be used meaningfully in any visualization. If using the categorical/ discrete colors,
+                                    the graphic on the right provides the suggested color order. For example, if using Old Rose as
+                                    the primary color, the next color that should be used is Scooter.
+                                    Alternatively, if you need to encode a quantitative palette, the continuous palettes on the left was developed using chroma.js
+                                    to create perceptible steps in lightness and saturation.</p>
+
+                                <h5 id="sg-co-usaid" class="mb-3">USAID COLOR PALETTE</h5>
+
+                                {% assign usaid_colors = site.data.colors_usaid %}
+
+                                <div class="row">
+                                    {% for color in usaid_colors %}
+                                        <div class="col text-center mb-1 mr-1"
+                                            style="color:white; min-height: 50px; background-color:{{color.hex_value}};">
+                                            <span class="align-middle">
+                                                {{ color.name }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.hex_value }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.rgb_value }}
+                                            </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+                                <h5 id="sg-co-siei" class="mb-3">OHA/SIEI COLOR PALETTE</h5>
+
+                                {% assign siei_colors = site.data.colors_siei %}
+
+                                <div class="row">
+                                    {% for color in siei_colors %}
+                                        <div class="col text-center mb-1 mr-1"
+                                            style="color:white; min-height: 50px; background-color:{{color.hex_value}};">
+                                            <span class="align-middle">
+                                                {{ color.name }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.hex_value }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.rgb_value }}
+                                            </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+
+                                <h5 id="sg-co-cont" class="mb-3">OHA/SIEI Continuous Color Palettes</h5>
+
+                                {% assign cont_colors = site.data.colors_cont %}
+
+                                <div class="row">
+                                    {% for color in cont_colors %}
+                                        <div class="col-12 mb-2">
+                                            <span class="align-middle">
+                                                {{ color.name | upcase }}
+                                            </span>
+                                        </div>
+
+                                        {% assign cont_values = color.value %}
+
+                                        {% for hex_value in cont_values %}
+                                            <div class="col text-center align-middle mb-1 mr-1"
+                                                style="color:white; min-height: 50px; background-color:{{hex_value}};">
+                                                <span class="">
+                                                    {{ hex_value }}
+                                                </span>
+                                            </div>
+                                        {% endfor %}
+                                    {% endfor %}
+                                </div>
+
+                                <h5 id="sg-co-div" class="mb-3">OHA/SIEI Diverging Color Palettes</h5>
+
+                                <h5 id="sg-co-cat" class="mb-3">OHA/SIEI Categorical Color Palettes</h5>
+
+                                <h5 id="sg-co-pairs" class="mb-3">SIEI Color Pairs</h5>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="{{site.url}}/assets/img/colors/color_pairs.png" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integration with R -->
+            <div class="tab-pane fade"
+                id="r-integration" role="tabpanel"
+                aria-labelledby="tab-r-integration">
+
+                <div class="row">
+                    <!-- Side Menu -->
+                    <div class="col-md-4 col-lg-3">
+                        <nav id="style-guide-submenu" class="list-group">
+                            <a href="#r-toc" class="list-group-item list-group-item-action">TOC</a>
+                            <a href="#r-overview" class="list-group-item list-group-item-action">Overview</a>
+                            <a href="#r-checklist" class="list-group-item list-group-item-action">Visualisation Checklist</a>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-8 col-lg-9">
+                        <img src="https://github.com/USAID-OHA-SI/glitr/raw/master/man/figures/logo.png" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integration with Tableau -->
+            <div class="tab-pane fade"
+                id="tbw-integration" role="tabpanel"
+                aria-labelledby="tab-tbw-integration">
+
+            </div>
+
+
+            <!-- Integration with Excel -->
+            <div class="tab-pane fade"
+                id="xls-integration" role="tabpanel"
+                aria-labelledby="tab-xls-integration">
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</div>
