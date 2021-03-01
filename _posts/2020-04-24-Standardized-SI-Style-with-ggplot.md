@@ -3,7 +3,7 @@ layout: post
 title: SI Standard Style with ggplot
 date: 2020-04-24
 author: Baboyma Kagniniwa
-categories: tutorial
+categories: [vignette]
 tags: [ggplot, vizualisation]
 thumbnail: "iris_scatter_plot_si_style.png"
 ---
