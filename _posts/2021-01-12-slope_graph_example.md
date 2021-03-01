@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "Ranking (slope charts) Example"
-author: Tim Essam \| SI
+author: Tim Essam
 date: 2021-01-12
 categories: [vignette]
 tags: [ggplot]
 ---
 
-Ranking (slope charts) Example
+### Visualizing Rankings (slope plots)
+
+A slope plot or connected line graph is an effective way to show discrete changes across time for a metric.
 
 ```{r}
 # Setup knitr defaults and folder paths

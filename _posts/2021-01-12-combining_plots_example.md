@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Combining Plots To Summarize Achievement"
-author: Tim Essam \| SI
+author: Tim Essam
 date: 2021-01-12
 categories: [vignette]
 tags: [ggplot]
@@ -14,29 +14,29 @@ Sometimes we want to show whether or not a partner has achieve their targets for
 ```{r}
 
 # Spread the data wide for ease of plotting
-  hts_dev <- 
-    hts %>% 
-    filter(indicator == "HTS_TST", 
-           period == "FY49", 
-           period_type != "results") %>% 
-    group_by(primepartner, period_type, indicator) %>% 
-    summarise(partner_totals = sum(value)) %>% 
-    ungroup()  
+  hts_dev <-
+    hts %>%
+    filter(indicator == "HTS_TST",
+           period == "FY49",
+           period_type != "results") %>%
+    group_by(primepartner, period_type, indicator) %>%
+    summarise(partner_totals = sum(value)) %>%
+    ungroup()
 
 # Spread the data to make the acheivement calculations a bit easier
-  hts_dev_wide <- 
-     hts_dev %>% 
-     pivot_wider(names_from = period_type, 
-                 values_from = partner_totals) %>% 
-     mutate(achievement = cumulative / targets) %>% 
-     group_by(indicator) %>% 
-     mutate(annual_results = sum(cumulative), 
-            annual_targets = sum(targets), 
-            annual_achievement = annual_results / annual_targets, 
+  hts_dev_wide <-
+     hts_dev %>%
+     pivot_wider(names_from = period_type,
+                 values_from = partner_totals) %>%
+     mutate(achievement = cumulative / targets) %>%
+     group_by(indicator) %>%
+     mutate(annual_results = sum(cumulative),
+            annual_targets = sum(targets),
+            annual_achievement = annual_results / annual_targets,
             deviation = achievement - annual_achievement,
             partner_order = fct_reorder(
               paste0(primepartner, " ", "(", comma(cumulative), "/", comma(targets), ")"), deviation)
-            ) %>% 
+            ) %>%
      # Remove dedups
      filter(primepartner != "Dedup")
 ```
@@ -47,19 +47,19 @@ We start with a bar graph that summarizes achievement. An effective method for s
 # Create achievement bar graph with negative space highlighting threshold
 # Incorporate text geom to display percent achievement and color bars for partners
 # reaching 100% or higher
-  hts_ach <- 
-    hts_dev_wide %>% 
-    ggplot(aes(x = achievement, 
+  hts_ach <-
+    hts_dev_wide %>%
+    ggplot(aes(x = achievement,
                y = fct_reorder(primepartner, achievement))) +
-    geom_col(aes(x = 1), 
+    geom_col(aes(x = 1),
              fill = grey10k) +
     geom_col(aes(fill = if_else(achievement > 1, genoa, grey60k))) +
-    geom_vline(xintercept = 1, 
-               size = 1.5, 
+    geom_vline(xintercept = 1,
+               size = 1.5,
                colour = "white") +
-    geom_text(aes(x = -.25, 
-                  label = percent(achievement, accuracy = 2), 
-              color = if_else(achievement > 1, genoa, "black")), 
+    geom_text(aes(x = -.25,
+                  label = percent(achievement, accuracy = 2),
+              color = if_else(achievement > 1, genoa, "black")),
               hjust = 0.5) +
     si_style_nolines() +
     scale_x_continuous(position = "top") +
@@ -70,7 +70,7 @@ We start with a bar graph that summarizes achievement. An effective method for s
     #scale_x_continuous(labels = percent) +
     scale_fill_identity() +
     scale_color_identity() +
-    labs(y = NULL) 
+    labs(y = NULL)
 ```
 
 ![bar graph for achievement](https://github.com/USAID-OHA-SI/pretty_in_grey40K/raw/main/examples/images/ach_bar_rhs-02.png "bar graph for achievement")
@@ -79,17 +79,17 @@ Next, we create a basic geom_point graph that takes a filled value when a partne
 
 ```{r}
 # Create geom_point plot that shows whether or not a partner has achieved targets
-  hts_tgt_achieved <- 
-    hts_dev_wide %>% 
+  hts_tgt_achieved <-
+    hts_dev_wide %>%
     mutate(achieved = if_else(achievement > 1, genoa, grey10k),
-            `Targets Achieved` = 1) %>% 
-    ggplot(aes(x = `Targets Achieved`, 
-               y = fct_reorder(primepartner, achievement), 
+            `Targets Achieved` = 1) %>%
+    ggplot(aes(x = `Targets Achieved`,
+               y = fct_reorder(primepartner, achievement),
                fill = achieved)) +
-    geom_point(shape = 21, 
+    geom_point(shape = 21,
                size = 4) +
     scale_fill_identity() +
-    si_style_nolines() + 
+    si_style_nolines() +
     scale_x_discrete(position = "top") +
     theme(axis.text.y =  element_blank(),
           axis.title.y = element_blank())
@@ -104,20 +104,20 @@ Next, we create a column summarizing how near or far a prime partner is from the
 # This will be used to fill in the axis labels with different colors
 
   hts_gap_table <-
-        hts_dev_wide %>% 
+        hts_dev_wide %>%
     mutate(achieved = if_else(achievement > 1, genoa, color_title),
-           `Deficit/Surplus` = 1) %>% 
-    ggplot(aes(x = `Deficit/Surplus`, 
-               y = fct_reorder(primepartner, achievement))) + 
+           `Deficit/Surplus` = 1) %>%
+    ggplot(aes(x = `Deficit/Surplus`,
+               y = fct_reorder(primepartner, achievement))) +
     geom_text(aes(x = `Deficit/Surplus`,
                   label = paste0(comma(cumulative - targets)),
                   color = achieved)
-              ) + 
-    scale_color_identity() + 
-    si_style_nolines() + 
-    scale_x_discrete(position = "top") + 
-    theme(axis.text.y =  element_blank(), 
-          axis.title.y = element_blank()) 
+              ) +
+    scale_color_identity() +
+    si_style_nolines() +
+    scale_x_discrete(position = "top") +
+    theme(axis.text.y =  element_blank(),
+          axis.title.y = element_blank())
 ```
 
 ![gap summary column](https://github.com/USAID-OHA-SI/pretty_in_grey40K/raw/main/examples/images/hts_gap_middle_1.png "gap summary column")
@@ -126,23 +126,23 @@ The final piece of the graphic is a column summarizing the actual cumulative res
 
 ```{r}
 
-  ach_color <- if_else(sort(hts_dev_wide$achievement, decreasing = FALSE) > 1, 
+  ach_color <- if_else(sort(hts_dev_wide$achievement, decreasing = FALSE) > 1,
                      genoa, color_title)
 
-  hts_ach_table <-  
-    hts_dev_wide %>% 
+  hts_ach_table <-
+    hts_dev_wide %>%
     mutate(achieved = if_else(achievement > 1, genoa, color_title),
-            `Results / Targets` = 1) %>% 
-    ggplot(aes(x = `Results / Targets`, 
-               y = fct_reorder(primepartner, achievement), 
+            `Results / Targets` = 1) %>%
+    ggplot(aes(x = `Results / Targets`,
+               y = fct_reorder(primepartner, achievement),
                fill = grey70k)) +
-    geom_text(aes(label = paste0(comma(cumulative), " / ", comma(targets)), 
+    geom_text(aes(label = paste0(comma(cumulative), " / ", comma(targets)),
                   color = achieved)) +
     scale_color_identity() +
     si_style_nolines() +
     scale_x_discrete(position = "top") +
     theme(axis.title.y = element_blank(),
-          axis.text.y = element_text(colour = ach_color, 
+          axis.text.y = element_text(colour = ach_color,
                                      family = "Source Sans Pro SemiBold"))
 ```
 
@@ -153,10 +153,10 @@ The final step is to append each plot together using the `patchwork` package. Th
 ```{r}
 # Put it all together with patchwork
   ach_table_plot <-
-    hts_ach_table + 
-    hts_gap_table + 
-    hts_tgt_achieved + 
-    hts_ach + 
+    hts_ach_table +
+    hts_gap_table +
+    hts_tgt_achieved +
+    hts_ach +
     plot_layout(widths = c(2, 1, 1, 4)) +
     plot_annotation(caption = caption,
          title = "SEVEN OF TWELVE PARTNERS ACHIEVED HTS TARGETS")

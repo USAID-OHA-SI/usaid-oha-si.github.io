@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Bar graph example"
-author: Tim Essam | SI
+author: Tim Essam
 date: 2021-01-12
 categories: [vignette]
 tags: [ggplot]
 ---
+
+Bar graphs are one of the most effective ways of comparing the magnitudes of a metric aross numerous categories. Sorting the bars based on the magnitude (not alphabetically) helps the reader make quick comparisons. Highlighting bars above a given threshold can help distinguish different classes of categories.
 
 ```{r}
 # Setup knitr defaults and folder paths

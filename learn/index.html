@@ -1,22 +1,26 @@
 ---
 layout: default
 permalink: /learn/
-title: SI - Learning
+title: SI - Learning Resources
 ---
 
 <div class="content container">
 
-    <div class="row mt-3">
+    <div class="row">
         <div class="col-12">
-            <h3>Learning Resources</h3>
+            <h1 class="text-uppercase display-5">Learning Resources</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla
-                mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
+            <p class="text-justify">We are a group of analysts, monitoring and evaluation experts,
+                economists, geographers, and public health experts that like to learn from one another.
+                Collaborative learning has helped us grow as a team. Share what you know with others and learn from them in return.</p>
+
+            <p class="text-justify">Below are some of what we’ve been teaching each other. The resources are organised as posts and grouped into categories and tags.</p>
         </div>
     </div>
 
-    <div class="row mt-3">
-        <div class="col-12">
+    <!-- Categories, Tags, Authors -->
+    <div class="row mt-1">
+        <div class="col-4 bg-callout">
             <h4 class="display-5">CATEGORIES</h4>
 
             <div class="tags-expo mb-3">
@@ -28,10 +32,10 @@ title: SI - Learning
                 {% endfor %}
             </div>
         </div>
-    </div>
+    <!-- </div>
 
-    <div class="row mt-3">
-        <div class="col-12">
+    <div class="row mt-3"> -->
+        <div class="col-4 bg-callout">
             <h4 class="display-5">TAGS</h4>
 
             <div class="tags-expo mb-3">
@@ -43,10 +47,10 @@ title: SI - Learning
                 {% endfor %}
             </div>
         </div>
-    </div>
+    <!-- </div>
 
-    <div class="row mt-3">
-        <div class="col-12">
+    <div class="row mt-3"> -->
+        <div class="col-4 bg-callout">
             <h4 class="display-5">AUTHORS</h4>
 
             <div class="tags-expo mb-3">
@@ -54,15 +58,16 @@ title: SI - Learning
                 {% for author in authors %}
                     <a href="./authors/#{{ author.name | slugize}}"
                         class="post-tag badge badge-success">
-                        <i class="fa fa-user-circle"></i> {{ author.name | slugize}}</a>
+                        <i class="fa fa-user-circle"></i> {{ author.name | default:"Not Available" | slugize}}</a>
                 {% endfor %}
             </div>
         </div>
     </div>
 
-    <div class="row mt-3">
+    <!-- Posts -->
+    <div class="row mt-1">
         <div class="col-12">
-            <h4 class="display-5 mb-5">RECENT POSTS</h4>
+            <h4 class="display-5">RECENT POSTS</h4>
         </div>
     </div>
 
@@ -73,10 +78,12 @@ title: SI - Learning
             <div class="card h-100">
                 <!-- Post Thumbnail -->
                 {% if post.thumbnail %}
-                    <img src="/assets/img/tutorials/{{ post.thumbnail }}" class="card-img-top" alt="{{ post.title }}">
+                    <img src="/assets/img/tutorials/{{ post.thumbnail }}"
+                    class="card-img-top"
+                    alt="{{ post.title }}">
                 {% else %}
                     <!-- Get first image's source -->
-                    {% assign post_images = post.content | split:"<img " %}
+                    {% assign post_images = post.content | split:"<img " | reverse %}
 
                     {% for image in post_images %}
 
@@ -123,4 +130,10 @@ title: SI - Learning
         {% endfor %}
     </div>
 
+    <!-- More Post -->
+    <div class="row mt-1">
+        <div class="col-12">
+            <a href="/learn/categories/">Load more ...</a>
+        </div>
+    </div>
 </div>
