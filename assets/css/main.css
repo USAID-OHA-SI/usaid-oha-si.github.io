@@ -358,6 +358,12 @@ body {
     border-left-color: #cfcdc9;
 }
 
+/* Lengths */
+
+.w-1x {
+    width: 100px;
+}
+
 #main-content,
 .content {
     padding-top: 80px;
