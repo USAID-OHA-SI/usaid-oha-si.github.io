@@ -73,7 +73,7 @@ title: SI - Learning
             <div class="card h-100">
                 <!-- Post Thumbnail -->
                 {% if post.thumbnail %}
-                    <img src="/assets/img/tutorials/{{ post.thumbnail }}" class="card-img-top" alt="{{ post.title }}">
+                    <img src="/assets/img/posts/{{ post.thumbnail }}" class="card-img-top" alt="{{ post.title }}">
                 {% else %}
                     <!-- Get first image's source -->
                     {% assign post_images = post.content | split:"<img " %}
