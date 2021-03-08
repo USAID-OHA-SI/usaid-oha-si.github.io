@@ -6,19 +6,19 @@ title: SI - Recurrent tags in posts
 
 <div class="content container">
 
-    <div class="row mt-3">
+    <!-- <div class="row">
         <div class="col-12">
             <h3>POSTS ARE TAGGED</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla
                 mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
         </div>
-    </div>
+    </div> -->
 
-    <div class="row mt-3">
+    <div class="row">
         <div class="col-12">
 
-            <h3>SI POSTS BY TAG</h3>
+            <h3 class="display-5">LIST OF POSTS BY TAG</h3>
 
             <ul>
             {% for tag in site.tags %}
@@ -28,7 +28,10 @@ title: SI - Recurrent tags in posts
                     {% for post in site.tags[tagname] %}
                     <li class="mb-2">
                         <i class="fa fa-file-o" title="post"></i>
-                        <a href="{{ post.url }}">{{ post.title }}</a> <br/> &nbsp;&nbsp;
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <br/> &nbsp;&nbsp;
+                        <span class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 80 }}</span>
+                        <br/> &nbsp;&nbsp;
                         <small>
                             <i class="fa fa-calendar" title="date"></i> {{post.date | date: "%Y-%m-%d" }} &nbsp;&nbsp;
                             <i class="fa fa-user-circle" title="author"></i> {{post.author}} &nbsp;&nbsp;

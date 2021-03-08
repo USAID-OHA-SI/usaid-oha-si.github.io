@@ -5,7 +5,7 @@ date: 2021-01-24
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "/assets/img/posts/20210125_post-thumbnail.png"
+thumbnail: "20210125_post-thumbnail.png"
 ---
 
 I saw a great graphic from the Washington Post (reposted on Twitter this week but actually from an article published three years ago) that I wanted to share.
@@ -23,12 +23,12 @@ And we combine those marks and channels to create different plots.
 Okay, sorry for the digression, but below is the graphic from [Philip Bump](https://twitter.com/pbump) of the Post. Back in 2018, he looked at how frequently White House Press secretaries held the [daily press briefings](https://www.washingtonpost.com/news/politics/wp/2018/08/10/if-we-didnt-know-better-wed-think-sarah-huckabee-sanders-wasnt-interested-in-holding-press-briefings/) and for how long between 2016-2018. To analyze the data, Bump created this plot that is using a number of marks and channels:
 
   - each day is presented by a **point**
-  - **position** is used to encode time 
+  - **position** is used to encode time
   - vertical represents days, horizontal represents months
   - each WH press secretary is encoded with a different **color (hue)**
   - the type of briefing (briefing/gaggle/briefing with third party) is also encoded using color but this time using **saturation**
   - duration is captured by the size/**area** of each circle
-  
+
 ![WH Press Briefings 2016-18](/assets/img/posts/20210125_bump_wh-press-briefings.jfif)
 
 I really like Bump's graphic because it is able to encode a lot of different elements to make for a more robust visualization and because it is a slightly untraditional display of time (we usually just think about time moving along the x axis)

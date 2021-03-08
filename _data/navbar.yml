@@ -1,8 +1,8 @@
 #_data/navbar.yml
 - name: Home
   link: /
-- name: Packages
-  link: /packages/
+- name: Tools
+  link: /tools/
 - name: Projects
   link: /projects/
 # - name: Style Guide

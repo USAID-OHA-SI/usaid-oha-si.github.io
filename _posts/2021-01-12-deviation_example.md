@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Deviation Example"
-author: Tim Essam | SI
+author: Tim Essam
 profile:
 date: 2021-01-12
 categories: [vignette, viz]

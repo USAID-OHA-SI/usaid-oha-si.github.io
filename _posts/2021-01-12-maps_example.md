@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Maps Example"
-author: Tim Essam \| SI
+author: Tim Essam
 date: 2021-01-12
 categories: [vignette]
 tags: [ggplot]

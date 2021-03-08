@@ -1,16 +1,24 @@
 ---
-layout: default 
-title: Projects 
+layout: default
+title: Projects
 ---
 
 <div class="content container">
 
     <div class="row">
         <div class="col-12">
-            <h1>Projects</h1>
+            <h1>Current Projects</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim facilisis risus in vehicula. Cras in lorem a ex ultrices laoreet. Mauris vel egestas tellus. Duis quis risus in leo sodales tincidunt. Proin rhoncus urna mi, vitae fringilla
-                mi commodo eget. Maecenas in egestas mi. Nulla dui velit, vestibulum in ullamcorper ut, ornare et nibh. Integer sit amet tortor eu quam sagittis lacinia id non arcu.</p>
+            <p class="text-justify">Most of our projects to date have been around supporting
+                PEPFAR Country / Region Operational Plans (C/ROP),
+                Oversight and Accountability Response Team (POART),
+                Quarterly Data Reviews, Data Deep Dives, monitoring programs achievement,
+                evaluating impact of COVID on programs implementation,
+                processing and analysing country data.</p>
+
+            <p></p>
+
+
         </div>
     </div>
 
@@ -30,7 +38,7 @@ title: Projects
     </div> {%- endcomment -%}
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        {% assign si_repos = site.data.repos | sort: 'name' %} 
+        {% assign si_repos = site.data.repos | sort: 'name' %}
         {% for repo in si_repos%}
         <div class="col mb-3">
             <div class="card h-100">
@@ -39,7 +47,7 @@ title: Projects
                     <p class="card-text">{{repo.description | default: 'Description is not available ...'}}</p>
                 </div>
                 <div class="card-footer">
-                    <a class="card-link" href="{{repo.html_url}}" target="_blank"><i class="fa fa-github" ></i> 
+                    <a class="card-link" href="{{repo.html_url}}" target="_blank"><i class="fa fa-github" ></i>
                         {% if repo.license.first %} <strong>Package</strong> {% else %} Project {% endif %}
                     </a> <br/>
                     <span>
@@ -56,10 +64,10 @@ title: Projects
     {%- comment -%} <div class="pagination">
         {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}" class="previous">
-                Previous 
+                Previous
             </a>
         {% else %}
-            <span class="previous">Previous </span> 
+            <span class="previous">Previous </span>
         {% endif %}
 
         <span class="page_number ">
