@@ -5,7 +5,7 @@ date: 2021-03-01
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "/assets/img/posts/20210301_schwabish_spectrum.png"
+thumbnail: "20210301_schwabish_spectrum.png"
 ---
 
 Last week, many of us were busy with the release of Q1 data, updating Tableau workbooks and/or creating visuals to support the country and technical teams for quarterly reviews. The visualizations we create exist on two spectrums, form and function, as Jon Schwabish has [nicely laid out](https://urban-institute.medium.com/form-and-function-let-your-audiences-needs-drive-your-data-visualization-choices-3c0603745822) across an assortment of his work over the years. Form represents whether the graphic is static, e.g. a (non animated) graph of table in PowerPoint or interactive, e.g. a visual that the audience can interface with, like a hover over pop up or adjustable parameters/filters in Tableau. The second axis is the function spectrum which consists of explanatory, i.e. trying to convey a purpose with the visuals, and exploratory, i.e. allowing the user to come to their own conclusions with the data at hand.
@@ -19,7 +19,7 @@ I really like this example of a change in form that I saw posted at the end of J
 
 ![Andrews tweet](/assets/img/posts/20210301-andrews-tweet.png)
 
-Andrew's scatter plot is a static exploratory visualization, allowing the audience to peruse the data, seeing where different countries fall (and highlighting the US). This plot is pretty nice and serves a purpose, but isn't in a final state to be presented in say a quarterly review presentation, much like just taking a screenshot of a Tableau workbook  
+Andrew's scatter plot is a static exploratory visualization, allowing the audience to peruse the data, seeing where different countries fall (and highlighting the US). This plot is pretty nice and serves a purpose, but isn't in a final state to be presented in say a quarterly review presentation, much like just taking a screenshot of a Tableau workbook
 
 ![Andrews tweet](/assets/img/posts/20210301-andrews-scatter.png)
 

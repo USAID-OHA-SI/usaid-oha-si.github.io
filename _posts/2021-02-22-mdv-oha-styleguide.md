@@ -5,12 +5,12 @@ date: 2021-02-22
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "/assets/img/posts/20210222-styleguide.png"
+thumbnail: "20210222-styleguide.png"
 ---
 
-For these posts, I usually share some interesting, novel, or important content that I've come across around data visualization principles and techniques. Instead of doing that today, I wanted to share a resource produced in house, that Tim and I with the help of Katya and the rest of the Analytics Standards Group, have been working on for quite a few months now. 
+For these posts, I usually share some interesting, novel, or important content that I've come across around data visualization principles and techniques. Instead of doing that today, I wanted to share a resource produced in house, that Tim and I with the help of Katya and the rest of the Analytics Standards Group, have been working on for quite a few months now.
 
-The [OHA Data Visualization Style Guide](https://issuu.com/achafetz/docs/oha_styleguide) expands upon the 1-page [cheat sheet](https://sites.google.com/a/usaid.gov/gh-oha/home/oha-data-tools-resources/-oha-data-visualization-style-guide-cheat-sheet) released earlier this year. We state in the introduction, 
+The [OHA Data Visualization Style Guide](https://issuu.com/achafetz/docs/oha_styleguide) expands upon the 1-page [cheat sheet](https://sites.google.com/a/usaid.gov/gh-oha/home/oha-data-tools-resources/-oha-data-visualization-style-guide-cheat-sheet) released earlier this year. We state in the introduction,
 
 > This guide should not be viewed as a software specific tool that will tell you how to create visualizations, but rather a tool that lays out the foundational elements of the OHA brand. There are definitely things that you should and should not do when creating a visualization. But, because of the diversity of products used/created across the office, from exploratory to static communication pieces, there is no one size fits all solution to data visualization creation. Instead, this document is simply a guide complete with examples that are to be emulated. The chart types presented herein are not meant to be exhaustive. They are put forth to illustrate a stylistic approach that is consistent, identifiable and built on industry best practices.
 
