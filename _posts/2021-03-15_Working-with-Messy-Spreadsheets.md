@@ -5,7 +5,7 @@ date: 2021-03-15
 author: Aaron Chafetz
 categories: [corps]
 tags: [munging, wrangling, processing]
-thumbnail: "20210315_wexler_stacked.png"
+thumbnail: "div_and_conq.png"
 ---
 
 coRps Session
@@ -57,7 +57,7 @@ McBain writes:
 > sheets later. For the first sheet I broke the problem down into two
 > parts:
 
-![](div_and_conq.png)
+![](/assets/imgs/posts/div_and_conq.png)
 
 > Dealing with A) and B) separately hinges on being able to read in
 > separate data frames from areas within a sheet of an .xlsx file.
