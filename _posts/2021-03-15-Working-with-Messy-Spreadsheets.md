@@ -57,7 +57,7 @@ McBain writes:
 > sheets later. For the first sheet I broke the problem down into two
 > parts:
 
-![](/assets/imgs/posts/div_and_conq.png)
+![](/assets/img/posts/div_and_conq.png)
 
 > Dealing with A) and B) separately hinges on being able to read in
 > separate data frames from areas within a sheet of an .xlsx file.
