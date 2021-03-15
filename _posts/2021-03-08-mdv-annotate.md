@@ -5,10 +5,10 @@ date: 2021-03-08
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "20210308_zhang_dc-thumb.png"
+thumbnail: "20210308_zhang_dc.png"
 ---
 
-As I got started with data viz, I thought the secret to going from a standard graphic to a stellar one was all software based; what cutting edge software is going to allow me to show things with my data that allows me to show data in innovative ways to make my point. But over time, I've found that the key to creating informative graphics is right in front of all of us - our keyboards. Adding context to our plots amplies not just a narrative, but drives home the message we want our audience to come away with and provides key context. 
+As I got started with data viz, I thought the secret to going from a standard graphic to a stellar one was all software based; what cutting edge software is going to allow me to show things with my data that allows me to show data in innovative ways to make my point. But over time, I've found that the key to creating informative graphics is right in front of all of us - our keyboards. Adding context to our plots amplies not just a narrative, but drives home the message we want our audience to come away with and provides key context.
 
 On an [older blog post on her Storytelling With Data blog](https://www.storytellingwithdata.com/blog/2015/02/annotate-with-text), Cole Nussbaumer Knaflic makes these important points
 
@@ -16,7 +16,7 @@ On an [older blog post on her Storytelling With Data blog](https://www.storytell
 
 ![stories have words](/assets/img/posts/20210308_nussbaumerknaflic_words.png)
 
-Cole emphasizes active chart titles over descriptive ones as an important element as well as the use of text to call out important points. 
+Cole emphasizes active chart titles over descriptive ones as an important element as well as the use of text to call out important points.
 
 The Financial Times has a stellar data team and produces plenty of examples of what Cole raises. I really like these examples from a recent [COVID article they produced on vaccine roll out](https://www.ft.com/content/7b0db882-a369-4e32-a86a-eb7fda2a0da0). Christine Zhang uses active titles and subtitles, tells a story across their series of plots, and provides important context with annotation callouts. They also make great use of their typography hierarchy, emphasizing their titles in bold and large size and minimizing the attention to creating text, like the source and notes, with smaller and lighter text.
 
