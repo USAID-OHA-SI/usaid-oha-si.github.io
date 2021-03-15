@@ -8,7 +8,7 @@ tags: [munging, wrangling, processing]
 thumbnail: "div_and_conq.png"
 ---
 
-coRps Session
+coRps Session on Messy Spreadsheets
 
 ### Overview
 
@@ -30,7 +30,7 @@ have to re-run with a new file, everything is good to go.
 So, let’s talk through how to do this using R, which has some great
 packages to make your life a bit easier with this difficult task.
 
-For today’s session, we’re going to go a similar walk through from a
+For today’s session, we’re going to do a similar walk through from a
 great [blog post Miles McBain
 wrote](https://medium.com/@miles.mcbain/tidying-the-australian-same-sex-marriage-postal-survey-data-with-r-5d35cea07962)
 back in 2017. The dataset is the same and we end with a similar result,
