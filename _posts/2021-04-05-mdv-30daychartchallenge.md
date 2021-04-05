@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monday Data Viz 30DayChartChallenge
+title: Monday Data Viz - 30DayChartChallenge
 date: 2021-04-05
 author: Aaron Chafetz
 categories: [data viz]
