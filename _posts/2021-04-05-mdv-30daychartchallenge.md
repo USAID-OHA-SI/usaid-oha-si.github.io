@@ -16,16 +16,16 @@ Each day has a different visualization topic, which is a great way to get you ou
 
 Here's a few examples from the last few days that might inspire you.
 
-Day 1 - (Part-to-Whole)[https://twitter.com/geokaramanis/status/1377687447732162562?s=20]
+Day 1 - [Part-to-Whole](https://twitter.com/geokaramanis/status/1377687447732162562?s=20)
 ![part to whole](/assets/img/posts/20210405_karamanis_part-to-whole.png)
 
-Day 2 - (Pictogram)[https://twitter.com/ShijiaWendy/status/1378136869842509826?s=20]
+Day 2 - [Pictogram](https://twitter.com/ShijiaWendy/status/1378136869842509826?s=20)
 ![pictogram](/assets/img/posts/20210405_shijia_pictogram.png)
 
-Day3 - (Historical)[https://twitter.com/cnicault/status/1378673876171907076?s=20]  
+Day3 - [Historical](https://twitter.com/cnicault/status/1378673876171907076?s=20)  
 ![historical](/assets/img/posts/20210405_nicault_historical.png)
 
-Day 4 - (Magical)[https://twitter.com/ikashnitsky/status/1378673154730647555?s=20]
+Day 4 - [Magical](https://twitter.com/ikashnitsky/status/1378673154730647555?s=20)
 ![magical](/assets/img/posts/20210405_kashnitsky_magical.png)
 
 So get out there, give this a shot and put your data viz skills to the test.
