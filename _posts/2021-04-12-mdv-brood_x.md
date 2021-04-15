@@ -8,7 +8,7 @@ tags: [vizualisation, Monday data viz]
 thumbnail: "20210412_berkowitz-galocha_cicada-distro.png"
 ---
 
-We are just a short wait from something I have been counting down for a while now...17 years to be exact. In the next couple of months, cicadas will descend upon the DMV in full force and be omnipresent, both visually and audibly. These aren't just any cicadas, but the Brood X variety which blanket this region every 17 years. The Bonnie Berkowitz and Artur Galocha of the Washington Post Graphics team had a recent article with fun data viz to get you in the mood for their arrival.
+We are just a short wait from something I have been counting down for a while now...17 years to be exact. In the next couple of months, cicadas will descend upon the DMV in full force and be omnipresent, both visually and audibly. These aren't just any cicadas, but the Brood X variety which blanket this region every 17 years. The Bonnie Berkowitz and Artur Galocha of the Washington Post Graphics team had a [recent article](https://www.washingtonpost.com/climate-environment/2021/03/09/cicadas-broodx-environment/?tidloc=5) with fun data viz to get you in the mood for their arrival.
 
 Here's what a cicada looks like....
 
