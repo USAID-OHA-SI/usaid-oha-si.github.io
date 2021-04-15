@@ -5,7 +5,7 @@ date: 2021-04-12
 author: Aaron Chafetz
 categories: [corps]
 tags: [munging, wrangling, processing, api]
-thumbnail: "20210412_googleapi.png.png"
+thumbnail: "20210412_googleapi.png"
 ---
 
 coRps Session on Google API Workflow
