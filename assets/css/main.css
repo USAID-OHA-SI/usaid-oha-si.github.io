@@ -330,6 +330,30 @@ body {
     border-radius: .25rem;
 }
 
+.bg-callout-info {
+    border-left-color: #17a2b8;
+}
+
+.bg-callout-primary {
+    border-left-color: #007bff;
+}
+
+.bg-callout-secondary {
+    border-left-color: #6c757d;
+}
+
+.bg-callout-success {
+    border-left-color: #28a745;
+}
+
+.bg-callout-danger {
+    border-left-color: #dc3545;
+}
+
+.bg-callout-warning {
+    border-left-color: #ffc107;
+}
+
 .bg-callout-red {
     border-left-color: #ba0c2f;
 }
@@ -420,6 +444,7 @@ a#logo {
     background-color: #F5F5F5;
 }
 
+img.thumbnail,
 .post-thumbnail>img {
     width: 100%;
     height: 200px;
