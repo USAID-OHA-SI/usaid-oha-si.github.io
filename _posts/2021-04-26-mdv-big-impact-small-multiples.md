@@ -7,9 +7,7 @@ categories: [data viz]
 tags: [vizualisation, Monday data viz]
 thumbnail: "20210426_mizra_vaccines-administered.png"
 ---
-Hey all,
-
-Happy Monday! I know we're all overwhelmed with how omnipresent COVID is in all of our lives these days, but I did want to share a good viz I saw on the Post last week. In [their article](https://www.washingtonpost.com/world/interactive/2021/coronavirus-vaccine-inequality-global/), Atthar Mirza and Emily Rauhala explore the the unequal vaccine roll out across the globe, highlighting the fact "that nearly half — 48 percent — of all vaccine doses administered so far have gone to just 16 percent of the world’s population in what the World Bank considers high-income countries." I want to highlight a few features from their graphics
+I know we're all overwhelmed with how omnipresent COVID is in all of our lives these days, but I did want to share a good viz I saw on the Post last week. In [their article](https://www.washingtonpost.com/world/interactive/2021/coronavirus-vaccine-inequality-global/), Atthar Mirza and Emily Rauhala explore the the unequal vaccine roll out across the globe, highlighting the fact "that nearly half — 48 percent — of all vaccine doses administered so far have gone to just 16 percent of the world’s population in what the World Bank considers high-income countries." I want to highlight a few features from their graphics
 
 ![vaccines administered](/assets/img/posts/20210426_mizra_vaccines-administered.png)
 
