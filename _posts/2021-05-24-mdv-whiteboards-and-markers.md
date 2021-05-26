@@ -5,7 +5,7 @@ date: 2021-05-24
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "20210524_porter_bubble.png.png"
+thumbnail: "20210524_porter_bubble.png"
 ---
 
 Our SI jobs are very heavily rooted in data analysis and data viz, spending most of our time digging through our PEPFAR data to support country and technical teams answer their analytic questions and provide visualizations to support/promote their work. We spend countless hours week in and week out crafting quality visualizations to get our points across.  
