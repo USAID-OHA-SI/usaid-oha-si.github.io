@@ -36,13 +36,12 @@ plugins:
   - jekyll-feed
   - jekyll-toc
   #- hex_to_rgb
-  #- jekyll-paginate
+  - jekyll-paginate-v2
 
 pagination:
   enabled: true
-  collections: repos
-  per_page: 12
-  paginate_path: "/projects/page:num/"
+  paginate: 9
+  paginate_path: "/learn/page:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

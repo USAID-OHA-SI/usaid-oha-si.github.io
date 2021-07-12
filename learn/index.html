@@ -1,7 +1,10 @@
 ---
 layout: default
-permalink: /learn/
+#permalink: /learn/
 title: SI - Learning Resources
+pagination:
+    enabled: true
+    collection: posts
 ---
 
 <div class="content container">
@@ -67,6 +70,7 @@ title: SI - Learning Resources
         </div>
     </div>
 
+    <!-- Posts -->
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
         {% assign recent_posts = site.posts | sort: 'date' | reverse %}
         {% for post in recent_posts limit: 9 %}
@@ -132,6 +136,31 @@ title: SI - Learning Resources
         </div>
         {% endfor %}
     </div>
+
+    <!-- Paginations -->
+    <!-- {% if paginator.next_page %}
+        ,"next": "{{ paginator.next_page_path }}"
+    {% endif %}
+
+    {% if paginator.last_page %}
+    ,"prev": "{{ paginator.last_page_path }}"
+    {% endif %}
+
+    {% if paginator.first_page %}
+    ,"first": "{{ paginator.first_page_path }}"
+    {% endif %} -->
+
+    {% if paginator.total_pages > 1 %}
+    <ul>
+        {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a></li>
+        {% endif %}
+        {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a></li>
+        {% endif %}
+    </ul>
+    {% endif %}
+
 
     <!-- More Post -->
     <div class="row mt-1">
