@@ -1,0 +1,42 @@
+[
+    {
+        "name": "denim light",
+        "hex_value": "#bfddff",
+        "rgb_value": "rgb(191, 221, 255)"
+    },
+    {
+        "name": "old rose light",
+        "hex_value": "#ff939a",
+        "rgb_value": "rgb(255, 147, 154)"
+    },
+    {
+        "name": "moody blue light",
+        "hex_value": "#dfd3ff",
+        "rgb_value": "rgb(223, 211, 255)"
+    },
+    {
+        "name": "burnt sienna light",
+        "hex_value": "#ffcaa2",
+        "rgb_value": "rgb(255, 202, 162)"
+    },
+    {
+        "name": "scooter light",
+        "hex_value": "#83dbfb",
+        "rgb_value": "rgb(131, 219, 251)"
+    },
+    {
+        "name": "golden sand light",
+        "hex_value": "#ffdda2",
+        "rgb_value": "rgb(255, 221, 162)"
+    },
+    {
+        "name": "genoa light",
+        "hex_value": "#7ecfc0",
+        "rgb_value": "rgb(126, 207, 192)"
+    },
+    {
+        "name": "trolley grey light",
+        "hex_value": "#e6e6e6",
+        "rgb_value": "rgb(230, 230, 230)"
+    }
+]
