@@ -39,11 +39,9 @@ plugins:
 
 pagination:
   enabled: true
-  #paginate: 9
   per_page: 9
   sort_field: 'date'
   sort_reverse: true
-  #paginate_path: "/learn/page:num/"
   permalink: "/page/:num/"
 
 # Exclude from processing.
