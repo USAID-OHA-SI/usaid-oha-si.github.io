@@ -35,13 +35,16 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-toc
-  #- hex_to_rgb
   - jekyll-paginate-v2
 
 pagination:
   enabled: true
-  paginate: 9
-  paginate_path: "/learn/page:num/"
+  #paginate: 9
+  per_page: 9
+  sort_field: 'date'
+  sort_reverse: true
+  #paginate_path: "/learn/page:num/"
+  permalink: "/page/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
