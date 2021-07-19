@@ -1,10 +1,7 @@
 ---
 layout: default
-#permalink: /learn/
+permalink: /learn/
 title: SI - Learning Resources
-pagination:
-    enabled: true
-    collection: posts
 ---
 
 <div class="content container">
@@ -67,17 +64,26 @@ pagination:
     <div class="row my-1">
         <div class="col-12">
             <h4 class="display-5">RECENT POSTS</h4>
+
+            {% assign ttl_posts = site.posts | size %}
+            {% assign mod_posts = ttl_posts | modulo:site.page_size %}
+
+            {% assign ttl_pages = ttl_posts | minus:mod_posts %}
+            {% assign ttl_pages = ttl_pages | divided_by:site.page_size %}
+            {% if mod_posts > 0 %}
+            {% assign ttl_pages = ttl_pages | plus:1 %}
+            {% endif %}
+
+            <p>Showing {{ site.page_size }} out of {{ ttl_posts }} posts grouped in {{ ttl_pages }} pages</p>
         </div>
     </div>
 
-    <!-- Pagination -->
-    <!-- {% include paginate_posts.html %} -->
+    <!-- Pagination V2 : not working with github-pages -->
 
     <!-- Posts -->
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-        <!-- {% assign recent_posts = site.posts | sort: 'date' | reverse %} -->
-        {% assign recent_posts = paginator.posts | sort: 'date' | reverse %}
-        {% for post in recent_posts %}
+        {% assign recent_posts = site.posts | sort: 'date' | reverse %}
+        {% for post in recent_posts | limit:site.page_size %}
         <div class="col mb-4">
             <div class="card h-100">
                 <!-- Thumbnail -->
@@ -141,13 +147,13 @@ pagination:
         {% endfor %}
     </div>
 
-    <!-- Pagination -->
-    <!-- {% include paginate_posts.html %} -->
+    <!-- Custom Paginations -->
+    {% include paginate_links.html %}
 
-    <!-- More Post -->
-    <!-- <div class="row mt-1">
+    <!-- More Posts -->
+    <div class="row mt-1">
         <div class="col-12">
-            <a href="/learn/categories/">List posts by category ...</a>
+            <a href="/learn/categories/">List of all posts by category ...</a>
         </div>
-    </div> -->
+    </div>
 </div>

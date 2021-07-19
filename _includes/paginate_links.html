@@ -1,0 +1,20 @@
+{% if ttl_posts > 1 %}
+
+    <div class="pagination my-3">
+
+        <span>&laquo; Recent &nbsp;</span>
+
+        {% for page in (1..ttl_pages) %}
+            {% if page == 1 %}
+            <a href="/learn/">{{ page }}</a>
+            {% else %}
+            <!--THIS IS NOT YET WORKING <a href="/learn/page/{{ page }}">{{ page }}</a> -->
+            <a href="/learn/">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+
+        <span>Previous posts &raquo;</span>
+
+    </div>
+
+{% endif %}
