@@ -8,7 +8,7 @@ tags: [vizualisation, Monday data viz]
 thumbnail: "20210913_andre-falk_remake.png"
 ---
 
- Last week I came across an article that had some pretty interesting findings, but had a pretty poor graphic to explain their findings. The article was written by two economists at the University of Bonn in Germany, Peter Andre and Armin Falk, who were using a "global survey of almost 10,000 academic economists to find their opinions on what economic research should look like." Their piece was accompanied by the below graphic, used to show the gap between what surveyed economists think is important versus what actually gets published in journals. 
+ Last week I came across an [article](https://voxeu.org/article/what-s-worth-knowing-economics-global-survey-among-economists) that had some pretty interesting findings, but had a pretty poor graphic to explain their findings. The article was written by two economists at the University of Bonn in Germany, Peter Andre and Armin Falk, who were using a "global survey of almost 10,000 academic economists to find their opinions on what economic research should look like." Their piece was accompanied by the below graphic, used to show the gap between what surveyed economists think is important versus what actually gets published in journals. 
 
 ![Clustered Bar plot](/assets/img/posts/20210913_andre-falk_clustered-bar.png)
 
