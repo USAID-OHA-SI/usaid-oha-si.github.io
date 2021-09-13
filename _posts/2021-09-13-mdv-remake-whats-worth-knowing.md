@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monday Data Viz - Remake: What’s worth knowing in economics?
+title: Monday Data Viz - Remake - What’s worth knowing in economics?
 date: 2021-09-13
 author: Aaron Chafetz
 categories: [data viz]
