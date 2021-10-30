@@ -7,7 +7,7 @@ tags: [vizualisation, Monday data viz]
 thumbnail: "20211101_bui-irwin_rental-car-prices.png"
 ---
 
-Last week, I talked a bit about leveraging the visual hierarchy and gave an example from [Schwabish's 2014 journal article](https://www.aeaweb.org/articles?id=10.1257/jep.28.1.209). Today, I wanted to showcase this effect in the wild.
+{Last week, I talked a bit about leveraging the visual hierarchy](https://usaid-oha-si.github.io/data%20viz/2021/10/25/mdv-visual-hierarchy-1.html) and gave an example from [Schwabish's 2014 journal article](https://www.aeaweb.org/articles?id=10.1257/jep.28.1.209). Today, I wanted to showcase this effect in the wild.
 
 If you look to any news outlet with a graphics team, you will see ample application of the visual hierarchy.  Below is an example from [Quoctrung Bui and Neil Irwin at the New York Times](https://www.nytimes.com/2021/09/20/upshot/car-rental-prices-economy.html), which provides a great example to walk through, going from the most important items at the top of the visual hierarchy all the way to the bottom. Each component in the graphic is there for a reason and relies on different elements (e.g. size, hue, saturation, location, etc) to layer information into a hierarchy.
 
