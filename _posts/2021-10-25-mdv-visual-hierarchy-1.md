@@ -4,7 +4,7 @@ title: Monday Data Viz - Visual Hierachy, Part I
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "20211025_schwabish_no-hierarchy.png"
+thumbnail: "20211025_schwabish_hierarchy.png"
 ---
 
  Data visualization is more than plotting points on a page; it’s a powerful lever to synthesize tens or millions of distinct data points into a digestible product. With this being the case, we spend substantial time artfully crafting each and every visualization to be purposeful and adhere to the best and up to date data visualization practices in the field. We aim to structure our visualizations to convey as much information seamlessly as possible without overburdening the visual or audience, i.e. prioritizing user experience and user interface (UX/UI). We are able to do this first and foremost by maintaining a visual hierarchy, heavily relying on text of varying sizes and gray as a primary color in our palette. 
@@ -15,7 +15,7 @@ To help explain this idea of a visual hierarchy, we can look to [Jon Schwabish�
 
 This task is made challenging by the fact that nothing stands out with no visual hierarchy, which then requires use to rely on the slower attentive processing.  
 
-![hiearchy](/assets/img/posts/20211025_schwabish_no-hierarchy.png)
+![hiearchy](/assets/img/posts/20211025_schwabish_hierarchy.png)
 
 In the second example, Schwabish encodes the visual by adjusting the typeface to bold and reducing the brightness of the font to zero, making it black. In doing so, Schwabish creates a visual hierarchy, allowing the reader to utilize pre-attentive processing to more easily perform this task. In essence, this creates a visual hierarchy, the “way that information is structured and prioritized in a design,” along with elements like size, hue, saturation, location ([Chapman 2019](http://www.toptal.com/designers/ux/visual-hierarchy-infographic)).  Strategically incorporating these elements create layers of information based on importance, making the visuals more meaningful, memorable, and have stronger take-away messaging. 
 
