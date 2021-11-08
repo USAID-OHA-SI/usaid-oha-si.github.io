@@ -15,7 +15,7 @@ Adobe makes the check extremely easy to run and the output is extremely clear. I
 
 ![image.png](/assets/img/posts/20211108_adobe_contrast-tool.png)
 
-Accessibility is important in our own products. For an upcoming presentation, the title slide below was created based on a pre-existing template. As you can quickly tell, the USAID Red against the USAID Blue is not at all readable and likely almost certainly doesn't pass the contrast rate.
+Accessibility is important in our own products. For an upcoming presentation, the title slide below was created based on a pre-existing template. As you can quickly tell, the USAID Red against the USAID Blue is not at all readable and almost certainly doesn't pass the contrast rate.
 
 ![image.png](/assets/img/posts/20211108_usaid_default-slide.png)
 
