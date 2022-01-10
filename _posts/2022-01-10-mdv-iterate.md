@@ -4,7 +4,7 @@ title: Monday Data Viz - Iterate
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "20220110_chafetz_bw-wireframe.png"
+thumbnail: "20220110_chafetz_bw-wireframe-cover.png"
 ---
 
 I hope everyone is having a good New Year so far and back in the saddle to take on 2022. This week I wanted to kick things off with a reminder that creating a (good) graphic is not an easy task and there is a lot of hidden labor behind the final product that everyone sees. The final vision isn't always apparent when you sit down to craft something
