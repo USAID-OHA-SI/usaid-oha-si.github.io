@@ -8,7 +8,7 @@ tags: [r]
 thumbnail: "20220131_rbbs_1-motivation.png"
 ---
 
-Part 1 of the coRps R Build Blocks Series (RBBS). All content can be found on this blog under the `rbbs` category as well as on the [USAID-OHA-SI/coRps GitHub repo](https://github.com/USAID-OHA-SI/coRps).
+Part 1 of the coRps R Building Blocks Series (RBBS). All content can be found on this blog under the `rbbs` category as well as on the [USAID-OHA-SI/coRps GitHub repo](https://github.com/USAID-OHA-SI/coRps).
 
 ## RBBS 1 - Motivation
 
