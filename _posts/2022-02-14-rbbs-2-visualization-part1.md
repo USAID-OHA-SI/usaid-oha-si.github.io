@@ -8,6 +8,8 @@ tags: [r]
 thumbnail: "20220214_rbbs_2-visualization.png"
 ---
 
+Part 2 of the coRps R Building Blocks Series (RBBS). All content can be found on this blog under the `rbbs` category as well as on the [USAID-OHA-SI/coRps GitHub repo](https://github.com/USAID-OHA-SI/coRps).
+
 ## RBBS 2 - Visualization, Part I
 
 For our R Building Blocks session today, we will be kicking everything
