@@ -44,7 +44,7 @@ guide](https://usaid-oha-si.github.io/corps/rbbs/2022/01/28/rbbs-0-setup.html).
 RStudio may seem imposing at first, but in no time you’ll know where
 everything is. Your RStudio will be broken down into 4 main components.
 
-![RStudio IDE](assets/img/posts/20220214_rstudio_ide.png)
+<img src="/assets/img/posts/20220214_rstudio_ide.png" />
 
   - **Source**: this box won’t be here when you first open RStudio. If you
     go to File > New File > R Script, you will see this box. This is
