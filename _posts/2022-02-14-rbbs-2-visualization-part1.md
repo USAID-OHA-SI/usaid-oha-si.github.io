@@ -19,12 +19,12 @@ Science](https://r4ds.had.co.nz/data-visualisation.html).
 ### Learning Objectives
 
 -   Part I
-    -   Become familiar with the RStudio IDE
-    -   Understand the basic framework to build a plot
-    -   Know what aesthetics are
-    -   Understand the difference between adding aesthetics within and
+    - Become familiar with the RStudio IDE
+    - Understand the basic framework to build a plot
+    - Know what aesthetics are
+    - Understand the difference between adding aesthetics within and
         outside of `aes()`
-    -   Able to create small multiples
+    - Able to create small multiples
 
 ### Recording
 
@@ -46,18 +46,18 @@ everything is. Your RStudio will be broken down into 4 main components.
 
 ![RStudio IDE](assets/img/posts/20220214_rstudio_ide.png)
 
--   Source: this box won’t be here when you first open RStudio. If you
+  - **Source**: this box won’t be here when you first open RStudio. If you
     go to File > New File > R Script, you will see this box. This is
     where you can write/save or open your R scripts.
--   Console: below Source, you will have your console. This is where all
+  - **Console**: below Source, you will have your console. This is where all
     your R code is excuted and where the outputs are displayed. If you
     want to run a line as a one off, you can write it here. There is an
     tab here called Terminal, which is where you can run code through
     the command line, git for example.
--   Environment - moving to the upper right hand corner, you have your
+  - **Environment**: moving to the upper right hand corner, you have your
     environment tab. This box contains all the datasets or objects you
     have stored in your current working session.
--   Catch All - this last box has a lot of different features. You can
+  - **Catch All**: this last box has a lot of different features. You can
     see a number of tabs, which allow you to expore your
     directories/files, this is where your graphs will print, and where
     the help files are located.
