@@ -26,7 +26,7 @@ Science](https://r4ds.had.co.nz/data-visualisation.html).
 
 ### Recording
 
-You can use this link to access today’s recording.
+You can use [this link](https://drive.google.com/file/d/1vISNIXCslwYOI4REhABwFY9hSN4E3bae/view?usp=sharing) to access today’s recording.
 
 ### Setup
 
