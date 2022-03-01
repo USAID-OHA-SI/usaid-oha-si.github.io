@@ -32,7 +32,7 @@ For this workflow to work, you will first need to:
   
      `git clone <github-repossitory-url>`
      
-     Eg: `git clone https://github.com/USAID-OHA-SI/Man-Hunt.git`
+     `git clone https://github.com/USAID-OHA-SI/Man-Hunt.git`
      
   + Navigate the newly created project folder and open the `.Rproj` file
   
@@ -44,10 +44,10 @@ For this workflow to work, you will first need to:
     - New Directory > New Project > Enter the directory name and choose the location of your project
     - Existing Directory > Browse to existing folder
     
-![RStudio New Project](assets/img/posts/20220228-rbbs-project-workflow-capture - 1 - RStudio New Project.PNG)
+![RStudio New Project](/assets/img/posts/20220228-rbbs-project-workflow-capture - 1 - RStudio New Project.PNG)
 
 
-![RStudio New Project details](assets/img/posts/20220228-rbbs-project-workflow-capture - 2 - RStudio New Project details.PNG)
+![RStudio New Project details](/assets/img/posts/20220228-rbbs-project-workflow-capture - 2 - RStudio New Project details.PNG)
 
 **Note**: If your RStudio is already opened from existing project, you may want to check the `Open in new session` checkbox to open the project in a new session.
   
@@ -57,18 +57,18 @@ For this workflow to work, you will first need to:
   + identify the directory of your project
   
 ```{r}
-  dir_project <- "~/Documents/project-coRps-test"
+dir_project <- "~/Documents/project-coRps-test"
 ```
 
   + install `usethis` package if not already installed
   
-```{r, message=F}
-# install.packages("usethis")
+```{r, eval=FALSE}
+install.packages("usethis")
 ```
 
   + Load library and execute `create_project` function
   
-```{r, message=F}
+```{r, eval=F}
 library(usethis)
 
 create_project(dir_project)
@@ -76,11 +76,11 @@ create_project(dir_project)
 
   It's also possible to execute a specific function from a package without loading the entire package. Just make sure the package is installed.
 
-```{r, message=F}
+```{r, eval=F}
 usethis::create_project(dir_project)
 ```
 
-![Create Project from console](assets/img/posts/20220228-rbbs-project-workflow-capture - 3 - UseThis Create Project.PNG)
+![Create Project from console](/assets/img/posts/20220228-rbbs-project-workflow-capture - 3 - UseThis Create Project.PNG)
 
 
 ### Enable Version Control for your New Project
@@ -131,7 +131,7 @@ si_setup()
 glamr::si_setup()
 ```
 
-![Create Project Structure](assets/img/posts/20220228-rbbs-project-workflow-capture - 5 - SI Project Structure.PNG)
+![Create Project Structure](/assets/img/posts/20220228-rbbs-project-workflow-capture - 5 - SI Project Structure.PNG)
 
 `si_setup` function is what you need to configure your project. 
 The function contains three sub-function:
