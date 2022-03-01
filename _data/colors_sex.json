@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Female<br/>(Moody Blue)",
+        "hex_value": "#8980cb",
+        "rgb_value": "rgb(137, 128, 203)"
+    },
+    {
+        "name": "Male<br/>(Genoa)",
+        "hex_value": "#287c6f",
+        "rgb_value": "rgb(40, 124, 111)"
+    },
+    {
+        "name": "Other<br/>(Trolley Grey)",
+        "hex_value": "#808080",
+        "rgb_value": "rgb(128, 128, 128)"
+    }
+]

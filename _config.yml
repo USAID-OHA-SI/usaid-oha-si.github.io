@@ -35,14 +35,21 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-toc
-  #- hex_to_rgb
+  #- jekyll-paginate-v2
   #- jekyll-paginate
 
-pagination:
-  enabled: true
-  collections: repos
-  per_page: 12
-  paginate_path: "/projects/page:num/"
+# for jekyll-paginate-v2
+# pagination:
+#   enabled: true
+#   per_page: 9
+#   sort_field: 'date'
+#   sort_reverse: true
+#   permalink: "/page/:num/"
+
+# For jekyll-paginate
+page_size: 9
+#paginate: 9
+#paginate_path: "/page/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

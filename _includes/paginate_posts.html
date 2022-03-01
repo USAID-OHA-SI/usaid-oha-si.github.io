@@ -1,0 +1,29 @@
+{% if paginator.total_pages > 1 %}
+
+    <div class="pagination my-3">
+
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">&laquo; Recent</a>
+    {% else %}
+        <span>&laquo; Recent &nbsp;</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <span>{{ page }}</span>
+        {% elsif page == 1 %}
+        <a href="/learn/">{{ page }} </a>
+        {% else %}
+        <a href="/learn/page/{{ page }}">{{ page }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Previous posts &raquo;</a>
+    {% else %}
+        <span>Previous posts &raquo;</span>
+    {% endif %}
+
+    </div>
+
+{% endif %}

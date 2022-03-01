@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Less then -25%<br/>(old rose light)",
+        "hex_value": "#ff939a",
+        "rgb_value": "rgb(255, 147, 154)"
+    },
+    {
+        "name": "-25 to -10%<br/>(burnt sienna light)",
+        "hex_value": "#ffcaa2",
+        "rgb_value": "rgb(255, 202, 162)"
+    },
+    {
+        "name": "-10 to 10%<br/>(scooter medium)",
+        "hex_value": "#1e87a5",
+        "rgb_value": "rgb(30, 135, 165)"
+    },
+    {
+        "name": "Greater than 10%<br/>(trolley grey light)",
+        "hex_value": "#808080",
+        "rgb_value": "rgb(128, 128, 128)"
+    }
+]

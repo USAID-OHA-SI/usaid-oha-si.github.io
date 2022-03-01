@@ -19,8 +19,8 @@ title: SI - Learning Resources
     </div>
 
     <!-- Categories, Tags, Authors -->
-    <div class="row mt-1">
-        <div class="col-4 bg-callout">
+    <div class="row my-1">
+        <div class="col-4 bg-callout bg-callout-secondary">
             <h4 class="display-5">CATEGORIES</h4>
 
             <div class="tags-expo mb-3">
@@ -32,10 +32,8 @@ title: SI - Learning Resources
                 {% endfor %}
             </div>
         </div>
-    <!-- </div>
 
-    <div class="row mt-3"> -->
-        <div class="col-4 bg-callout">
+        <div class="col-4 bg-callout bg-callout-info">
             <h4 class="display-5">TAGS</h4>
 
             <div class="tags-expo mb-3">
@@ -47,10 +45,8 @@ title: SI - Learning Resources
                 {% endfor %}
             </div>
         </div>
-    <!-- </div>
 
-    <div class="row mt-3"> -->
-        <div class="col-4 bg-callout">
+        <div class="col-4 bg-callout bg-callout-success">
             <h4 class="display-5">AUTHORS</h4>
 
             <div class="tags-expo mb-3">
@@ -65,75 +61,101 @@ title: SI - Learning Resources
     </div>
 
     <!-- Posts -->
-    <div class="row mt-1">
+    <div class="row my-1">
         <div class="col-12">
             <h4 class="display-5">RECENT POSTS</h4>
+
+            {% assign ttl_posts = site.posts | size %}
+            {% assign mod_posts = ttl_posts | modulo:site.page_size %}
+
+            {% assign ttl_pages = ttl_posts | minus:mod_posts %}
+            {% assign ttl_pages = ttl_pages | divided_by:site.page_size %}
+            {% if mod_posts > 0 %}
+            {% assign ttl_pages = ttl_pages | plus:1 %}
+            {% endif %}
+
+            <p>Showing {{ site.page_size }} out of {{ ttl_posts }} posts grouped in {{ ttl_pages }} pages</p>
         </div>
     </div>
 
+    <!-- Pagination V2 : not working with github-pages -->
+    <!-- Custom Paginations -->
+    {% include paginate_links.html %}
+
+    <!-- Posts -->
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
         {% assign recent_posts = site.posts | sort: 'date' | reverse %}
-        {% for post in recent_posts limit: 6 %}
+        {% for post in recent_posts | limit:site.page_size %}
         <div class="col mb-4">
             <div class="card h-100">
-                <!-- Post Thumbnail -->
-                {% if post.thumbnail %}
-                    <img src="/assets/img/tutorials/{{ post.thumbnail }}"
-                    class="card-img-top"
-                    alt="{{ post.title }}">
-                {% else %}
-                    <!-- Get first image's source -->
-                    {% assign post_images = post.content | split:"<img " | reverse %}
-
-                    {% for image in post_images %}
-
-                        {% if image contains 'src=' %}
-                            {% assign image_attrs = image | split:">" | first %}
-                            {% assign attrs = image_attrs | split:" " %}
-
-                            {% for attr in attrs %}
-                                {% if attr contains 'src' %}
-                                    {% assign src = attr %}
-                                    {% break %}
-                                {% endif %}
-                            {% endfor %}
-
-                            {% break %}
-                        {% endif %}
-                    {% endfor %}
-
-                    <!-- Insert Post Image -->
-                    {% if src %}
-                        <img {{ src }} class="card-img-top" alt="Post thumbnail">
+                <!-- Thumbnail -->
+                <div class="post-thumbnail">
+                    <a class="display-5" href="{{ post.url }}">
+                    {% if post.thumbnail %}
+                        <img src="/assets/img/posts/{{ post.thumbnail }}"
+                        class="card-img-top thumbnail"
+                        alt="{{ post.title }}">
                     {% else %}
-                        <img src="/assets/img/g4578.png" class="card-img-top" alt="{{ post.title }}">
+                        <!-- Get first image's source -->
+                        {% assign post_images = post.content | split:"<img " | reverse %}
+
+                        {% for image in post_images %}
+
+                            {% if image contains 'src=' %}
+                                {% assign image_attrs = image | split:">" | first %}
+                                {% assign attrs = image_attrs | split:" " %}
+
+                                {% for attr in attrs %}
+                                    {% if attr contains 'src' %}
+                                        {% assign src = attr %}
+                                        {% break %}
+                                    {% endif %}
+                                {% endfor %}
+
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+
+                        <!-- Insert Post Image -->
+                        {% if src %}
+                            <img {{ src }} class="card-img-top thumbnail" alt="Post thumbnail">
+                        {% else %}
+                            <img src="/assets/img/g4578.png" class="card-img-top thumbnail" alt="{{ post.title }}">
+                        {% endif %}
                     {% endif %}
-                {% endif %}
+                    </a>
+                </div>
 
                 <!-- Post Content -->
                 <div class="card-body">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
+                    <h5 class="card-title">
+                        <a class="display-5" href="{{ post.url }}">
+                            {{ post.title }}
+                        </a>
+                    </h5>
 
-                    <p class="card-text">
-                        <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
-                        <br/>
-                        <small> <i class="fa fa-suitcase"></i> <!-- Categories:--> {% if post.categories %}  {{ post.categories | join: ", " }} {% else %} "N/A" {% endif %}</small>
-                        <br/>
-                        <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
-                        <br/>
-                        <small><a class="display-5" href="{{ post.url }}">Details</a></small>
-                    </p>
+                    <p class="card-text">{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</p>
+                </div>
+                <!-- Post Footer -->
+                <div class="card-footer text-muted">
+                    <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
+                    <br/>
+                    <small> <i class="fa fa-suitcase"></i> <!-- Categories:--> {% if post.categories %}  {{ post.categories | join: ", " }} {% else %} "N/A" {% endif %}</small>
+                    <br/>
+                    <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
 
-    <!-- More Post -->
+    <!-- Custom Paginations -->
+    {% include paginate_links.html %}
+
+    <!-- More Posts -->
     <div class="row mt-1">
         <div class="col-12">
-            <a href="/learn/categories/">Load more ...</a>
+            <a href="/learn/categories/">List of all posts by category ...</a>
         </div>
     </div>
 </div>

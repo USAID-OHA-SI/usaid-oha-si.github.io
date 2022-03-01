@@ -484,7 +484,7 @@ title: Cookbook
                                     Alternatively, if you need to encode a quantitative palette, the continuous palettes on the left was developed using chroma.js
                                     to create perceptible steps in lightness and saturation.</p>
 
-                                <h5 id="sg-co-usaid" class="mb-3">USAID COLOR PALETTE</h5>
+                                <h5 id="sg-co-usaid" class="my-3">USAID COLOR PALETTE</h5>
 
                                 {% assign usaid_colors = site.data.colors_usaid %}
 
@@ -507,7 +507,7 @@ title: Cookbook
                                     {% endfor %}
                                 </div>
 
-                                <h5 id="sg-co-siei" class="mb-3">OHA/SIEI COLOR PALETTE</h5>
+                                <h5 id="sg-co-siei" class="my-3">OHA/SIEI COLOR PALETTE</h5>
 
                                 {% assign siei_colors = site.data.colors_siei %}
 
@@ -530,8 +530,99 @@ title: Cookbook
                                     {% endfor %}
                                 </div>
 
+                                <h5 id="sg-co-siei" class="my-3">OHA/SIEI COLOR PALETTE (light)</h5>
 
-                                <h5 id="sg-co-cont" class="mb-3">OHA/SIEI Continuous Color Palettes</h5>
+                                {% assign siei_lcolors = site.data.colors_siei_lights %}
+
+                                <div class="row">
+                                    {% for color in siei_lcolors %}
+                                        <div class="col text-center mb-1 mr-1"
+                                            style="color:white; min-height: 50px; background-color:{{color.hex_value}};">
+                                            <span class="align-middle">
+                                                {{ color.name }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.hex_value }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.rgb_value }}
+                                            </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+                                <h5 id="sg-co-siei" class="my-3">AGENCIES COLOR PALETTE</h5>
+
+                                {% assign agency_colors = site.data.colors_agency %}
+
+                                <div class="row">
+                                    {% for color in agency_colors %}
+                                        <div class="col text-center mb-1 mr-1"
+                                            style="color:white; min-height: 50px; background-color:{{color.hex_value}};">
+                                            <span class="align-middle">
+                                                {{ color.name }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.hex_value }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.rgb_value }}
+                                            </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+                                <h5 id="sg-co-siei" class="my-3">PROGRAMS PERFORMANCE COLOR PALETTE</h5>
+
+                                {% assign achv_colors = site.data.colors_achv %}
+
+                                <div class="row">
+                                    {% for color in achv_colors %}
+                                        <div class="col text-center mb-1 mr-1"
+                                            style="color:white; min-height: 50px; background-color:{{color.hex_value}};">
+                                            <span class="align-middle">
+                                                {{ color.name }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.hex_value }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.rgb_value }}
+                                            </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+                                <h5 id="sg-co-siei" class="my-3">GENDER COLOR PALETTE</h5>
+
+                                {% assign sex_colors = site.data.colors_sex %}
+
+                                <div class="row">
+                                    {% for color in sex_colors %}
+                                        <div class="col text-center mb-1 mr-1"
+                                            style="color:white; min-height: 50px; background-color:{{color.hex_value}};">
+                                            <span class="align-middle">
+                                                {{ color.name }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.hex_value }}
+                                            </span>
+                                            <br/>
+                                            <span class="align-middle">
+                                                {{ color.rgb_value }}
+                                            </span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+
+                                <h5 id="sg-co-cont" class="my-3">OHA/SIEI Continuous Color Palettes</h5>
 
                                 {% assign cont_colors = site.data.colors_cont %}
 
@@ -556,11 +647,11 @@ title: Cookbook
                                     {% endfor %}
                                 </div>
 
-                                <h5 id="sg-co-div" class="mb-3">OHA/SIEI Diverging Color Palettes</h5>
+                                <!-- <h5 id="sg-co-div" class="my-3">OHA/SIEI Diverging Color Palettes</h5>
 
-                                <h5 id="sg-co-cat" class="mb-3">OHA/SIEI Categorical Color Palettes</h5>
+                                <h5 id="sg-co-cat" class="mb-3">OHA/SIEI Categorical Color Palettes</h5> -->
 
-                                <h5 id="sg-co-pairs" class="mb-3">SIEI Color Pairs</h5>
+                                <h5 id="sg-co-pairs" class="my-3">SIEI Color Pairs</h5>
 
                                 <div class="row">
                                     <div class="col-12">

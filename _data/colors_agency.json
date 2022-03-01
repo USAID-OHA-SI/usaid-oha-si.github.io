@@ -1,0 +1,27 @@
+[
+    {
+        "name": "USAID<br/>(Denim)",
+        "hex_value": "#2057a7",
+        "rgb_value": "rgb(32, 87, 167)"
+    },
+    {
+        "name": "CDC<br/>(Scooter Light)",
+        "hex_value": "#83dbfb",
+        "rgb_value": "rgb(131, 219, 251)"
+    },
+    {
+        "name": "DOD<br/>(Genoa Light)",
+        "hex_value": "#7ecfc0",
+        "rgb_value": "rgb(126, 207, 192)"
+    },
+    {
+        "name": "Peace Corps<br/>(Moody Blue)",
+        "hex_value": "#8980cb",
+        "rgb_value": "rgb(137, 128, 203)"
+    },
+    {
+        "name": "Other<br/>(Trolley Grey)",
+        "hex_value": "#808080",
+        "rgb_value": "rgb(128, 128, 128)"
+    }
+]
