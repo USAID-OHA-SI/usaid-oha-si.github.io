@@ -7,7 +7,7 @@ tags: [vizualisation, Monday data viz]
 thumbnail: "20220307_torban_before-after.png"
 ---
   
-During the Data Visualization Conference last month, I caught a session with [Alli Torban](https://www.allitorban.com/) and really liked what she had to say and her work. My synapses started firing when I saw her name on [a post on Data Literacy](https://dataliteracy.com/how-to-annotate-like-a-designer/?utm_campaign=Blog&utm_content=199247755&utm_medium=social&utm_source=twitter&hss_channel=tw-980970876639133696) last week. In it, Torban discussed cleaning up a visual's annotation with a few key tweeks to make it shine. 
+During the Data Visualization Conference last month, I caught a session with [Alli Torban](https://www.allitorban.com/) and really liked what she had to say and her work. My synapses started firing when I saw her name on [a post on Data Literacy](https://dataliteracy.com/how-to-annotate-like-a-designer/) last week. In it, Torban discussed cleaning up a visual's annotation with a few key tweaks to make it shine. 
 
 Torban outlined three guidelines - keep it simple with as few elements/colors as possible to get your point across; be consistent and purposeful; rely on a textual hierarchy. She takes her sister's  Excel chart (based on her sister's collected data) and vastly improves it, making it look like a more polished product by cleaning up the annotations using these guidelines.
 
