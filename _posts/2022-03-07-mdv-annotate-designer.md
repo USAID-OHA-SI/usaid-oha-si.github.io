@@ -14,3 +14,5 @@ Torban outlined three guidelines - keep it simple with as few elements/colors as
 ![troop movement into Ukraine](/assets/img/posts/20220307_torban_before-after.png)
 
 Check out her post (and quick video at the end) for the specifics!
+
+Happy plotting!
