@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Monday Data Viz - Annotate Like a Designer
+title: Monday Data Viz - Replotting the difference
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
