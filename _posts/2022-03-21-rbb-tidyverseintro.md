@@ -10,7 +10,7 @@ tags: r
 thumbnail: 20220314_rbbs_5-tidyverse-base.png
 ---
 
-For our R Building Blocks session today, we will focus on the
+For our R Building Blocks session today, we will focus on the 
 `tidyverse`. The technical portion of the session will focus on the
 [`dlpyr`](https://dplyr.tidyverse.org/) package for data wrangling.
 
