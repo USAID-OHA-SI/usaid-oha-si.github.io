@@ -27,7 +27,7 @@ the [`readr` package](https://readr.tidyverse.org/).
 
 ### Recording
 
-You can use this link to access today’s recording.
+You can use [this link]() to access today’s recording.
 
 ### Materials
 
