@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "RBBS - 7 Importing Data"
+title: "RBBS - 6 Importing Data"
 date: "2022-03-28"
 author: "Aaron Chafetz"
 categories: [corps, rbbs]
@@ -27,7 +27,7 @@ the [`readr` package](https://readr.tidyverse.org/).
 
 ### Recording
 
-You can use [this link]() to access today’s recording.
+You can use [this link](https://drive.google.com/file/d/190Dg9n_LVkqKbomaKwkZ88avTrTm3WIb/view?usp=sharing) to access today’s recording.
 
 ### Materials
 
