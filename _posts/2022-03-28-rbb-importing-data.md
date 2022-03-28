@@ -5,7 +5,7 @@ date: "2022-03-28"
 author: "Aaron Chafetz"
 categories: [corps, rbbs]
 tags: [r]
-thumbnail: "20220328_rbbs_7-importing-data.png"
+thumbnail: "20220328_rbbs_6-importing-data.png"
 ---
 
 Part 6 of the coRps R Building Blocks Series (RBBS). All content can be found on this blog under the `rbbs` category as well as on the [USAID-OHA-SI/coRps GitHub repo](https://github.com/USAID-OHA-SI/coRps).
@@ -107,7 +107,7 @@ Let’s give `read_csv()`, “a special \[case\] of the more general
 `read_demin()` a go. We just need to provide the file path from our
 working directory to the file and pass that into the first parameter
 (`file`) in `read_csv()`. With R, if you are working on a PC, you will
-need to change the backslashes (”") in your file path to forward slashes
+need to change the backslashes (”\\") in your file path to forward slashes
 (“/”). (The data for this session can be found
 [here](https://github.com/USAID-OHA-SI/coRps/tree/main/2022-03-28)).
 
