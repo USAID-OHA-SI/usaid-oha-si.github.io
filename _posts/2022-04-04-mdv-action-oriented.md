@@ -15,7 +15,7 @@ I saw a blog post last week that filled my thoughts the rest of the week and wan
 
  The above visuals mimic the data and viz from the SWD video Ricks remakes. These two charts have exactly the same data and yet by moving away from program defaults in graphing the data, we went up with two vastly different plots. Ricks uses the following process in her remake. 
 
-![image.png](/assets/img/posts/20220404_ricks_swd-process.png)
+![Storytelling With Data Process Flow](/assets/img/posts/20220404_ricks_swd-process.png)
 
 In the remake, Ricks starts by understanding the context and uses that to play into what graph makes the most sense to use. Next, she declutters the graph and focuses it through applying a number of different data viz principles: reoridents the graph (useful if the category labels were long, but we're just working with dummy numbered ids), orders the categories based on the error rates, uses color to strategically call attention to the particular areas of focus and not all the data, integrates the color legend into the text subtitles and annotations, and includes a baselines (average warehouse in this case).
 
