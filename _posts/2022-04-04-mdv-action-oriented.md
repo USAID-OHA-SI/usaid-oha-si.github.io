@@ -4,12 +4,14 @@ title: Monday Data Viz - Action Oriented Data Viz
 author: Aaron Chafetz
 categories: [data viz]
 tags: [vizualisation, Monday data viz]
-thumbnail: "20220404_ricks_swd-cover.png"
+thumbnail: "20220404_rapp_swd-cover.png"
 ---
 
 I saw a blog post last week that filled my thoughts the rest of the week and wanted to share with you all. In [the post, Albert Rapp](https://albert-rapp.de/post/2022-03-29-recreating-the-swd-look/) draws on a [Storytelling With Data Makeover video](https://youtu.be/st7_vPjq0SU)) by Elizabeth Hardman Ricks and applies it to R. It's fascinating to watch the transformation process occur in R, but what really sticks with me is the end product compared with the original, which doesn't look terribly dissimilar to some of the PEPFAR graphics we frequently see. 
 
-![Rapp original and remake visuals of stacked bars](/assets/img/posts/20220404_rapp_swd-remake.png)
+![Rapp original stacked bars](/assets/img/posts/20220404_rapp_swd-original.png)
+
+![Rapp remake visuals of stacked bars](/assets/img/posts/20220404_rapp_swd-remake.png)
 
  The above visuals mimic the data and viz from the SWD video Ricks remakes. These two charts have exactly the same data and yet by moving away from program defaults in graphing the data, we went up with two vastly different plots. Ricks uses the following process in her remake. 
 
