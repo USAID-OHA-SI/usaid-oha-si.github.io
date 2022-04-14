@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RBBS - 7 Tranformation, Part II
-date: 2022-04-04
+date: 2022-04-11
 author: Josh Davis
 categories: [corps, rbbs]
 tags: [r]
