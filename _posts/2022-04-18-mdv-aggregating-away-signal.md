@@ -15,7 +15,7 @@ By making the data easier to work with and visualize, we are making a decision t
 
 > Informed aggregation simplifies and prioritizes. Uninformed aggregation means you’ll never know what insights you lost.
 
-It's well and fine to just say we should be diving deeper, but what's the call to action? How should we be exploring our large data beyond "uninformed aggregation"? Armstrong draws from a [blog series on exploring time series data](https://observablehq.com/@observablehq/analyzing-time-series-data) that she co-wrote to come up with the following three recommendations. 
+It's well and good to just say we should be diving deeper, but what's the call to action? How should we be exploring our large data beyond "uninformed aggregation"? Armstrong draws from a [blog series on exploring time series data](https://observablehq.com/@observablehq/analyzing-time-series-data) that she co-wrote to come up with the following three recommendations. 
 
 > - **Rearranging the data** to compare “like to like.”
 > - **Augmenting the data with concepts that matter**, like “summer” vs. “winter” or data-defined categories like “high” or “normal” energy usage.
