@@ -37,7 +37,7 @@ Science](https://r4ds.had.co.nz/data-visualisation.html).
 ### Recording
 
 You can use [this
-link](https://drive.google.com/drive/folders/1mNyzqYgONeR1OH9UWkSew9tjE9MdtC7P)
+link](https://drive.google.com/file/d/1bRe8ikYmZk6N2QRfhxvhWbtbgIHbRti4/view?usp=sharing)
 to access today’s recording.
 
 ### Setup
