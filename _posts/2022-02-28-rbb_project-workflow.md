@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "R Projects Workflow"
+title: "RBBS - 3 R Projects Workflow"
 date: "2022-02-28"
 author: "Baboyma Kagniniwa"
 categories: [corps, rbbs]
@@ -9,8 +9,9 @@ thumbnail: "20220228_rbbs_3-visualization.png"
 output: github_document
 ---
 
+Part 3 of the coRps R Building Blocks Series (RBBS). All content can be found on this blog under the `rbbs` category as well as on the [USAID-OHA-SI/coRps GitHub repo](https://github.com/USAID-OHA-SI/coRps).
 
-R Project Workflow with OHA/SI `glamr` Package
+## R Project Workflow with OHA/SI `glamr` Package
 
 ### Introduction
 This RBBS #3 session is a quick walk through of R projects workflows. 

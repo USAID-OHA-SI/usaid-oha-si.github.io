@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: USAID/OHA - Strategic Information
-email: your-email@example.com
+email: sisupport@usaid.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -28,6 +28,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://usaid-oha-si.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: oha-si
 github_username:  usaid-oha-si
+google_analytics: UA-225380292-1
 
 # Build settings
 theme: minima
