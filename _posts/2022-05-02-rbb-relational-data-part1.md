@@ -9,8 +9,7 @@ thumbnail: "20220502_rbbs_9-relational.png"
 output: github_document
 ---
 
-
-
+Relational Data - Part 1: Combining data sets through R/Dplyr Joins.
 
 ## Introduction
 
