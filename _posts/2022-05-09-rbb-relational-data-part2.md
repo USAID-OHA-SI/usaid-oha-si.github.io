@@ -39,10 +39,7 @@ See `part one` of this session for definition and other concepts.
 
 Let's revisit the `MER Structured Dataset (MSD)` we used during last session:
 
-
 ## Load Libraries 
-
-
 
 ```r
 library(tidyverse) # Data munging
@@ -68,9 +65,6 @@ df_msd <- read_msd(file = file_site_im_msd)
 
 MSD - Site by IM data sets comes with ~52 columns
 
-
-
-
 ```
 Rows: 3,176,685
 Columns: 52
@@ -86,7 +80,6 @@ The data sets include 5 key reference tables & the program data:
 - `Data Elements & Disaggregations`
 - `Reporting Periods`
 - `Program - Results Data`
-
 
 
 ```r
