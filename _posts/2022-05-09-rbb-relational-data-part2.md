@@ -6,7 +6,6 @@ author: "Baboyma Kagniniwa"
 categories: [corps, rbbs]
 tags: [r]
 thumbnail: "20220502_rbbs_9-relational.png"
-#output: ioslides_presentation
 output: github_document
 ---
 
