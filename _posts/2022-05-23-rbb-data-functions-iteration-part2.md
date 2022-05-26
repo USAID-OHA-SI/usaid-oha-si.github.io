@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RBBS - 10 Functions/Iteration
+title: RBBS - 10 Functions/Iteration Part II
 date: 2022-05-23
 author: Aaron Chafetz
 categories: [corps, rbbs]
@@ -18,7 +18,7 @@ Part 10 of the coRps R Building Blocks Series (RBBS). All content can be found o
   - Gain an understanding of the loop vs functional programming (purrr) and their differences
 
 ### Recording
-You can use [this link]() to access today's recording.
+You can use [this link](https://drive.google.com/file/d/1csq2B_Xrm3u_pcKjqa4M61xVCEDozSzD/view?usp=sharing) to access today's recording.
 
 ### Material
 
