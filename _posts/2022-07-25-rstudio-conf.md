@@ -17,11 +17,11 @@ Presentation
 
 Resources
 
-[coRps GitHub repo of presentations and materials](github.com/USAID-OHA-SI/coRps) 
+[coRps GitHub repo of presentations and materials](https://github.com/USAID-OHA-SI/coRps) 
 
-[coRps R Building Blocks Series](usaid-oha-si.github.io/learn/categories/#rbbs)
+[coRps R Building Blocks Series](https://usaid-oha-si.github.io/learn/categories/#rbbs)
 
-[Our R Packages](usaid-oha-si.github.io/tools/)
+[Our R Packages](https://usaid-oha-si.github.io/tools/)
 
 [About USAID's Office of HIV/AIDS](https://www.usaid.gov/global-health/health-areas/hiv-and-aids)
 
