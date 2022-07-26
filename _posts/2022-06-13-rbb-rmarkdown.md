@@ -18,7 +18,7 @@ Part 12 of the coRps R Building Blocks Series (RBBS). All content can be found o
   - Learn how to knit a document
 
 ### Recording
-You can use [this link](https://drive.google.com/file/d/1bICxJN_7x2ZaMT8xDCCB6rOTV5nwjBit/view?usp=sharing) to access today's recording.
+USAID staff can use [this link](https://drive.google.com/file/d/1bICxJN_7x2ZaMT8xDCCB6rOTV5nwjBit/view?usp=sharing) to access today's recording (not available to external users).
 
 ### Material
 

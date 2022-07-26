@@ -34,7 +34,7 @@ The session agenda is below:
 2) Spatial Data Acquisition
 3) Spatial Data Visualization
 
-[Here](https://drive.google.com/file/d/1i_zg4QpgtcxvK-w1QttSZzFHxp-pvuNA/view?usp=sharing) is the recording of the session.
+USAID staff can use [this link](https://drive.google.com/file/d/1i_zg4QpgtcxvK-w1QttSZzFHxp-pvuNA/view?usp=sharing) to access today's recording (not available to external users).
 
 ## R Spatial Packages
 

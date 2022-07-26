@@ -28,9 +28,9 @@ for Data Science](https://r4ds.had.co.nz/data-visualisation.html).
 
 ### Recording
 
-You can use [this
+USAID staff can use [this
 link](https://drive.google.com/file/d/1i_zg4QpgtcxvK-w1QttSZzFHxp-pvuNA/view?usp=sharing)
-to access today’s recording.
+to access today’s recording (not available to external users).
 
 ### Materials
 

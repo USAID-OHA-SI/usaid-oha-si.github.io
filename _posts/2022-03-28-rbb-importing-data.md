@@ -27,7 +27,7 @@ the [`readr` package](https://readr.tidyverse.org/).
 
 ### Recording
 
-You can use [this link](https://drive.google.com/file/d/190Dg9n_LVkqKbomaKwkZ88avTrTm3WIb/view?usp=sharing) to access today’s recording.
+USAID staff can use [this link](https://drive.google.com/file/d/190Dg9n_LVkqKbomaKwkZ88avTrTm3WIb/view?usp=sharing) to access today’s recording (not available to external users).
 
 ### Materials
 

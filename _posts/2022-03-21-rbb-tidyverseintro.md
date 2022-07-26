@@ -22,9 +22,9 @@ For our R Building Blocks session today, we will focus on the
 
 ### Recording
 
-You can use [this
+USAID staff can use [this
 link](https://drive.google.com/file/d/1BPkfhGJ2mFtPIwqqb4DqcYkocP55YFWn/view)
-to access today’s recording.
+to access today’s recording (not available to external users).
 
 ### Materials
 

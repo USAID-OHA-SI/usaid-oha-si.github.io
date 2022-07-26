@@ -18,7 +18,7 @@ Part 10 of the coRps R Building Blocks Series (RBBS). All content can be found o
   - Gain an understanding of the loop vs functional programming (purrr) and their differences
 
 ### Recording
-You can use [this link](https://drive.google.com/file/d/1csq2B_Xrm3u_pcKjqa4M61xVCEDozSzD/view?usp=sharing) to access today's recording.
+USAID staff can use [this link](https://drive.google.com/file/d/1csq2B_Xrm3u_pcKjqa4M61xVCEDozSzD/view?usp=sharing) to access today's recording (not available to external users).
 
 ### Material
 

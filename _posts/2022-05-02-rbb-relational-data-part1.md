@@ -32,7 +32,7 @@ Part 1
 
 ## Recordings and Materials
 
-Today's [recordings](https://drive.google.com/file/d/1bppRmdZBjUIyo5UUCYxBXO875ocFCR0m/view?usp=sharing), [code](https://github.com/USAID-OHA-SI/coRps/tree/main/2022-05-02), and materials will be shared through the `coRps Presentations & Recordings` Google Spreadsheet, accessible through coRps calendar invite.
+Today's [recordings](https://drive.google.com/file/d/1bppRmdZBjUIyo5UUCYxBXO875ocFCR0m/view?usp=sharing) (for USAID staff only), [code](https://github.com/USAID-OHA-SI/coRps/tree/main/2022-05-02), and materials will be shared through the `coRps Presentations & Recordings` Google Spreadsheet, accessible through coRps calendar invite.
 
 ## Relational Data?
 

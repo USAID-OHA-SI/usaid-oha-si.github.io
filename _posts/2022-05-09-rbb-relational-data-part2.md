@@ -29,7 +29,7 @@ This session covers a bit of the Computer Science / Information Technology conce
 
 ## Recordings and Materials
 
-Today's [recordings](https://drive.google.com/file/d/1fdL13bfNhtzRoz4EGZ9KuXZBO2z3N238/view?usp=sharing), [code](https://github.com/USAID-OHA-SI/coRps/tree/main/2022-05-09), and materials will be shared through the `coRps Presentations & Recordings` Google Spreadsheet, accessible through coRps calendar invite.
+Today's [recordings](https://drive.google.com/file/d/1fdL13bfNhtzRoz4EGZ9KuXZBO2z3N238/view?usp=sharing) (for USAID staff only), [code](https://github.com/USAID-OHA-SI/coRps/tree/main/2022-05-09), and materials will be shared through the `coRps Presentations & Recordings` Google Spreadsheet, accessible through coRps calendar invite.
 
 ## Relational Data
 

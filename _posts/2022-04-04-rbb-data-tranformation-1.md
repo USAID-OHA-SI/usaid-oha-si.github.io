@@ -19,7 +19,7 @@ Part 7 of the coRps R Building Blocks Series (RBBS). All content can be found on
 
 
 ### Recording
-You can use [this link](https://drive.google.com/file/d/17EM8QGJOFoRwgqjYuOwqmfhmb4jZb1Gh/view?usp=sharing) to access today's recording.
+USAID staff can use [this link](https://drive.google.com/file/d/17EM8QGJOFoRwgqjYuOwqmfhmb4jZb1Gh/view?usp=sharing) to access today's recording (not available to external users).
 
 ### Material
 
