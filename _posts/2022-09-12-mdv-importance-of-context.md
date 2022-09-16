@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Monday Data Viz - The importance of context
