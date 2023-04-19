@@ -7,7 +7,7 @@
 <link href="OHA_SI_infra_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="OHA_SI_infra_presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="OHA_SI_infra_presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.335">
+  <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Tim Essam">
   <meta name="author" content="Karishma Srikanth">
@@ -412,7 +412,7 @@ Karishma Srikanth
 </div>
 </div>
 
-  <p class="date">4/19/27</p>
+  <p class="date">4/19/23</p>
 </section>
 <section>
 <section id="office-of-hivaids" class="title-slide slide level1 center">
@@ -608,14 +608,32 @@ Karishma Srikanth
 </div>
 </div>
 </section>
+<section id="code-reproducibility-through-common-paths" class="slide level2">
+<h2>Code Reproducibility through Common Paths</h2>
+<ul>
+<li class="fragment"><p>To improve reproducibility of our code and encourage collaboration, we created a function that accesses our central data folder paths stored locally in our <code>.Rprofile</code>.</p></li>
+<li class="fragment"><p>This way, when we are collaborating on code as a team, we don’t need to change any paths manually to adjust for different folder paths from machine to machine.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">set_paths</span>(<span class="at">folderpath_msd =</span> <span class="st">"~/Documents/Data"</span>,</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="at">folderpath_datim =</span>  <span class="st">"~/Documents/DATIM"</span>,</span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="at">folderpath_downloads =</span>  <span class="st">"~/Downloads"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img data-src="images/image-1702900836.png"></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>df <span class="ot">&lt;-</span> glamr<span class="sc">::</span><span class="fu">si_path</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  glamr<span class="sc">::</span><span class="fu">return_latest</span>(<span class="st">"OU_IM_FY22"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3"></a>  gophr<span class="sc">::</span><span class="fu">read_psd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+</section>
 <section id="discoverable-content-i" class="slide level2">
 <h2>Discoverable Content I</h2>
 <p>With around 20 analysts on our team, covering over 50 countries, tracking analyses and visualizations can be difficult. To track visualizations we use unique referenced ids that are embedded in graphics using the <code>glue</code> package.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>  <span class="co"># Generate a reference id for a visualization</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>    (ref_id <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>() <span class="sc">|&gt;</span> digest<span class="sc">::</span><span class="fu">sha1</span>() <span class="sc">|&gt;</span> <span class="fu">substr</span>(<span class="at">start =</span> <span class="dv">1</span>, <span class="at">stop =</span> <span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>  <span class="co"># Generate a reference id for a visualization</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>    (ref_id <span class="ot">&lt;-</span> <span class="fu">Sys.time</span>() <span class="sc">|&gt;</span> digest<span class="sc">::</span><span class="fu">sha1</span>() <span class="sc">|&gt;</span> <span class="fu">substr</span>(<span class="at">start =</span> <span class="dv">1</span>, <span class="at">stop =</span> <span class="dv">8</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "8e32330c"</code></pre>
+<pre><code>[1] "ae1d5edd"</code></pre>
 </div>
 </div>
 </section>
@@ -623,35 +641,35 @@ Karishma Srikanth
 <h2>Discoverable Content II</h2>
 <p>We use this unique id in the caption of all visuals, which allows us to search github for content.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="|14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>  <span class="co"># Required libraries</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">library</span>(palmerpenguins) </span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">library</span>(tidyverse)</span>
-<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">library</span>(glue)</span>
-<span id="cb4-5"><a href="#cb4-5"></a></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co"># Create a mock up plot</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a>  p <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb4-8"><a href="#cb4-8"></a>    <span class="fu">summarise</span>(<span class="at">ave_bill_length =</span> <span class="fu">mean</span>(bill_length_mm, <span class="at">na.rm =</span> T), <span class="at">.by =</span> <span class="st">"species"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-9"><a href="#cb4-9"></a>    <span class="fu">mutate</span>(<span class="at">species_order =</span> <span class="fu">fct_reorder</span>(species, ave_bill_length)) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-10"><a href="#cb4-10"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> ave_bill_length, <span class="at">x =</span> species_order, <span class="at">fill =</span> glitr<span class="sc">::</span>si_palettes<span class="sc">$</span>old_rose[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>])) <span class="sc">+</span></span>
-<span id="cb4-11"><a href="#cb4-11"></a>    <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb4-12"><a href="#cb4-12"></a>    glitr<span class="sc">::</span><span class="fu">si_style_ygrid</span>() <span class="sc">+</span></span>
-<span id="cb4-13"><a href="#cb4-13"></a>    <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
-<span id="cb4-14"><a href="#cb4-14"></a>    <span class="fu">labs</span>(<span class="at">caption =</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"SI graph | {ref_id}"</span>),</span>
-<span id="cb4-15"><a href="#cb4-15"></a>         <span class="at">title =</span> <span class="st">"Chinstrap penguins have the longest bill length, on average"</span>, </span>
-<span id="cb4-16"><a href="#cb4-16"></a>         <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Bill length (in mm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="|14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>  <span class="co"># Required libraries</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">library</span>(palmerpenguins) </span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">library</span>(tidyverse)</span>
+<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">library</span>(glue)</span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="co"># Create a mock up plot</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>  p <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb6-8"><a href="#cb6-8"></a>    <span class="fu">summarise</span>(<span class="at">ave_bill_length =</span> <span class="fu">mean</span>(bill_length_mm, <span class="at">na.rm =</span> T), <span class="at">.by =</span> <span class="st">"species"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-9"><a href="#cb6-9"></a>    <span class="fu">mutate</span>(<span class="at">species_order =</span> <span class="fu">fct_reorder</span>(species, ave_bill_length)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-10"><a href="#cb6-10"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> ave_bill_length, <span class="at">x =</span> species_order, <span class="at">fill =</span> glitr<span class="sc">::</span>si_palettes<span class="sc">$</span>old_rose[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>])) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>    <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb6-12"><a href="#cb6-12"></a>    glitr<span class="sc">::</span><span class="fu">si_style_ygrid</span>() <span class="sc">+</span></span>
+<span id="cb6-13"><a href="#cb6-13"></a>    <span class="fu">scale_fill_identity</span>() <span class="sc">+</span></span>
+<span id="cb6-14"><a href="#cb6-14"></a>    <span class="fu">labs</span>(<span class="at">caption =</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"SI graph | {ref_id}"</span>),</span>
+<span id="cb6-15"><a href="#cb6-15"></a>         <span class="at">title =</span> <span class="st">"Chinstrap penguins have the longest bill length, on average"</span>, </span>
+<span id="cb6-16"><a href="#cb6-16"></a>         <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Bill length (in mm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="discoverable-content-iii" class="slide level2">
 <h2>Discoverable Content III</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Print the plot</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>  p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Print the plot</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>  p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="OHA_SI_infra_presentation_files/figure-revealjs/unnamed-chunk-2-1.png" style="width:100.0%" class="r-stretch"></section>
 <section id="corps" class="slide level2">
 <h2>coRps</h2>
-<p>Our mission is to create an inclusive learning/sharing collaborative within USAID’s Office of HIV/AIDS (OHA) where analysts can gain from others’ analytic experiences, primarily in and around R. The focus is on how improving our skills collectively so we can develop and foster principles of conducting analysis and viz that will bleed over to the rest of the office.</p>
+<p>Our mission is to create an inclusive learning/sharing collaborative within USAID's Office of HIV/AIDS (OHA),&nbsp; where analysts can gain from others' analytic experiences, primarily in and around R. The coRps is focused on improving R skills and building a culture or R use for the benefit of OHA.</p>
 
 <img data-src="https://github.com/USAID-OHA-SI/coRps/raw/main/figures/logo.png" width="225" class="r-stretch quarto-figure-left"></section>
 <section id="section" class="slide level2">
