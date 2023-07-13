@@ -459,6 +459,10 @@ img.thumbnail,
     color: rgba(255,255,255, .9) !important;
 }
 
+a.nav-link.dropdown-item {
+    color: #212529 !important;
+}
+
 a.badge {
     color: #ffffff;
 }
