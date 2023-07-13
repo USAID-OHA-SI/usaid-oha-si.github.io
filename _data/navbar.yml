@@ -16,9 +16,9 @@
 - name: Resources
   link: /learn/
   submenu:
-	- name: "Reference Guides"
-	  link: /reference/
-	- name: Presentations
-	  link: /presentations/
-	- name: "Newsletters & coRps"
-	  link: /learn/
+    - name: "Reference Guides"
+      link: /reference/
+    - name: Presentations
+      link: /presentations/
+    - name: "Newsletters & coRps"
+      link: /learn/
