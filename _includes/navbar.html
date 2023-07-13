@@ -10,16 +10,24 @@
         <div class="collapse navbar-collapse" id="app-nav">
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navbar %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
-                    {% if item.submenu[0] %}
-                        <div class="dropdown-menu">
+                {% if item.submenu[0] %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ item.link }}" data-toggle="dropdown">{{ item.name }}</a>
+
+                    <ul class="dropdown-menu">
                         {% for sub in item.submenu %}
-                            <a class="nav-link" href="{{ sub.link }}">{{ sub.name }}</a>
+                        <li>
+                            <a class="nav-link dropdown-item" href="{{ sub.link }}">{{ sub.name }}</a>
+                        </li>
                         {% endfor %}
-                        </div>
-                    {% endif %}
+                    </ul>
+
                 </li>
+                {% else %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{{ item.link }}" data-toggle="dropdown">{{ item.name }}</a>
+                </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
