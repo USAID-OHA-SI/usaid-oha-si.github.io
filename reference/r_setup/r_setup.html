@@ -64,12 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="installing-r-and-rstudio">Installing R and RStudio</h4>
 <p>Working from your USAID laptop, Government Furnished Equipment (GFE), you can install R and RStudio without having to submit a ticket to the M/CIO Help Desk. R is the open-source statistics package that we use for our work and is the engine that powers RStudio Desktop, the user interface or integrated development environment (IDE). RStudio Desktop or another IDE such as Visual Studio Code is not required to use R, but will vastly improve your experience.</p>
 <p>To install both R and RStudio Desktop on your GFE, go to Software Center on your computer (Start &gt; Microsoft Endpoint manager &gt; Software Center) Once there, you can select the Application called “R for Windows” and click “Install”. After that completes, you can then select “RStudio Desktop” and then “Install”. If you run into any issues, first try restarting your machine and if that fails, you can contact <a href="CIO-HELPDESK@usaid.gov">M/CIO Help Desk</a>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="/assets/img/manuals/software-center_r.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Software Center window with R and RStudio highlighted</figcaption><p></p>
-</figure>
-</div>
+<p><img src="images/r_setup-software-center_r.png" class="img-fluid" alt="Software Center window with R and RStudio highlighted"></p>
 <p>If working on a personal machine, you can install R from <a href="https://cran.r-project.org/">CRAN</a>. Select “Download R for Windows” and then “base” and follow the instructions for installing that pop up when you launch the .exe file from your downloads. RStudio Desktop can be installed <a href="https://posit.co/download/rstudio-desktop/">Posit’s website</a> by selecting “Download RStudio Desktop for Windows” and then following the setup instructions.</p>
 </section>
 <section id="installing-rtools" class="level4">
@@ -85,41 +80,32 @@ ul.task-list li input[type="checkbox"] {
 <li>Change dropdown to “Never” for “Save workspace to .RData on exit”</li>
 <li>Uncheck “Always save history (even when not saving .RData)</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="/assets/img/manuals/global-options.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">RStudio Global Options menu with the items above changed</figcaption><p></p>
-</figure>
-</div>
+<p><img src="images/r_setup-global-options.png" class="img-fluid" alt="RStudio Global Options menu with the items above changed"></p>
 </section>
 <section id="storing-snippets" class="level4">
 <h4 class="anchored" data-anchor-id="storing-snippets">Storing Snippets</h4>
 <p>Rstudio code snippets are predefined code shortcuts that can be used to quickly insert commonly used code blocks. The use of snippets can improve coding efficiency, reduce the time spent copying and pasting code from other scripts, and improve the readability of your code by providing a standardized format for your analytical scripts.</p>
 <p>To create your own snippets in Rstudio, go to “Tools &gt; Global Options &gt; Code &gt; Edit Snippets. This will open a file where you can define your custom snippets using a simple syntax.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="/assets/img/manuals/snippets_global-options.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">RStudio Global Options highlighting where to access Snippets</figcaption><p></p>
-</figure>
-</div>
+<p><img src="images/r_setup-snippets_global-options.png" class="img-fluid" alt="RStudio Global Options highlighting where to access Snippets"></p>
 <p>Rstudio comes bundled with a set of built-in snippets that you may have already used without even realizing it. The snippets are not limited to just R, but to all of the different languages you can code in within the Rstudio IDE. In the example below, this snippet sets up the formatting of a script for you. To create a new snippet, follow the syntax in the window and click save. Your snippet is now available for use.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="/assets/img/manuals/snippet-window.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">RStudio Snippet window showing user created setup</figcaption><p></p>
-</figure>
-</div>
+<p><img src="images/r_setup-snippet-window.png" class="img-fluid" alt="RStudio Snippet window showing user created setup"></p>
 <p>For example, if we wanted to create snippet to insert a new object that represents the time right now, we could use the following snippet:</p>
-<p><code>snippet time “insert time right now”     Sys.time()</code> Close your snippet window by hitting save, and return to the console.</p>
+<pre><code>snippet time “insert time right now”     
+   Sys.time()</code></pre>
+<p>Close your snippet window by hitting save, and return to the console.</p>
 <p>When we start typing we will then see the following appear.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="/assets/img/manuals/snippet_insert.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">RStudio Console window showing autofill of Snippet name</figcaption><p></p>
-</figure>
-</div>
+<p><img src="images/r_setup-snippet_insert.png" class="img-fluid" alt="RStudio Console window showing autofill of Snippet name"></p>
 <p>If we hit Tab, the <code>Sys.time()</code> function will be inserted in the console window. When we hit enter, Rstudio will report the current time. While this may not be that useful, you can imagine how useful this may be if you need to insert the date or a repeated chunk of code.</p>
-<p>####Types of snippets There are broadly four different types of snippets available for use or creation. Predefined snippets: RStudio comes with several built-in snippets for common programming tasks. These snippets cover a wide range of R code structures and functions, such as for loops, if statements, function definitions, and more. Triggering snippets: Snippets are triggered by typing a specific keyword followed by pressing the “Tab” key. For example, if you type “for” and then press “Tab,” RStudio will automatically expand the snippet into a basic for loop structure. Tab stops: Snippets may contain tab stops (usually denoted by the ${1}), indicated by numbers or placeholders. These allow you to quickly navigate through the different sections of the snippet by pressing the “Tab” key. For example, if you have a placeholder for a variable name, pressing “Tab” will move the cursor to that position, allowing you to enter the desired variable name. Dynamic snippets: Snippets can be dynamic and include placeholders that are automatically filled with values based on the context. For example, the <code># DATE:   2023-08-01</code> code chunk will insert today’s date into your script.</p>
+</section>
+<section id="types-of-snippets" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-snippets">Types of snippets</h4>
+<p>There are broadly four different types of snippets available for use or creation.</p>
+<ol type="1">
+<li>Predefined snippets: RStudio comes with several built-in snippets for common programming tasks. These snippets cover a wide range of R code structures and functions, such as for loops, if statements, function definitions, and more.</li>
+<li>Triggering snippets: Snippets are triggered by typing a specific keyword followed by pressing the “Tab” key. For example, if you type “for” and then press “Tab,” RStudio will automatically expand the snippet into a basic for loop structure.</li>
+<li>Tab stops: Snippets may contain tab stops (usually denoted by the ${1}), indicated by numbers or placeholders. These allow you to quickly navigate through the different sections of the snippet by pressing the “Tab” key. For example, if you have a placeholder for a variable name, pressing “Tab” will move the cursor to that position, allowing you to enter the desired variable name.</li>
+<li>Dynamic snippets: Snippets can be dynamic and include placeholders that are automatically filled with values based on the context.For example, the “# DATE: r Sys.Date()” code chunk will insert today’s date into your script.</li>
+</ol>
 <p>By using RStudio snippets, you can streamline your coding workflow, reduce repetitive typing, and improve overall productivity when working with R code. We highly encourage you to take advantage of snippets and share your discoveries with the team.</p>
 <p><a href="https://gist.github.com/tessam30/fc775a2f917ea5d62de0f6724c4aeada">Link to SI Snippets</a></p>
 </section>
