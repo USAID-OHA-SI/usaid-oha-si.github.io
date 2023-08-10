@@ -63,7 +63,8 @@ title: SI - Reference Materials
     <div class="row row-cols-1">
         {% assign recent_posts = site.posts | sort: 'date' | reverse %}
         {% for post in recent_posts | limit:site.page_size %}
-        <div class="col">
+        {% if "manual" in post.tags %}
+        <div class="col mb-5">
             <div class="card h-100">
                 <!-- Thumbnail -->
                 <div class="post-thumbnail">
@@ -121,6 +122,7 @@ title: SI - Reference Materials
                 </div>
             </div>
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 
