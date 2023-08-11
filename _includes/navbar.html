@@ -23,7 +23,7 @@
                     </ul>
 
                 </li>
-                {% else if item.link contains "github.com/USAID-OHA-SI" %}
+                {% elsif item.link == "https://github.com/USAID-OHA-SI" %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ item.link }}" target="_blank">{{ item.name }}</a>
                 </li>

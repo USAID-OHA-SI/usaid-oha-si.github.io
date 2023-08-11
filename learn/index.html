@@ -96,7 +96,7 @@ title: SI - Learning Resources
                         <img src="/assets/img/reference/{{ post.thumbnail }}"
                              class="card-img-top thumbnail"
                              alt="{{ post.title }}">
-                        {% else if post.thumbnail and post.category != "manual" %}
+                        {% elsif post.thumbnail and post.category != "manual" %}
                         <img src="/assets/img/posts/{{ post.thumbnail }}"
                              class="card-img-top thumbnail"
                              alt="{{ post.title }}">
@@ -104,7 +104,7 @@ title: SI - Learning Resources
                         <!-- Get first image's source -->
                         {% assign post_images = post.content | split:"<img " | reverse %}
 
-                    {% for image in post_images %}
+                        {% for image in post_images %}
 
                         {% if image contains 'src=' %}
                             {% assign image_attrs = image | split:">" | first %}
