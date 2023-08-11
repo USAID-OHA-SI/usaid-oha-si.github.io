@@ -44,22 +44,7 @@ title: SI - Reference Materials
         {% if post.category == "manual" %}
         <div class="col mb-3">
             <div class="card h-100">
-                <!-- Thumbnail -->
-                <!--
-                <div class="post-thumbnail">
-                    <a class="display-5" href="{{ post.url }}">
-                        {% if post.thumbnail %}
-                        <img src="/assets/img/reference/{{ post.thumbnail }}"
-                             class="card-img-top thumbnail"
-                             alt="{{ post.title }}">
-                        {% else %}
-                            <img src="/assets/img/g4578.png"
-                                 class="card-img-top thumbnail"
-                                 alt="{{ post.title }}">
-                        {% endif %}
-                    </a>
-                </div>
-                -->
+
                 <!-- Post Content -->
                 <div class="card-body">
                     <h5 class="card-title">
@@ -81,6 +66,41 @@ title: SI - Reference Materials
                     <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
                     <br />
                     <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Manual Docs -->
+    <div class="row row-cols-1">
+        {% for man in site.manuals %}
+        {% if man.category == "manual" %}
+        <div class="col mb-3">
+            <div class="card h-100">
+
+                <!-- Post Content -->
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a class="display-5" href="{{ man.url }}">
+                            {{ man.title }}
+                        </a>
+                    </h5>
+                    <p>
+                        {% if post.description and post.description != "" %}
+                        {{man.description}}
+                        {% else %}
+                        For more details on "{{man.title}}, click the link above to open the manual."
+                        {% endif %}
+                    </p>
+                </div>
+
+                <!-- Post Footer -->
+                <div class="card-footer text-muted">
+                    <small> Posted {% if post.author and post.author != "" %} by {{ man.author }} {% endif %} on {{ man.date | date: "%m/%d/%Y" }}</small>
+                    <br />
+                    <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ man.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
                 </div>
             </div>
         </div>

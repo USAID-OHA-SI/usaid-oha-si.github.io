@@ -1,0 +1,140 @@
+---
+layout: default
+---
+<div class="content container">
+    <div class="row mt-3">
+
+        <!-- Sidebar menu to posts -->
+        <div class="d-none d-md-block col-md-3 col-lg-4 mt-3 position-relative">
+
+            <div id="post-sidemenu" class="post-sidemenu card">
+
+                {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item bg-secondary text-light">
+                        <i class="fa fa-list-ul"></i> Other posts
+                        <span class="badge badge-pill badge-light pull-right">{{site.posts.size}}</span></li>
+
+                {% for year in postsByYear %}
+
+                    {% assign bYear = year.name | prepend: "blog-" %}
+
+                    <li class="list-group-item list-group-item-action">
+                        <a href="#{{bYear}}" data-toggle="collapse"
+                            aria-expanded="false" aria-controls="{{bYear}}">
+                            <i class="fa fa-folder-o"></i> {{ year.name }}</a>
+                        <span class="badge badge-pill badge-light pull-right">{{year.items.size}}</span></li>
+
+                    <div id="{{bYear}}" class="collapse">
+
+                        {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+
+                        <ul class="list-group">
+
+                            {% for month in postsByMonth %}
+                            {% assign bMonth = month.name %}
+                            {% assign bMonth = bMonth | prepend: "-" | prepend: bYear %}
+
+                                <li class="list-group-item list-group-item-action">
+                                    <a href="#{{bMonth}}" data-toggle="collapse"
+                                        aria-expanded="false" aria-controls="{{bMonth}}">
+                                        &nbsp; <i class="fa fa-folder-o"></i> {{ month.name }}</a>
+                                    <span class="badge badge-pill badge-light pull-right">{{month.items.size}}</span></li>
+
+                                <div id="{{bMonth}}" class="collapse">
+                                    <ul class="list-group">
+                                        {% for post in month.items %}
+                                            {% assign bDate = post.date | date:"%Y-%m-%d" %}
+                                            {% assign bDate = bDate | prepend:"blog-" %}
+
+                                            <li class="list-group-item list-group-item-action">
+
+                                            {% if post.title == page.title %}
+                                                &nbsp; <i class="fa fa-file"></i>
+                                            {% else %}
+                                                &nbsp; <i class="fa fa-file-o"></i>
+                                            {% endif %}
+
+                                                <a href="{{ post.url }}" class="{{ bDate }}"
+                                                    data-parent="{{bMonth}}">
+                                                    {{ post.title }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                {% endfor %}
+
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Content of the Manual -->
+        <div class="col-sm-12 col-md-9 col-lg-8">
+            <div class="post">
+
+                <h3 class="post-title">{{ page.title }}</h3>
+                <hr/>
+
+                <!-- Metatada -->
+
+                <span>
+                    <!-- Author & date -->
+                    <small>
+                        <i class="fa fa-calendar" title="date"></i> {{ page.date | date: "%Y-%m-%d" }} &nbsp;&nbsp;
+                        <i class="fa fa-user-circle" title="author"></i>
+                        {% if page.author and page.author != "" %} {{ page.author }} {% else %} Not available {% endif %}
+                    </small>
+
+                    <br/>
+
+                    <!-- Categories -->
+                    <small>
+                        <i class="fa fa-folder-open" title="category"></i>
+                        {% if post %}
+                            {% assign categories = post.categories %}
+                        {% else %}
+                            {% assign categories = page.categories %}
+                        {% endif %}
+                        {% for category in categories %}
+                            <a href="{{site.url}}/learn/categories/#{{ category | slugify }}"
+                                class="badge badge-secondary">
+                                {{ category | slugify}}</a>
+                        {% endfor %}
+                    </small>
+
+                     &nbsp;&nbsp;
+
+                    <!-- Tags -->
+                    <small>
+                        <i class="fa fa-tags" title="tag"></i>
+                        {% if post %}
+                            {% assign tags = post.tags %}
+                        {% else %}
+                            {% assign tags = page.tags %}
+                        {% endif %}
+
+                        {% for tag in tags %}
+                            <a href="{{site.url}}/learn/tags/#{{ tag | slugify }}"
+                                class="badge badge-info">
+                                {{ tag | slugify }}</a>
+                        {% endfor %}
+                    </small>
+                </span>
+                <hr/>
+
+                <!-- Content -->
+                <article class="post-content">
+                    {{ content | toc}}
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
