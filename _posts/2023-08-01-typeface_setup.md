@@ -44,7 +44,7 @@ To use non-native fonts in R, you must run a program called `extrafonts`. You wi
     library(extrafont)
     fonts()
 
-![Output in R Console showing Source Sans Pro family installed](/assets/img/reference/img/typeface_setup-typeface_installed.png)
+![Output in R Console showing Source Sans Pro family installed](/assets/img/reference/typeface_setup-typeface_installed.png)
 
 #### Additional Resources
 
