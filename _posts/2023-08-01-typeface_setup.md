@@ -1,9 +1,10 @@
 ---
 title: "Installing Source Sans Pro Typeface"
+description: "This document provide instructions on how to install Source Sans Pro Typeface on your personal computer"
 author: "Aaron Chafetz"
 date: 2023-08-01
 category: "manual"
-tags: [setup]
+tags: [setup, typeface]
 thumbnail: "typeface_setup-usaid-style_font.png"
 ---
 

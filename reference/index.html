@@ -34,38 +34,18 @@ title: SI - Reference Materials
                 <i class="fa fa-book"></i> Installing Source Sans Pro Typeface
             </a>
         </div>
-
     </div>
 
-    <!-- Guidance -->
-    <div class="row my-1">
-        <div class="col-12 bg-callout bg-callout-secondary">
-            <h4 class="display-5 text-uppercase">Guiding Materials</h4>
-
-            <a href="#" target="_blank" class="post-tag badge badge-secondary">
-                <i class="fa fa-th-list"></i> Test guide ...
-            </a>
-        </div>
-    </div>
-
-    <!-- Others -->
-    <div class="row my-1">
-        <div class="col-12 bg-callout bg-callout-secondary">
-            <h4 class="display-5 text-uppercase">Other materials</h4>
-
-            <a href="#" target="_blank" class="post-tag badge badge-secondary">
-                <i class="fa fa-bars"></i> other ...
-            </a>
-        </div>
-    </div>
+    <h3 class="display-5 text-uppercase">User Manuals</h3>
 
     <!-- Manual Posts -->
     <div class="row row-cols-1">
         {% for post in site.posts %}
         {% if post.category == "manual" %}
-        <div class="col mb-5">
+        <div class="col mb-3">
             <div class="card h-100">
                 <!-- Thumbnail -->
+                <!--
                 <div class="post-thumbnail">
                     <a class="display-5" href="{{ post.url }}">
                         {% if post.thumbnail %}
@@ -73,13 +53,13 @@ title: SI - Reference Materials
                              class="card-img-top thumbnail"
                              alt="{{ post.title }}">
                         {% else %}
-                            <img src="/assets/img/g4578.png" 
-                                 class="card-img-top thumbnail" 
+                            <img src="/assets/img/g4578.png"
+                                 class="card-img-top thumbnail"
                                  alt="{{ post.title }}">
                         {% endif %}
                     </a>
                 </div>
-
+                -->
                 <!-- Post Content -->
                 <div class="card-body">
                     <h5 class="card-title">
@@ -87,6 +67,13 @@ title: SI - Reference Materials
                             {{ post.title }}
                         </a>
                     </h5>
+                    <p>
+                        {% if post.description and post.description != "" %}
+                        {{post.description}}
+                        {% else %}
+                        For more details on "{{post.title}}, click the link above to open the manual."
+                        {% endif %}
+                    </p>
                 </div>
 
                 <!-- Post Footer -->
@@ -100,5 +87,25 @@ title: SI - Reference Materials
         {% endif %}
         {% endfor %}
     </div>
+
+    <!-- Guidance -->
+
+    <h3 class="display-5 text-uppercase">Guiding Materials</h3>
+
+    <p>
+        <a href="#" target="_blank" class="post-tag badge badge-secondary">
+            <i class="fa fa-th-list"></i> Test guide ...
+        </a>
+    </p>
+
+    <!-- Others -->
+
+    <h3 class="display-5 text-uppercase">Other materials</h3>
+
+    <p>
+        <a href="#" target="_blank" class="post-tag badge badge-secondary">
+            <i class="fa fa-bars"></i> other ...
+        </a>
+    </p>
 
 </div>
