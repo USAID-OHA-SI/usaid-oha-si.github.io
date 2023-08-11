@@ -4,7 +4,8 @@
 - name: Tools
   link: /tools/
 - name: Projects
-  link: /projects/
+  link: https://github.com/USAID-OHA-SI
+  #link: /projects/
 # - name: Style Guide
 #   link: /styleguide/
 - name: Visualization
