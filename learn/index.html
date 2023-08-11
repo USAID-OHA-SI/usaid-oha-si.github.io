@@ -91,11 +91,15 @@ title: SI - Learning Resources
                 <!-- Thumbnail -->
                 <div class="post-thumbnail">
                     <a class="display-5" href="{{ post.url }}">
-                    {% if post.thumbnail %}
+                        {% if post.thumbnail and post.category == "manual" %}
+                        <img src="/assets/img/reference/{{ post.thumbnail }}"
+                             class="card-img-top thumbnail"
+                             alt="{{ post.title }}">
+                        {% else if post.thumbnail and post.category != "manual" %}
                         <img src="/assets/img/posts/{{ post.thumbnail }}"
-                        class="card-img-top thumbnail"
-                        alt="{{ post.title }}">
-                    {% else %}
+                             class="card-img-top thumbnail"
+                             alt="{{ post.title }}">
+                        {% else %}
                         <!-- Get first image's source -->
                         {% assign post_images = post.content | split:"<img " | reverse %}
 
@@ -103,26 +107,26 @@ title: SI - Learning Resources
 
                             {% if image contains 'src=' %}
                                 {% assign image_attrs = image | split:">" | first %}
-                                {% assign attrs = image_attrs | split:" " %}
+                        {% assign attrs = image_attrs | split:" " %}
 
-                                {% for attr in attrs %}
-                                    {% if attr contains 'src' %}
-                                        {% assign src = attr %}
-                                        {% break %}
-                                    {% endif %}
-                                {% endfor %}
+                        {% for attr in attrs %}
+                        {% if attr contains 'src' %}
+                        {% assign src = attr %}
+                        {% break %}
+                        {% endif %}
+                        {% endfor %}
 
-                                {% break %}
-                            {% endif %}
+                        {% break %}
+                        {% endif %}
                         {% endfor %}
 
                         <!-- Insert Post Image -->
                         {% if src %}
-                            <img {{ src }} class="card-img-top thumbnail" alt="Post thumbnail">
+                        <img {{ src }} class="card-img-top thumbnail" alt="Post thumbnail">
                         {% else %}
-                            <img src="/assets/img/g4578.png" class="card-img-top thumbnail" alt="{{ post.title }}">
+                        <img src="/assets/img/g4578.png" class="card-img-top thumbnail" alt="{{ post.title }}">
                         {% endif %}
-                    {% endif %}
+                        {% endif %}
                     </a>
                 </div>
 
