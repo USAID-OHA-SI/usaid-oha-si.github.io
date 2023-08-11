@@ -21,21 +21,21 @@ title: SI - Learning Resources
     <!-- Categories, Tags, Authors -->
     <div class="row my-1">
         <div class="col-12 bg-callout bg-callout-lightblue">
-            <h4 class="display-5">CATEGORIES</h4>
+            <h4 class="display-5 mb-2">CATEGORIES</h4>
 
-            <div class="tags-expo mb-2">
+            <div class="tags-expo mb-3">
                 {% for category in site.categories %}
                 {% capture categoryname %}{{ category | first }}{% endcapture %}
                 <a href="./categories/#{{ categoryname | slugize}}"
-                   class="post-tag badge badge-secondary">
+                   class="post-tag badge badge-dark">
                     <i class="fa fa-folder"></i> {{categoryname | slugize}}
                 </a>
                 {% endfor %}
             </div>
 
-            <h4 class="display-5">TAGS</h4>
+            <h4 class="display-5 mb-2">TAGS</h4>
 
-            <div class="tags-expo mb-2">
+            <div class="tags-expo mb-3">
                 {% for tag in site.tags %}
                 {% capture tagname %}{{ tag | first }}{% endcapture %}
                 <a href="./tags/#{{ tagname | slugize}}"
@@ -45,13 +45,13 @@ title: SI - Learning Resources
                 {% endfor %}
             </div>
 
-            <h4 class="display-5">AUTHORS</h4>
+            <h4 class="display-5 mb-">AUTHORS</h4>
 
-            <div class="tags-expo mb-2">
+            <div class="tags-expo mb-3">
                 {% assign authors = site.posts | group_by: "author" %}
                 {% for author in authors %}
                 <a href="./authors/#{{ author.name | slugize}}"
-                   class="post-tag badge badge-success">
+                   class="post-tag badge badge-secondary">
                     <i class="fa fa-user-circle"></i> {{ author.name | default:"Not Available" | slugize}}
                 </a>
                 {% endfor %}
