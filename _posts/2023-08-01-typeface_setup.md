@@ -4,7 +4,7 @@ author: "Aaron Chafetz"
 date: 2023-08-01
 category: "manual"
 tags: [setup]
-thumbnail: "usaid-style_font.png"
+thumbnail: "typeface_setup-usaid-style_font.png"
 ---
 
 ## Source Sans Pro Typeface
