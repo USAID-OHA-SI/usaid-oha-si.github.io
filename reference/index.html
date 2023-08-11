@@ -62,7 +62,7 @@ title: SI - Reference Materials
     <!-- Manual Posts -->
     <div class="row row-cols-1">
         {% for post in site.posts %}
-        {% if "manual" in post.categories %}
+        {% if post.category == "manual" %}
         <div class="col mb-5">
             <div class="card h-100">
                 <!-- Thumbnail -->
@@ -73,33 +73,9 @@ title: SI - Reference Materials
                              class="card-img-top thumbnail"
                              alt="{{ post.title }}">
                         {% else %}
-                            <!-- Get first image's source -->
-                            {% assign post_images = post.content | split:"<img " | reverse %}
-
-                            {% for image in post_images %}
-
-                                {% if image contains 'src=' %}
-
-                                    {% assign image_attrs = image | split:">" | first %}
-                                    {% assign attrs = image_attrs | split:" " %}
-
-                                    {% for attr in attrs %}
-                                        {% if attr contains 'src' %}
-                                            {% assign src = attr %}
-                                            {% break %}
-                                        {% endif %}
-                                    {% endfor %}
-
-                                    {% break %}
-                                {% endif %}
-                            {% endfor %}
-
-                            <!-- Insert Post Image -->
-                            {% if src %}
-                                <img {{ src }} class="card-img-top thumbnail" alt="Post thumbnail">
-                            {% else %}
-                                <img src="/assets/img/g4578.png" class="card-img-top thumbnail" alt="{{ post.title }}">
-                            {% endif %}
+                            <img src="/assets/img/g4578.png" 
+                                 class="card-img-top thumbnail" 
+                                 alt="{{ post.title }}">
                         {% endif %}
                     </a>
                 </div>

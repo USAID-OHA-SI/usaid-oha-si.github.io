@@ -2,7 +2,7 @@
 title: "Installing Source Sans Pro Typeface"
 author: "Aaron Chafetz"
 date: 2023-08-01
-categories: [manual]
+category: "manual"
 tags: [setup]
 thumbnail: "usaid-style_font.png"
 ---
