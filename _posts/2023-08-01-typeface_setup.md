@@ -15,7 +15,7 @@ To create standard visualizations across our SI team, we rely on one of USAID's 
 
 ![Snapshot from USAID's Graphic Standards and Partner Co-Branding Guide showing the web typeface as Source Sans Pro Light](/assets/img/reference/usaid-style_font.png)
 
-![](/assets/img/reference/usaid-style_font.png)
+![Source Sans Pro Font](/assets/img/reference/typeface_setup-usaid-style_font.png)
 
 To install the font on your GFE, you can find it in Software Center (Start \> Microsoft Endpoint manager \> Software Center). Once there, you can select the Application called "Source Sans Pro" and click "Install".
 
@@ -44,7 +44,7 @@ To use non-native fonts in R, you must run a program called `extrafonts`. You wi
     library(extrafont)
     fonts()
 
-![Output in R Console showing Source Sans Pro family installed](/assets/img/reference/img/typeface_installed.png)
+![Output in R Console showing Source Sans Pro family installed](/assets/img/reference/img/typeface_setup-typeface_installed.png)
 
 #### Additional Resources
 
