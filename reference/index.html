@@ -93,8 +93,6 @@ title: SI - Reference Materials
                 <div class="card-footer text-muted">
                     <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
                     <br />
-                    <small> <i class="fa fa-suitcase"></i> <!-- Categories:--> {% if post.categories %}  {{ post.categories | join: ", " }} {% else %} "N/A" {% endif %}</small>
-                    <br />
                     <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
                 </div>
             </div>
