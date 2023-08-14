@@ -602,8 +602,9 @@ div.font-ssp > div.col-10 {
     left: 0 !important;
 }
 
-book .book-body, .book .book-body .body-inner {
+book .book-body, 
+.book .book-body .body-inner {
     position: fixed !important;
     top: 110px !important;
-    overflow-y: hidden !important;
+    overflow-y: auto !important;
 }
