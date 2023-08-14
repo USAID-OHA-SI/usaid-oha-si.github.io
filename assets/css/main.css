@@ -393,7 +393,8 @@ body {
     padding-top: 80px !important;
     padding-bottom: 100px !important;
     margin-bottom: 100px !important;
-    height: 100% !important;
+    min-height: 100% !important;
+    height: auto !important;
 }
 
 a#logo {
@@ -585,15 +586,26 @@ div.font-ssp > div.col-10 {
     
 }
 
-.book .book-header.fixed {
-    position: relative !important;
+.book {
+    position: inherit !important;
 }
 
-.book .book-body, .book .book-body .body-inner {
-    position: absolute;
+.book .book-summary {
+    position: absolute !important;
+    top: 80px !important;
+}
+       
+.book .book-header.fixed {
+    position: absolute !important;
+    top: 10px;
+}
+
+
+/*book .book-body, .book .book-body .body-inner {
+    position: absolute !important;
     top: 0;
     left: 0;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
     bottom: 0;
     right: 0;
-}
+}*/
