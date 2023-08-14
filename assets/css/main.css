@@ -592,20 +592,18 @@ div.font-ssp > div.col-10 {
 
 .book .book-summary {
     position: absolute !important;
-    top: 80px !important;
-}
-       
-.book .book-header.fixed {
-    position: absolute !important;
-    top: 10px;
+    top: 110px !important; /* 60 + 50 */
 }
 
+.book .book-header.fixed,
+.book .with-summary .book-header.fixed {
+    position: fixed !important;
+    top: 60px !important;
+    left: 0 !important;
+}
 
-/*book .book-body, .book .book-body .body-inner {
-    position: absolute !important;
-    top: 0;
-    left: 0;
+book .book-body, .book .book-body .body-inner {
+    position: fixed !important;
+    top: 110px !important;
     overflow-y: hidden !important;
-    bottom: 0;
-    right: 0;
-}*/
+}
