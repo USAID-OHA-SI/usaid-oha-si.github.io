@@ -4,155 +4,153 @@ permalink: /reference/
 title: SI - Reference Materials
 ---
 
-<div class="content container">
 
-    <!-- Reference material -->
-    <div class="row">
-        <div class="col-12">
-            <h1 class="text-uppercase display-5">Reference Materials</h1>
-        </div>
+<!-- Reference material -->
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-uppercase display-5">Reference Materials</h1>
     </div>
-
-    <!-- Manuals -->
-    <div class="row my-1">
-        <div class="col-12 bg-callout bg-callout-secondary">
-            <h4 class="display-5 text-uppercase">User Manuals</h4>
-
-            <a href="./background/background.html" target="_blank" class="post-tag badge badge-secondary">
-                <i class="fa fa-book"></i> Background
-            </a>
-
-            <a href="./r_setup/r_setup.html" target="_blank" class="post-tag badge badge-secondary">
-                <i class="fa fa-book"></i> R Setup
-            </a>
-
-            <a href="./base_packages/base_packages.html" target="_blank" class="post-tag badge badge-secondary">
-                <i class="fa fa-book"></i> Installing Our Base Set of Packages
-            </a>
-
-            <a href="./typeface_setup/typeface_setup.html" target="_blank" class="post-tag badge badge-secondary">
-                <i class="fa fa-book"></i> Installing Source Sans Pro Typeface
-            </a>
-        </div>
-    </div>
-
-    <h3 class="display-5 text-uppercase">User Manuals</h3>
-
-    <!-- Manual: Static Reforence -->
-    <div class="row row-cols-1">
-        <div class="col mb-3">
-            <div class="card h-100">
-
-                <!-- Post Content -->
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a class="display-5" href="./book - typeface_setup/accessing-fonts-in-r.html">
-                            Installing Source Sans Pro Typeface
-                        </a>
-                    </h5>
-                    <p>
-                        For more details click the link above to open the manual."
-                    </p>
-                </div>
-
-                <!-- Post Footer -->
-                <div class="card-footer text-muted">
-                    <small> Posted byAaron Chafetz on 08/01/2023</small>
-                    <br />
-                    <small> <i class="fa fa-tags"></i> setup, typeface</small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Manual Posts -->
-    <div class="row row-cols-1">
-        {% for post in site.posts %}
-        {% if post.category == "manual" %}
-        <div class="col mb-3">
-            <div class="card h-100">
-
-                <!-- Post Content -->
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a class="display-5" href="{{ post.url }}">
-                            {{ post.title }}
-                        </a>
-                    </h5>
-                    <p>
-                        {% if post.description and post.description != "" %}
-                        {{post.description}}
-                        {% else %}
-                        For more details on "{{post.title}}, click the link above to open the manual."
-                        {% endif %}
-                    </p>
-                </div>
-
-                <!-- Post Footer -->
-                <div class="card-footer text-muted">
-                    <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
-                    <br />
-                    <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-    <!-- Manual Docs -->
-    <div class="row row-cols-1">
-        {% for man in site.manuals %}
-        {% if man.category == "manual" %}
-        <div class="col mb-3">
-            <div class="card h-100">
-
-                <!-- Post Content -->
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a class="display-5" href="{{ man.url }}">
-                            {{ man.title }}
-                        </a>
-                    </h5>
-                    <p>
-                        {% if post.description and post.description != "" %}
-                        {{man.description}}
-                        {% else %}
-                        For more details on "{{man.title}}, click the link above to open the manual."
-                        {% endif %}
-                    </p>
-                </div>
-
-                <!-- Post Footer -->
-                <div class="card-footer text-muted">
-                    <small> Posted {% if post.author and post.author != "" %} by {{ man.author }} {% endif %} on {{ man.date | date: "%m/%d/%Y" }}</small>
-                    <br />
-                    <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ man.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-    <!-- Guidance -->
-
-    <h3 class="display-5 text-uppercase">Guiding Materials</h3>
-
-    <p>
-        <a href="#" target="_blank" class="post-tag badge badge-secondary">
-            <i class="fa fa-th-list"></i> Test guide ...
-        </a>
-    </p>
-
-    <!-- Others -->
-
-    <h3 class="display-5 text-uppercase">Other materials</h3>
-
-    <p>
-        <a href="#" target="_blank" class="post-tag badge badge-secondary">
-            <i class="fa fa-bars"></i> other ...
-        </a>
-    </p>
-
 </div>
+
+<!-- Manuals -->
+<div class="row my-1">
+    <div class="col-12 bg-callout bg-callout-secondary">
+        <h4 class="display-5 text-uppercase">User Manuals</h4>
+
+        <a href="./background/background.html" target="_blank" class="post-tag badge badge-secondary">
+            <i class="fa fa-book"></i> Background
+        </a>
+
+        <a href="./r_setup/r_setup.html" target="_blank" class="post-tag badge badge-secondary">
+            <i class="fa fa-book"></i> R Setup
+        </a>
+
+        <a href="./base_packages/base_packages.html" target="_blank" class="post-tag badge badge-secondary">
+            <i class="fa fa-book"></i> Installing Our Base Set of Packages
+        </a>
+
+        <a href="./typeface_setup/typeface_setup.html" target="_blank" class="post-tag badge badge-secondary">
+            <i class="fa fa-book"></i> Installing Source Sans Pro Typeface
+        </a>
+    </div>
+</div>
+
+<h3 class="display-5 text-uppercase">User Manuals</h3>
+
+<!-- Manual: Static Reforence -->
+<div class="row row-cols-1">
+    <div class="col mb-3">
+        <div class="card h-100">
+
+            <!-- Post Content -->
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a class="display-5" href="./book - typeface_setup/accessing-fonts-in-r.html">
+                        Installing Source Sans Pro Typeface
+                    </a>
+                </h5>
+                <p>
+                    For more details click the link above to open the manual
+                </p>
+            </div>
+
+            <!-- Post Footer -->
+            <div class="card-footer text-muted">
+                <small> Posted byAaron Chafetz on 08/01/2023</small>
+                <br />
+                <small> <i class="fa fa-tags"></i> setup, typeface</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Manual Posts -->
+<div class="row row-cols-1">
+    {% for post in site.posts %}
+    {% if post.category == "manual" %}
+    <div class="col mb-3">
+        <div class="card h-100">
+
+            <!-- Post Content -->
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a class="display-5" href="{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                </h5>
+                <p>
+                    {% if post.description and post.description != "" %}
+                    {{post.description}}
+                    {% else %}
+                    For more details on "{{post.title}}, click the link above to open the manual."
+                    {% endif %}
+                </p>
+            </div>
+
+            <!-- Post Footer -->
+            <div class="card-footer text-muted">
+                <small> Posted {% if post.author and post.author != "" %} by {{ post.author }} {% endif %} on {{ post.date | date: "%m/%d/%Y" }}</small>
+                <br />
+                <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ post.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<!-- Manual Docs -->
+<div class="row row-cols-1">
+    {% for man in site.manuals %}
+    {% if man.category == "manual" %}
+    <div class="col mb-3">
+        <div class="card h-100">
+
+            <!-- Post Content -->
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a class="display-5" href="{{ man.url }}">
+                        {{ man.title }}
+                    </a>
+                </h5>
+                <p>
+                    {% if post.description and post.description != "" %}
+                    {{man.description}}
+                    {% else %}
+                    For more details on "{{man.title}}, click the link above to open the manual."
+                    {% endif %}
+                </p>
+            </div>
+
+            <!-- Post Footer -->
+            <div class="card-footer text-muted">
+                <small> Posted {% if post.author and post.author != "" %} by {{ man.author }} {% endif %} on {{ man.date | date: "%m/%d/%Y" }}</small>
+                <br />
+                <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ man.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<!-- Guidance -->
+
+<h3 class="display-5 text-uppercase">Guiding Materials</h3>
+
+<p>
+    <a href="#" target="_blank" class="post-tag badge badge-secondary">
+        <i class="fa fa-th-list"></i> Test guide ...
+    </a>
+</p>
+
+<!-- Others -->
+
+<h3 class="display-5 text-uppercase">Other materials</h3>
+
+<p>
+    <a href="#" target="_blank" class="post-tag badge badge-secondary">
+        <i class="fa fa-bars"></i> other ...
+    </a>
+</p>
+
