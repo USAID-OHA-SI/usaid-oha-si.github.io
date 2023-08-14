@@ -3,83 +3,81 @@ layout: default
 title: Projects
 ---
 
-<div class="content container">
 
-    <div class="row">
-        <div class="col-12">
-            <h1>Current Projects</h1>
+<div class="row">
+    <div class="col-12">
+        <h1>Current Projects</h1>
 
-            <p class="text-justify">Most of our projects to date have been around supporting
-                PEPFAR Country / Region Operational Plans (C/ROP),
-                Oversight and Accountability Response Team (POART),
-                Quarterly Data Reviews, Data Deep Dives, monitoring programs achievement,
-                evaluating impact of COVID on programs implementation,
-                processing and analysing country data.</p>
+        <p class="text-justify">Most of our projects to date have been around supporting
+            PEPFAR Country / Region Operational Plans (C/ROP),
+            Oversight and Accountability Response Team (POART),
+            Quarterly Data Reviews, Data Deep Dives, monitoring programs achievement,
+            evaluating impact of COVID on programs implementation,
+            processing and analysing country data.</p>
 
-            <p></p>
+        <p></p>
 
-
-        </div>
-    </div>
-
-    {%- comment -%}
-    <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-3">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Repo</h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-                <div class="card-footer">
-                    <a class="card-link" href="#">Github Repo</a>
-                </div>
-            </div>
-        </div>
-    </div> {%- endcomment -%}
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        {% assign si_repos = site.data.repos | sort: 'name' %}
-        {% for repo in si_repos%}
-        <div class="col mb-3">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">{{repo.name}}</h5>
-                    <p class="card-text">{{repo.description | default: 'Description is not available ...'}}</p>
-                </div>
-                <div class="card-footer">
-                    <a class="card-link" href="{{repo.html_url}}" target="_blank"><i class="fa fa-github" ></i>
-                        {% if repo.license.first %} <strong>Package</strong> {% else %} Project {% endif %}
-                    </a> <br/>
-                    <span>
-                        <small>Language: {{repo.language | default: 'Not available'}} - Created on {{repo.created_at | date: '%Y-%m-%d'}}</small>
-                    </span>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
 
     </div>
+</div>
 
-    <!-- Pagination links -->
-    {%- comment -%} <div class="pagination">
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="previous">
-                Previous
-            </a>
-        {% else %}
-            <span class="previous">Previous </span>
-        {% endif %}
+{%- comment -%}
+<div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Repo</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="card-footer">
+                <a class="card-link" href="#">Github Repo</a>
+            </div>
+        </div>
+    </div>
+</div> {%- endcomment -%}
 
-        <span class="page_number ">
-             Page: {{ paginator.page }} of {{ paginator.total_pages }}
-        </span>
-
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next"> Next</a>
-        {% else %}
-            <span class="next "> Next</span>
-        {% endif %}
-
-    </div> {%- endcomment -%}
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+    {% assign si_repos = site.data.repos | sort: 'name' %}
+    {% for repo in si_repos%}
+    <div class="col mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{repo.name}}</h5>
+                <p class="card-text">{{repo.description | default: 'Description is not available ...'}}</p>
+            </div>
+            <div class="card-footer">
+                <a class="card-link" href="{{repo.html_url}}" target="_blank"><i class="fa fa-github" ></i>
+                    {% if repo.license.first %} <strong>Package</strong> {% else %} Project {% endif %}
+                </a> <br/>
+                <span>
+                    <small>Language: {{repo.language | default: 'Not available'}} - Created on {{repo.created_at | date: '%Y-%m-%d'}}</small>
+                </span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 
 </div>
+
+<!-- Pagination links -->
+{%- comment -%} <div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+        </a>
+    {% else %}
+        <span class="previous">Previous </span>
+    {% endif %}
+
+    <span class="page_number ">
+            Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next"> Next</a>
+    {% else %}
+        <span class="next "> Next</span>
+    {% endif %}
+
+</div> {%- endcomment -%}
+

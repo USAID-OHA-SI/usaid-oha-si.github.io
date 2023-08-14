@@ -26,12 +26,11 @@
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
-
     <!-- Include navigation bar here -->
     {% include navbar.html %}
 
     <!-- Add Content block here -->
-    {{ content }}
+    <div class="content container">{{ content }}</div>
 
 
     <!-- Include footer here -->
@@ -70,7 +69,7 @@
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-        window.ga = function() {
+        window.ga = function () {
             ga.q.push(arguments)
         };
         ga.q = [];
