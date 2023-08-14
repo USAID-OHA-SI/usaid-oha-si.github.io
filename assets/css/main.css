@@ -578,3 +578,22 @@ div.font-ssp > div.col-10 {
  .tool-icons {
 
  }
+
+ /* Bookdown Styles - Overwrite */
+.book.font-family-1 {
+    font-family: 'Source sans pro' !important;
+    
+}
+
+.book .book-header.fixed {
+    position: relative !important;
+}
+
+.book .book-body, .book .book-body .body-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    bottom: 0;
+    right: 0;
+}
