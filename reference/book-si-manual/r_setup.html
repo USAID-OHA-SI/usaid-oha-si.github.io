@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>R guide for Strategic Information Advisors - 4&nbsp; Installing R, RStudio, RTools</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./typeface_setup.html" rel="next">
+<link href="./background.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installing R, RStudio, RTools</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">R guide for Strategic Information Advisors</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./background.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Background</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r_setup.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installing R, RStudio, RTools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./typeface_setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing Source Sans Pro Typeface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git_setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Installing git &amp; git client</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./r_project_setup.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Setting up a project</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./base_packages.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Installing our base set of packages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./access_store_data.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Storing and accessing PEPFAR data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./creds_mgmt.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Credential management</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#installing-r-and-rstudio" id="toc-installing-r-and-rstudio" class="nav-link active" data-scroll-target="#installing-r-and-rstudio"><span class="toc-section-number">4.1</span>  Installing R and RStudio</a></li>
+  <li><a href="#installing-rtools" id="toc-installing-rtools" class="nav-link" data-scroll-target="#installing-rtools"><span class="toc-section-number">4.2</span>  Installing Rtools</a></li>
+  <li><a href="#rstudio-global-options" id="toc-rstudio-global-options" class="nav-link" data-scroll-target="#rstudio-global-options"><span class="toc-section-number">4.3</span>  RStudio Global Options</a></li>
+  <li><a href="#storing-snippets" id="toc-storing-snippets" class="nav-link" data-scroll-target="#storing-snippets"><span class="toc-section-number">4.4</span>  Storing Snippets</a></li>
+  <li><a href="#types-of-snippets" id="toc-types-of-snippets" class="nav-link" data-scroll-target="#types-of-snippets"><span class="toc-section-number">4.5</span>  Types of snippets</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources"><span class="toc-section-number">4.6</span>  Additional Resources</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Installing R, RStudio, RTools</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="installing-r-and-rstudio" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="installing-r-and-rstudio"><span class="header-section-number">4.1</span> Installing R and RStudio</h2>
+<p>Working from your USAID laptop, Government Furnished Equipment (GFE), you can install R and RStudio without having to submit a ticket to the M/CIO Help Desk. R is the open-source statistics package that we use for our work and is the engine that powers RStudio Desktop, the user interface or integrated development environment (IDE). RStudio Desktop or another IDE such as Visual Studio Code is not required to use R, but will vastly improve your experience.</p>
+<p>To install both R and RStudio Desktop on your GFE, go to Software Center on your computer (Start &gt; Microsoft Endpoint manager &gt; Software Center) Once there, you can select the Application called “R for Windows” and click “Install”. After that completes, you can then select “RStudio Desktop” and then “Install”. If you run into any issues, first try restarting your machine and if that fails, you can contact <a href="CIO-HELPDESK@usaid.gov">M/CIO Help Desk</a>.</p>
+<p><img src="images/r_setup-software-center_r.png" class="img-fluid" alt="Software Center window with R and RStudio highlighted"></p>
+<p>If working on a personal machine, you can install R from <a href="https://cran.r-project.org/">CRAN</a>. Select “Download R for Windows” and then “base” and follow the instructions for installing that pop up when you launch the .exe file from your downloads. RStudio Desktop can be installed <a href="https://posit.co/download/rstudio-desktop/">Posit’s website</a> by selecting “Download RStudio Desktop for Windows” and then following the setup instructions.</p>
+</section>
+<section id="installing-rtools" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="installing-rtools"><span class="header-section-number">4.2</span> Installing Rtools</h2>
+<p>If you are working on a GFE, you will need to submit a ticket to <a href="CIO-HELPDESK@usaid.gov">M/CIO Help Desk</a> to install Rtools on your machine. If you are installing from your personal machine, you will need to <a href="https://cran.r-project.org/bin/windows/Rtools/">download</a> and install the version of Rtools based on the R version you are using. You can determine what version of R you are using by opening up a new instance of R or RStudio and the version will be the very first thing that appears in your console.</p>
+</section>
+<section id="rstudio-global-options" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="rstudio-global-options"><span class="header-section-number">4.3</span> RStudio Global Options</h2>
+<p>It’s best practice to start with a clean session each time you load up RStudio, so you will want to adjust some default options in your IDE. To access these, in the menu bar at the top, navigate to Tools &gt; Global Options. Here are the places you will want to make changes to the default options before you hit “Apply”:</p>
+<ul>
+<li>Uncheck “Result most recent opened project at startup”</li>
+<li>Uncheck “Restore .RData into Workspace at startup”</li>
+<li>Change dropdown to “Never” for “Save workspace to .RData on exit”</li>
+<li>Uncheck “Always save history (even when not saving .RData)</li>
+</ul>
+<p><img src="images/r_setup-global-options.png" class="img-fluid" alt="RStudio Global Options menu with the items above changed"></p>
+</section>
+<section id="storing-snippets" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="storing-snippets"><span class="header-section-number">4.4</span> Storing Snippets</h2>
+<p>Rstudio code snippets are predefined code shortcuts that can be used to quickly insert commonly used code blocks. The use of snippets can improve coding efficiency, reduce the time spent copying and pasting code from other scripts, and improve the readability of your code by providing a standardized format for your analytical scripts.</p>
+<p>To create your own snippets in Rstudio, go to “Tools &gt; Global Options &gt; Code &gt; Edit Snippets. This will open a file where you can define your custom snippets using a simple syntax.</p>
+<p><img src="images/r_setup-snippets_global-options.png" class="img-fluid" alt="RStudio Global Options highlighting where to access Snippets"></p>
+<p>Rstudio comes bundled with a set of built-in snippets that you may have already used without even realizing it. The snippets are not limited to just R, but to all of the different languages you can code in within the Rstudio IDE. In the example below, this snippet sets up the formatting of a script for you. To create a new snippet, follow the syntax in the window and click save. Your snippet is now available for use.</p>
+<p><img src="images/r_setup-snippet-window.png" class="img-fluid" alt="RStudio Snippet window showing user created setup"></p>
+<p>For example, if we wanted to create snippet to insert a new object that represents the time right now, we could use the following snippet:</p>
+<pre><code>snippet time “insert time right now”     
+   Sys.time()</code></pre>
+<p>Close your snippet window by hitting save, and return to the console.</p>
+<p>When we start typing we will then see the following appear.</p>
+<p><img src="images/r_setup-snippet_insert.png" class="img-fluid" alt="RStudio Console window showing autofill of Snippet name"></p>
+<p>If we hit Tab, the <code>Sys.time()</code> function will be inserted in the console window. When we hit enter, Rstudio will report the current time. While this may not be that useful, you can imagine how useful this may be if you need to insert the date or a repeated chunk of code.</p>
+</section>
+<section id="types-of-snippets" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="types-of-snippets"><span class="header-section-number">4.5</span> Types of snippets</h2>
+<p>There are broadly four different types of snippets available for use or creation.</p>
+<ol type="1">
+<li>Predefined snippets: RStudio comes with several built-in snippets for common programming tasks. These snippets cover a wide range of R code structures and functions, such as for loops, if statements, function definitions, and more.</li>
+<li>Triggering snippets: Snippets are triggered by typing a specific keyword followed by pressing the “Tab” key. For example, if you type “for” and then press “Tab,” RStudio will automatically expand the snippet into a basic for loop structure.</li>
+<li>Tab stops: Snippets may contain tab stops (usually denoted by the ${1}), indicated by numbers or placeholders. These allow you to quickly navigate through the different sections of the snippet by pressing the “Tab” key. For example, if you have a placeholder for a variable name, pressing “Tab” will move the cursor to that position, allowing you to enter the desired variable name.</li>
+<li>Dynamic snippets: Snippets can be dynamic and include placeholders that are automatically filled with values based on the context.For example, the “# DATE: r Sys.Date()” code chunk will insert today’s date into your script.</li>
+</ol>
+<p>By using RStudio snippets, you can streamline your coding workflow, reduce repetitive typing, and improve overall productivity when working with R code. We highly encourage you to take advantage of snippets and share your discoveries with the team.</p>
+<p><a href="https://gist.github.com/tessam30/fc775a2f917ea5d62de0f6724c4aeada">Link to SI Snippets</a></p>
+</section>
+<section id="additional-resources" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="additional-resources"><span class="header-section-number">4.6</span> Additional Resources</h2>
+<ul>
+<li><a href="http://jtleek.com/modules/01_DataScientistToolbox/02_10_rtools/#1">Installing Rtools - Jeffrey Leek</a></li>
+<li><a href="https://usaid-oha-si.github.io/corps/rbbs/2022/01/28/rbbs-0-setup.html">RBBS - 0 Software and Account Setup: Setting up Rtools - Aaron Chafetz</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./background.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Background</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./typeface_setup.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Installing Source Sans Pro Typeface</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
