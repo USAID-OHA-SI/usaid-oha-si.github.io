@@ -13,29 +13,35 @@ title: SI - Reference Materials
 </div>
 
 <!-- Manuals -->
-<div class="row my-1">
-    <div class="col-12 bg-callout bg-callout-secondary">
-        <h4 class="display-5 text-uppercase">User Manuals</h4>
 
-        <a href="./background/background.html" target="_blank" class="post-tag badge badge-secondary">
-            <i class="fa fa-book"></i> Background
-        </a>
+<h3 class="display-6 text-uppercase">SI Manuals</h3>
 
-        <a href="./r_setup/r_setup.html" target="_blank" class="post-tag badge badge-secondary">
-            <i class="fa fa-book"></i> R Setup
-        </a>
+<!-- SI Manual as Quarto Book -->
+<div class="row row-cols-1">
+    <div class="col mb-3">
+        <div class="card h-100">
 
-        <a href="./base_packages/base_packages.html" target="_blank" class="post-tag badge badge-secondary">
-            <i class="fa fa-book"></i> Installing Our Base Set of Packages
-        </a>
+            <!-- Post Content -->
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a class="display-5" target="_blank" href="./book-si-manual/index.html">
+                        R guide for Strategic Information Advisors
+                    </a>
+                </h5>
+                <p>
+                    This guide is designed to assist OHA analysts who want to incorporate R + RStudio and Git + GitHub into their analytical workflows
+                </p>
+            </div>
 
-        <a href="./typeface_setup/typeface_setup.html" target="_blank" class="post-tag badge badge-secondary">
-            <i class="fa fa-book"></i> Installing Source Sans Pro Typeface
-        </a>
+            <!-- Post Footer -->
+            <div class="card-footer text-muted">
+                <small> Posted byAaron Chafetz on 08/01/2023</small>
+                <br />
+                <small> <i class="fa fa-tags"></i> Manual, SI, R, RStudio, Git</small>
+            </div>
+        </div>
     </div>
 </div>
-
-<h3 class="display-5 text-uppercase">User Manuals</h3>
 
 <!-- Manual: Static Reforence -->
 <div class="row row-cols-1">
@@ -74,15 +80,15 @@ title: SI - Reference Materials
             <!-- Post Content -->
             <div class="card-body">
                 <h5 class="card-title">
-                    <a class="display-5" href="{{ post.url }}">
+                    <a class="display-5" target="_blank" href="{{ post.url }}">
                         {{ post.title }}
                     </a>
                 </h5>
                 <p>
                     {% if post.description and post.description != "" %}
-                    {{post.description}}
+                    [Shared as a Blog Post] {{post.description}}
                     {% else %}
-                    For more details on "{{post.title}}, click the link above to open the manual."
+                    [Shared as a Blog Post] For more details on "{{post.title}}, click the link above to open the manual."
                     {% endif %}
                 </p>
             </div>
@@ -99,44 +105,9 @@ title: SI - Reference Materials
     {% endfor %}
 </div>
 
-<!-- Manual Docs -->
-<div class="row row-cols-1">
-    {% for man in site.manuals %}
-    {% if man.category == "manual" %}
-    <div class="col mb-3">
-        <div class="card h-100">
-
-            <!-- Post Content -->
-            <div class="card-body">
-                <h5 class="card-title">
-                    <a class="display-5" href="{{ man.url }}">
-                        {{ man.title }}
-                    </a>
-                </h5>
-                <p>
-                    {% if post.description and post.description != "" %}
-                    {{man.description}}
-                    {% else %}
-                    For more details on "{{man.title}}, click the link above to open the manual."
-                    {% endif %}
-                </p>
-            </div>
-
-            <!-- Post Footer -->
-            <div class="card-footer text-muted">
-                <small> Posted {% if post.author and post.author != "" %} by {{ man.author }} {% endif %} on {{ man.date | date: "%m/%d/%Y" }}</small>
-                <br />
-                <small> <i class="fa fa-tags"></i> <!-- Tags:--> {% if post.tags %}  {{ man.tags | join: ", " }} {% else %} "N/A" {% endif %}</small>
-            </div>
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-</div>
-
 <!-- Guidance -->
 
-<h3 class="display-5 text-uppercase">Guiding Materials</h3>
+<h3 class="display-6 text-uppercase">Guiding Materials</h3>
 
 <p>
     <a href="#" target="_blank" class="post-tag badge badge-secondary">
@@ -146,7 +117,7 @@ title: SI - Reference Materials
 
 <!-- Others -->
 
-<h3 class="display-5 text-uppercase">Other materials</h3>
+<h3 class="display-6 text-uppercase">Other materials</h3>
 
 <p>
     <a href="#" target="_blank" class="post-tag badge badge-secondary">
