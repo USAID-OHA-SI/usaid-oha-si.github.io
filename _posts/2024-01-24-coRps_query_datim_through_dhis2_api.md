@@ -2,6 +2,8 @@
 title: "Query DATIM through DHIS2 API"
 author: "Baboyma Kagniniwa"
 date: "2024-01-24"
+categories: [corps]
+tags: [grabr, datim, dhis2, api]
 output: html_document
 ---
 
