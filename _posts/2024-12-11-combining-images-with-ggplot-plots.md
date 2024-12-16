@@ -5,10 +5,10 @@ author: "Baboyma Kagniniwa"
 date: "2024-12-11"
 categories: [corps]
 tags: [ggplot, cowplot, patchwork, logo, images]
-output: html_document
+thumbnail: "2024-12-11-combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-35-1.png"
 ---
 
-
+coRps Session on Combining ggplot plots with images or logos
 
 ![](https://unsplash.com/photos/gxGtqG5ul2g/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzMzMjQ1MjQxfA&force=true&w=1920)
 
@@ -16,19 +16,22 @@ output: html_document
 
 This post was developed in response to an inquiry / suggestion to add a new function to `glitr` package that will be used to add **logos** to ggplot plots. After review of the inquiry, we decided it was best to show examples of ggplot plotting where [`cowplot Package`](https://wilkelab.org/cowplot/index.html) and other plotting packages ([patchwork](https://www.tidyverse.org/tags/patchwork/)) could be used to accomplish the same goal.
 
+## Recording
+
+The recording can be accessed through this [link](https://drive.google.com/file/d/1HllfQObOiWsr5rMiJETaLY2kHXKHe4jX/view).
+
 ## Objectives
 
 We will cover 4 main points:
 
-1)  Visualize data with ggplot
-2)  Combine multiple plot into 1
-3)  Add ggplot plots to images (png files)
-4)  Add images (png files) to ggplot plots
+1. Visualize data with ggplot
+2. Combine multiple plot into 1
+3. Add ggplot plots to images (png files)
+4. Add images (png files) to ggplot plots
 
 ## Requirements
 
 For the demo, we will be using `tidyverse`, `patchwork`, `cowplot` and other core OHA Packages.
-
 
 ``` r
   library(tidyverse)
@@ -311,7 +314,7 @@ Let's plot all 3 indicators into a single visual. We will use `faceting` along w
   viz_hts
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-15-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11-combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-15-1.png" />
 
 We could also drop the calculated indicator (HTS_TST_YIELD) and focus only on HTS_TST and HTS_TST_POS, given that these are absolute numbers.
 
@@ -338,7 +341,7 @@ We could also drop the calculated indicator (HTS_TST_YIELD) and focus only on HT
   viz_hts_pos
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-16-1.png" width="960" />
+<img src="assets/img/posts//2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-16-1.png" width="960" />
 
 In preparation of the next steps, we will try to remove the background of some of the plots so that the overlay is clear.
 
@@ -372,7 +375,7 @@ Below we leverage `si_style_transparent()` on a bar chart of HTS_TST_POS. We've 
   viz_hts_pos2
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-17-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-17-1.png" width="960" />
 
 Same plot as above, but using the % HTS_TST_POS instead of the absolute HIV+ numbers.
 
@@ -406,7 +409,7 @@ Same plot as above, but using the % HTS_TST_POS instead of the absolute HIV+ num
   viz_hts_yield
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-18-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-18-1.png" width="960" />
 
 ``` r
   ## Change the psnu names to white for image overlay
@@ -439,7 +442,7 @@ Same plot as above, but using the % HTS_TST_POS instead of the absolute HIV+ num
   viz_hts_yield2
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-19-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-19-1.png" width="960" />
 
 ### 2) Combine multiple plot into 1
 
@@ -455,7 +458,7 @@ With patchwork, we can use **+** and **/** to combine plots by row or column. Th
     plot_annotation(tag_levels = "A")
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-20-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-20-1.png" width="960" />
 
 Noticed that the enumeration tags are above the header of plot #A? Let fix that by removing the header from the first plot and adding it back on top of the combined plot.
 
@@ -472,7 +475,7 @@ Noticed that the enumeration tags are above the header of plot #A? Let fix that 
                     theme = theme(plot.title = element_text(face = "bold")))
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-21-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-21-1.png" width="960" />
 
 Let's now combine 3 plots while making sure the last 2 are on the second row.
 
@@ -488,7 +491,7 @@ Let's now combine 3 plots while making sure the last 2 are on the second row.
     plot_annotation(tag_levels = "A")
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-22-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-22-1.png" width="960" />
 
 #### b) Combine plot with `COWPLOT`
 
@@ -501,7 +504,7 @@ With `COWPLOT` we can use `ggdraw()` & `draw_plot()` to combine plots. The draw_
     draw_plot(viz_hts_yield)
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-23-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-23-1.png" width="960" />
 
 The overlay was successful but not really useful for the users / readers. To fix this, we will use the location and size parameters to adjust the overlap.
 
@@ -514,7 +517,7 @@ The overlay was successful but not really useful for the users / readers. To fix
               width = .4, height = .75) 
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-24-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-24-1.png" width="960" />
 
 
 ``` r
@@ -533,7 +536,7 @@ The overlay was successful but not really useful for the users / readers. To fix
   viz_hts_viz
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-25-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-25-1.png" width="960" />
 
 The overlay is looking better now. How do we put back out title? 
 `Cowplot` has a `plot_grid()` function we can leverage. This is similar to `pathwork`.
@@ -549,7 +552,7 @@ The overlay is looking better now. How do we put back out title?
             rel_widths = c(2, 1))
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-26-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-26-1.png" width="960" />
 
 
 ``` r
@@ -565,7 +568,7 @@ title <- ggdraw() +
 title
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-27-1.png" width="672" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-27-1.png" width="672" />
 
 
 ``` r
@@ -575,7 +578,7 @@ title
            rel_heights = c(0.1, 1)) # Shrink plots before combining them
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-28-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-28-1.png" width="960" />
 
 ### 3) Add ggplot plots to images (png files)
 
@@ -590,7 +593,7 @@ title
   ggdraw() + draw_grob(logo) # visualize a raw data of an image
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-29-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-29-1.png" width="960" />
 
 
 ``` r
@@ -599,7 +602,7 @@ title
     draw_image("../figures/logo.png")
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-30-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-30-1.png" width="960" />
 
 
 ``` r
@@ -608,7 +611,7 @@ title
     draw_image(file_logo)
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-31-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-31-1.png" width="960" />
 
 ``` r
   # Visualize an image hosted online
@@ -616,7 +619,7 @@ title
     draw_image("/assets/img/posts/20241211-rbbs-combining images with ggplot plots-usaid-pptx-header.png")
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-32-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-32-1.png" width="960" />
 
 #### b) Adding ggplot plot on top of image
 
@@ -630,7 +633,7 @@ title
               width = 1, height = 1)
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-33-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-33-1.png" width="960" />
 
 
 ``` r
@@ -644,7 +647,7 @@ title
               width = 1, height = 1)
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-34-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-34-1.png" width="960" />
 
 
 ``` r
@@ -656,7 +659,7 @@ title
               width = .7, height = 1)
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-35-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-35-1.png" width="960" />
 
 
 ``` r
@@ -669,7 +672,7 @@ title
               width = .55, height = .8)
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-36-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-36-1.png" width="960" />
 
 ### 4) Add images (png files) to ggplot plots
 
@@ -686,7 +689,7 @@ Using ggplot `annotation_custom()` we could also add raw images to specific area
       ymin = 1, ymax = 3) 
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-37-1.png" width="960" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-37-1.png" width="960" />
 
 
 ``` r
@@ -701,7 +704,7 @@ Using ggplot `annotation_custom()` we could also add raw images to specific area
     theme()
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-38-1.png" width="672" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-38-1.png" width="672" />
 
 
 ``` r
@@ -716,7 +719,7 @@ Using ggplot `annotation_custom()` we could also add raw images to specific area
     theme()
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-39-1.png" width="672" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-39-1.png" width="672" />
 
 
 ``` r
@@ -734,7 +737,7 @@ ggdraw() +
     theme(plot.title = element_markdown(hjust = 0, linewidth = unit(20, "lines")))
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-40-1.png" width="672" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-40-1.png" width="672" />
 
 
 ``` r
@@ -760,7 +763,7 @@ ggdraw() +
             rel_heights = c(0.1, 1)) # Shrink plots before combining them
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-41-1.png" width="1152" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-41-1.png" width="1152" />
 
 ## Additional notes
 
@@ -785,7 +788,7 @@ ggdraw() +
   ggdraw() + draw_image("/assets/img/posts/20241211-rbbs-combining images with ggplot plots-r-project.png")
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-43-1.png" width="672" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-43-1.png" width="672" />
 
 
 ``` r
@@ -798,12 +801,12 @@ ggdraw() +
   ggdraw() + draw_image("/assets/img/posts/20241211-rbbs-combining images with ggplot plots-youtube.png")
 ```
 
-<img src="C:/Users/bkagniniwa/Documents/Projects/GH/OHA/GITHUB/coRps/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-44-1.png" width="672" />
+<img src="assets/img/posts/2024-12-11/combining-images-with-ggplot-plots_files/figure-html/unnamed-chunk-44-1.png" width="672" />
 
-## END! 
+#### END! 
 
-## HAPPY PLOTTING... :)
+#### HAPPY PLOTTING... :)
 
-## THANK YOU!
+#### THANK YOU!
 
-## For feature inquiries, use [github issues](https://github.com/USAID-OHA-SI/coRps/issues) ...
+#### For feature inquiries, use [github issues](https://github.com/USAID-OHA-SI/coRps/issues) ...
